@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasCard > renders with as correctly 1`] = `
+"<section data-slot="root" class="card">
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+</section>"
+`;
+
+exports[`RobotbasCard > renders with class correctly 1`] = `
+"<div data-slot="root" class="card rounded-xl">
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasCard > renders with default slot correctly 1`] = `
+"<div data-slot="root" class="card">
+  <!--v-if-->
+  <div data-slot="body" class="card-body">Default slot</div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasCard > renders with footer slot correctly 1`] = `
+"<div data-slot="root" class="card">
+  <!--v-if-->
+  <!--v-if-->
+  <div data-slot="footer" class="card-footer">Footer slot</div>
+</div>"
+`;
+
+exports[`RobotbasCard > renders with header slot correctly 1`] = `
+"<div data-slot="root" class="card">
+  <div data-slot="header" class="card-header">Header slot</div>
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasCard > renders with ui correctly 1`] = `
+"<div data-slot="root" class="card">
+  <!--v-if-->
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;

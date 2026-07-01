@@ -1,0 +1,1643 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasCombobox > renders with ariaLabel correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Aria label" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with arrow correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div><span style="position: absolute; top: 0px; transform-origin: center 0; transform: rotate(180deg); visibility: hidden;"><svg width="10" height="5" rounded="false" viewBox="0 0 12 6" preserveAspectRatio="none" data-slot="arrow" class="" style="display: block;"><path d="M0 0L6 6L12 0"></path></svg></span>
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with avatar and leadingIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><i class="i-lucide-arrow-left" data-slot="leadingIcon"></i></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with avatar and trailingIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" data-slot="image" class="avatar-image"></span></span><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class=""><i class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span></button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with avatar correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" data-slot="image" class="avatar-image"></span></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with by correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="value" class="">Backlog</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="true" data-state="checked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with class correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select rounded-full">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with clear and clearIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" clear="true" clearicon="i-lucide-x" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="value" class="">Backlog</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="true" data-state="checked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with clear correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" clear="true" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="value" class="">Backlog</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="true" data-state="checked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with create-item-label slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="New value" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><span data-slot="itemLabel" class="">Create item slot</span></div>
+        </div>
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with default slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if-->Default slot
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with defaultValue correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="value" class="">Backlog</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="true" data-state="checked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with descriptionKey correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with disabled correctly 1`] = `
+"<button disabled="" type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" data-disabled="" aria-disabled="true" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" disabled="" autocomplete="off" data-disabled="" aria-disabled="true" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" disabled="" data-disabled="" data-state="unchecked"><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" disabled="" data-disabled="" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" disabled="" data-disabled="" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" disabled="" data-disabled="" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" disabled="" data-disabled="" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with icon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><i class="i-lucide-search" data-slot="leadingIcon"></i></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with id correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" id="id" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with item slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted="">Item slot</div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item slot</div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item slot</div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item slot</div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item slot</div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with item-description slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span><span data-slot="itemDescription" class="text-muted small">Item description slot</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span><span data-slot="itemDescription" class="text-muted small">Item description slot</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span><span data-slot="itemDescription" class="text-muted small">Item description slot</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span><span data-slot="itemDescription" class="text-muted small">Item description slot</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span><span data-slot="itemDescription" class="text-muted small">Item description slot</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with item-label slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Item label slot</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Item label slot</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Item label slot</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Item label slot</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Item label slot</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with item-leading slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted="">Item leading slot<span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item leading slot<span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item leading slot<span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item leading slot<span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked">Item leading slot<span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with item-trailing slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class="">Item trailing slot<!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class="">Item trailing slot<!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class="">Item trailing slot<!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class="">Item trailing slot<!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class="">Item trailing slot<!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with items correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with items with description correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span><span data-slot="itemDescription" class="text-muted small">Description</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span><span data-slot="itemDescription" class="text-muted small">Description</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span><span data-slot="itemDescription" class="text-muted small">Description</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span><span data-slot="itemDescription" class="text-muted small">Description</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span><span data-slot="itemDescription" class="text-muted small">Description</span></span><span data-slot="itemTrailing" class=""><!--v-if--></span></div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with labelKey correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">in_progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with leading and icon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><i class="i-lucide-arrow-left" data-slot="leadingIcon"></i></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with leading slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select"><span data-slot="leading" class="">Leading slot</span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with leadingIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><i class="i-lucide-arrow-left" data-slot="leadingIcon"></i></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with loading and avatar correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" data-slot="image" class="avatar-image"></span></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with loading correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><!--v-if--></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with loading trailing and avatar correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" data-slot="image" class="avatar-image"></span></span><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class=""><!--v-if--></span></button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with loading trailing correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class=""><!--v-if--></span>
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with loadingIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select"><span data-slot="leading" class=""><i class="i-lucide-loader" data-slot="leadingIcon"></i></span><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with modelValue correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="value" class="">Backlog</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="true" data-state="checked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with multiple correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="true" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with name correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with placeholder correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">Search...</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with required correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with searchInput icon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3"><span data-slot="leading" class=""><i class="i-lucide-search" data-slot="leadingIcon"></i></span>
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with searchInput placeholder correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="Filter items..." data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with selectedIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with trailing and icon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class=""><i class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with trailing slot correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class="">Trailing slot</span>
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with trailingIcon correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="false" aria-controls="" data-state="closed" aria-disabled="false" dir="ltr" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class=""><i class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with trailingIcon correctly 2`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span><span data-slot="trailing" class=""><i class="i-lucide-chevron-down" data-slot="trailingIcon"></i></span>
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with valueKey correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="value" class="">Backlog</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="" aria-activedescendant="reka-combobox-item-v-0-0-3">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="true" data-state="checked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders with virtualize correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-empty="" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <div data-slot="root" class=""><input type="text" placeholder="robotbas-combobox.search.placeholder" data-slot="input" class="form-control mb-1 form-control mb-1" autocomplete="off" aria-disabled="false" aria-expanded="true" aria-controls="reka-combobox-content-v-0-0-0" aria-autocomplete="list" role="combobox" value="">
+        <!--v-if-->
+        <!--v-if-->
+      </div>
+      <div data-slot="empty" class="dropdown-item-text text-muted">RobotbasCombobox.noData</div>
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div data-reka-virtualizer="" style="position: relative; width: 100%; height: 160px;"></div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;
+
+exports[`RobotbasCombobox > renders without searchInput correctly 1`] = `
+"<button type="button" tabindex="0" aria-label="Show popup" aria-haspopup="listbox" aria-expanded="true" aria-controls="" data-state="open" aria-disabled="false" dir="ltr" style="pointer-events: auto;" data-slot="base" class="form-select">
+  <!--v-if--><span data-slot="placeholder" class="text-muted">&nbsp;</span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+
+
+<div data-reka-popper-content-wrapper="" dir="ltr" style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;">
+  <div data-dismissable-layer="" style="display: flex; flex-direction: column; box-sizing: border-box; --reka-combobox-content-transform-origin: var(--reka-popper-transform-origin); --reka-combobox-content-available-width: var(--reka-popper-available-width); --reka-combobox-content-available-height: var(--reka-popper-available-height); --reka-combobox-trigger-width: var(--reka-popper-anchor-width); --reka-combobox-trigger-height: var(--reka-popper-anchor-height); animation: none; outline-color: none; outline-style: none; outline-width: initial;" tabindex="-1" data-slot="content" class="dropdown-menu robotbas-combobox-content show" role="listbox" aria-orientation="vertical" aria-multiselectable="false" data-orientation="vertical" position="popper" id="reka-combobox-content-v-0-0-0" data-state="open" data-side="bottom" data-align="end">
+    <div tabindex="-1" data-slot="focusScope" class="">
+      <!--v-if-->
+      <!--v-if-->
+      <div role="presentation" data-slot="viewport" class="">
+        <!--v-if-->
+        <div role="group" aria-labelledby="" id="reka-combobox-group-v-0-0-1" data-slot="group" class="">
+          <div id="reka-combobox-item-v-0-0-3" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="0" aria-selected="false" data-state="unchecked" data-highlighted=""><i class="i-lucide-circle-help" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Backlog</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-5" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-plus" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Todo</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-7" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-arrow-up" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">In Progress</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-9" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-check" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Done</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+          <div id="reka-combobox-item-v-0-0-11" data-slot="item" class="dropdown-item" data-reka-collection-item="" role="option" tabindex="-1" aria-selected="false" data-state="unchecked"><i class="i-lucide-circle-x" data-slot="itemLeadingIcon"></i><span data-slot="itemWrapper" class=""><span data-slot="itemLabel" class="">Canceled</span>
+            <!--v-if--></span><span data-slot="itemTrailing" class=""><!--v-if--></span>
+          </div>
+        </div>
+        <!--v-if-->
+      </div>
+    </div>
+    <!--v-if-->
+  </div>
+</div>
+
+
+<!--teleport end-->
+<!--v-if-->"
+`;

@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`sidebar link > match snapshot 1`] = `
+"<a data-v-4ad93fef="" class="sidebarlink">
+  <div data-v-4ad93fef="" class="sidebarlink-content">
+    <div data-v-4ad93fef="" class="sidebarlink-leading">
+      <!--v-if-->
+    </div>
+    <div data-v-4ad93fef="" class="text">link text</div>
+  </div><span data-v-4ad93fef="" class="sidebarlink-trailing"><!--v-if--><!--v-if--></span>
+</a>"
+`;
+
+exports[`sidebar link > with trailing icon > match snapshot 1`] = `
+"<a data-v-4ad93fef="" class="sidebarlink">
+  <div data-v-4ad93fef="" class="sidebarlink-content">
+    <div data-v-4ad93fef="" class="sidebarlink-leading">
+      <!--v-if-->
+    </div>
+    <div data-v-4ad93fef="" class="text">link text</div>
+  </div><span data-v-4ad93fef="" class="sidebarlink-trailing"><!--v-if--><i data-v-4ad93fef="" class="fas fa-chevron-down"></i></span>
+</a>"
+`;

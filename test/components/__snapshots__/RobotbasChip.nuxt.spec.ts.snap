@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Chip > renders with as correctly 1`] = `"<span data-slot="root" class=""><span role="contentinfo" data-slot="base" class=""></span></span>"`;
+
+exports[`Chip > renders with class correctly 1`] = `"<div data-slot="root" class="mx-auto"><span role="contentinfo" data-slot="base" class=""></span></div>"`;
+
+exports[`Chip > renders with color primary correctly 1`] = `"<div data-slot="root" class=""><span role="contentinfo" data-slot="base" class=""></span></div>"`;
+
+exports[`Chip > renders with content slot correctly 1`] = `"<div data-slot="root" class=""><span role="contentinfo" data-slot="base" class="">Content slot</span></div>"`;
+
+exports[`Chip > renders with default slot correctly 1`] = `"<div data-slot="root" class="">Default slot<span role="contentinfo" data-slot="base" class=""></span></div>"`;
+
+exports[`Chip > renders with inset correctly 1`] = `"<div data-slot="root" class=""><span role="contentinfo" data-slot="base" class=""></span></div>"`;
+
+exports[`Chip > renders with text correctly 1`] = `"<div data-slot="root" class=""><span role="contentinfo" data-slot="base" class="">Text</span></div>"`;
+
+exports[`Chip > renders with ui correctly 1`] = `"<div data-slot="root" class=""><span role="contentinfo" data-slot="base" class="text-muted text-muted"></span></div>"`;
+
+exports[`Chip > renders without show correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+</div>"
+`;

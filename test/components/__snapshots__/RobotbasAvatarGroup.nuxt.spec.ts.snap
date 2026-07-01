@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AvatarGroup > renders with as correctly 1`] = `"<span data-slot="root" class="avatar-group" aria-hidden="true"><!--v-if--><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/noook.png" alt="Neil Richter" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/romhml.png" alt="Romain Hamel" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/benjamincanac.png" alt="Benjamin Canac" width="32" height="32" data-slot="image" class="avatar-image"></span></span>"`;
+
+exports[`AvatarGroup > renders with class correctly 1`] = `
+"<div data-slot="root" class="avatar-group justify-start" aria-hidden="true">
+  <!--v-if--><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/noook.png" alt="Neil Richter" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/romhml.png" alt="Romain Hamel" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/benjamincanac.png" alt="Benjamin Canac" width="32" height="32" data-slot="image" class="avatar-image"></span>
+</div>"
+`;
+
+exports[`AvatarGroup > renders with default slot correctly 1`] = `
+"<div data-slot="root" class="avatar-group" aria-hidden="true">
+  <!--v-if--><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/noook.png" alt="Neil Richter" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/romhml.png" alt="Romain Hamel" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/benjamincanac.png" alt="Benjamin Canac" width="32" height="32" data-slot="image" class="avatar-image"></span>
+</div>"
+`;
+
+exports[`AvatarGroup > renders with max correctly 1`] = `"<div data-slot="root" class="avatar-group" aria-hidden="true"><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><span data-slot="fallback" aria-label="Avatar fallback" class="avatar-fallback">+1</span></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/romhml.png" alt="Romain Hamel" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar avatar-group-base"><img src="https://github.com/benjamincanac.png" alt="Benjamin Canac" width="32" height="32" data-slot="image" class="avatar-image"></span></div>"`;
+
+exports[`AvatarGroup > renders with ui correctly 1`] = `
+"<div data-slot="root" class="avatar-group" aria-hidden="true">
+  <!--v-if--><span aria-hidden="true" data-slot="root" class="avatar rounded-lg rounded-lg"><img src="https://github.com/noook.png" alt="Neil Richter" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar rounded-lg rounded-lg"><img src="https://github.com/romhml.png" alt="Romain Hamel" width="32" height="32" data-slot="image" class="avatar-image"></span><span aria-hidden="true" data-slot="root" class="avatar rounded-lg rounded-lg"><img src="https://github.com/benjamincanac.png" alt="Benjamin Canac" width="32" height="32" data-slot="image" class="avatar-image"></span>
+</div>"
+`;

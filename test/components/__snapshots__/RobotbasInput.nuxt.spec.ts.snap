@@ -1,0 +1,160 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasInput > renders with as correctly 1`] = `
+"<section data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</section>"
+`;
+
+exports[`RobotbasInput > renders with avatar and leadingIcon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><i class="i-lucide-arrow-left" data-slot="leadingIcon"></i></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with avatar and trailingIcon correctly 1`] = `"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></span></span><span data-slot="trailing" class=""><i class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span></div>"`;
+
+exports[`RobotbasInput > renders with avatar correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></span></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with class correctly 1`] = `
+"<div data-slot="root" class="absolute"><input type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with default slot correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off">Default slot
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with disabled correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" disabled="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with file type correctly 1`] = `
+"<div data-slot="root" class=""><input type="file" data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with icon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><i class="i-lucide-search" data-slot="leadingIcon"></i></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with id correctly 1`] = `
+"<div data-slot="root" class=""><input id="id" type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with leading and icon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><i class="i-lucide-arrow-left" data-slot="leadingIcon"></i></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with leading slot correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class="">Leading slot</span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with leadingIcon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><i class="i-lucide-arrow-left" data-slot="leadingIcon"></i></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with loading and avatar correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></span></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with loading correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><!--v-if--></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with loading trailing and avatar correctly 1`] = `"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></span></span><span data-slot="trailing" class=""><!--v-if--></span></div>"`;
+
+exports[`RobotbasInput > renders with loading trailing correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if--><span data-slot="trailing" class=""><!--v-if--></span>
+</div>"
+`;
+
+exports[`RobotbasInput > renders with loadingIcon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off"><span data-slot="leading" class=""><i class="i-lucide-loader" data-slot="leadingIcon"></i></span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with name correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" name="name" data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with placeholder correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" placeholder="Search..." data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with required correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" required="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with trailing and icon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if--><span data-slot="trailing" class=""><i class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>
+</div>"
+`;
+
+exports[`RobotbasInput > renders with trailing slot correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if--><span data-slot="trailing" class="">Trailing slot</span>
+</div>"
+`;
+
+exports[`RobotbasInput > renders with trailingIcon correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="" autocomplete="off">
+  <!--v-if--><span data-slot="trailing" class=""><i class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>
+</div>"
+`;
+
+exports[`RobotbasInput > renders with type correctly 1`] = `
+"<div data-slot="root" class=""><input type="password" data-slot="base" class="" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasInput > renders with ui correctly 1`] = `
+"<div data-slot="root" class=""><input type="text" data-slot="base" class="rounded-full rounded-full" autocomplete="off">
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;

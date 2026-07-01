@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasModal > match snapshot (closed) 1`] = `
+"Open modal
+<!--teleport start-->
+<!--teleport end-->"
+`;

@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasInputIterator > match snapshot 1`] = `"<div data-slot="root" class=""><button data-slot="leading" class="input-group-text"><i class="robotbas-icon-bold icon-caret-left-fill" data-slot="leadingIcon"></i></button><input type="text" data-slot="base" class="form-control form-control" autocomplete="off" readonly="" value="Jan"><button data-slot="trailing" class="input-group-text"><i class="robotbas-icon-bold icon-caret-right-fill" data-slot="trailingIcon"></i></button></div>"`;
