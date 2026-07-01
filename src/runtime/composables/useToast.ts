@@ -1,5 +1,6 @@
 import type { Ref, InjectionKey } from 'vue'
 import { ref, nextTick, inject } from 'vue'
+import { useState } from '#imports'
 
 import type { EmitsToProps } from '../types/utils'
 import type { ToastEmits, RobotbasToastProps } from '../components/RobotbasToast.vue'

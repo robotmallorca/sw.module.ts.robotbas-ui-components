@@ -27,6 +27,7 @@ export interface RobotbasButtonProps {
 </script>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 
 const props = withDefaults(defineProps<RobotbasButtonProps>(), {
   variant: 'normal',

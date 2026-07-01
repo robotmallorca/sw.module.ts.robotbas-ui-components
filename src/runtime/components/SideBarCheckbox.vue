@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, watch } from "vue";
+
 interface SideBarCheckboxProps {
   submenu: 0 | 1 | 2;
   text: string;

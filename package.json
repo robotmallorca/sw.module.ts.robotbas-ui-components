@@ -4,7 +4,7 @@
   "description": "RobotBAS Vue UI components (Robotbas*) shared across webapps. Packaged as a Nuxt module.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robotbas/sw.module.ts.robotbas-ui-components.git"
+    "url": "git+https://github.com/robotmallorca/sw.module.ts.robotbas-ui-components.git"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "type": "module",

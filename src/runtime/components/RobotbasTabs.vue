@@ -100,6 +100,7 @@ export type RobotbasTabsSlots<T extends RobotbasTabsItem = RobotbasTabsItem> = {
 </script>
 
 <script setup lang="ts" generic="T extends RobotbasTabsItem">
+import { ref, type ComponentPublicInstance } from 'vue'
 import { TabsRoot, TabsList, TabsIndicator, TabsTrigger, TabsContent, useForwardPropsEmits } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 

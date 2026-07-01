@@ -85,6 +85,7 @@ export interface ToastSlots {
 </script>
 
 <script setup lang="ts">
+import { useTemplateRef, ref, onMounted, nextTick } from 'vue'
 import { ToastRoot, ToastTitle, ToastDescription, ToastAction, ToastClose, useForwardPropsEmits } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 

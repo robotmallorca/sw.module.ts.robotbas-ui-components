@@ -23,6 +23,8 @@ interface SideBarItemProps {
 </script>
 
 <script setup lang="ts">
+import { computed } from "vue";
+import { useRoute } from "#imports";
 import type { RouteLocationRaw } from "#vue-router";
 import type { RobotbasBadgeProps } from "./RobotbasBadge.vue";
 

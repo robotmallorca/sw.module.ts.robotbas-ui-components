@@ -69,7 +69,7 @@ export interface InputSlots {
 </script>
 
 <script setup lang="ts">
-import { useTemplateRef, computed, onMounted } from 'vue'
+import { useTemplateRef, computed, onMounted, type ComputedRef } from 'vue'
 import { Primitive } from 'reka-ui'
 import { useVModel } from '@vueuse/core'
 import { useFieldGroup } from '../composables/useFieldGroup'

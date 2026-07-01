@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { ToggleGroupItem } from 'reka-ui';
 import type { RobotbasButtonProps } from './RobotbasButton.vue';
 

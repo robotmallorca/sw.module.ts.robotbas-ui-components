@@ -47,6 +47,7 @@ export interface ToasterSlots {
 </script>
 
 <script setup lang="ts">
+import { provide, toRef, computed, ref } from 'vue'
 import { ToastProvider, ToastViewport, ToastPortal, useForwardProps } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useToast, toastMaxInjectionKey } from '../composables/useToast'
