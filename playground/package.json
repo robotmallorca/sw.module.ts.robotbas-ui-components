@@ -1,0 +1,10 @@
+{
+  "name": "robotbas-ui-playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate"
+  }
+}
