@@ -1,0 +1,417 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasTabs > renders with as correctly 1`] = `
+"<section dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</section>"
+`;
+
+exports[`RobotbasTabs > renders with class correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with content slot correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">Content slot</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with custom slot correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with default slot correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Default slot<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Default slot<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Default slot<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with defaultValue correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" tabindex="0" style="animation-duration: 0s;" class="">And, this is the content for Tab2</div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with items correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with labelKey correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0"></li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>i-lucide-user<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>i-lucide-bell<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with leading slot correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">Leading slot<span class="nav-link"><!--v-if-->Tab1<!--v-if--></span></li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">Leading slot<span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span></li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">Leading slot<span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with modelValue correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" tabindex="0" style="animation-duration: 0s;" class="">And, this is the content for Tab2</div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with orientation vertical correctly 1`] = `
+"<div dir="ltr" data-orientation="vertical">
+  <div class="" tabindex="0" data-orientation="vertical" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="vertical">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="vertical" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="vertical" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="vertical" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="vertical" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="vertical" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="vertical" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with trailing slot correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1Trailing slot</span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2Trailing slot</span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3Trailing slot</span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with ui correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="w-full ring ring-default">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="w-full ring ring-default">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="w-full ring ring-default">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with unmountOnHide correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="active" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" tabindex="0" style="animation-duration: 0s;" class="">This is the content shown for Tab1</div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">And, this is the content for Tab2</div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">Finally, this is the content for Tab3</div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders with valueKey correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal" valuekey="label">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-0">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-1">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false" aria-controls="reka-tabs-v-0-0-0-content-2">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-0" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-0" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-1" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-1" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+  <div id="reka-tabs-v-0-0-0-content-2" role="tabpanel" data-state="inactive" data-orientation="horizontal" aria-labelledby="reka-tabs-v-0-0-0-trigger-2" hidden="" tabindex="0" class="">
+    <!--v-if-->
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTabs > renders without content correctly 1`] = `
+"<div dir="ltr" data-orientation="horizontal">
+  <div class="" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="tablist" aria-orientation="horizontal">
+    <!--v-if-->
+    <ul class="nav nav-tabs">
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" data-active="" id="reka-tabs-v-0-0-0-trigger-0" role="tab" aria-selected="true" data-state="active" disabled="false">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><!--v-if-->Tab1<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-1" role="tab" aria-selected="false" data-state="inactive" disabled="false">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-user me-1"></i>Tab2<!--v-if--></span>
+      </li>
+      <li class="nav-item" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" id="reka-tabs-v-0-0-0-trigger-2" role="tab" aria-selected="false" data-state="inactive" disabled="false">
+        <!-- <UAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui?.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" :class="ui?.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" /> --><span class="nav-link"><i class="i-lucide-bell me-1"></i>Tab3<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">badge</span>
+        <!--v-if--></span></span>
+      </li>
+    </ul>
+  </div>
+  <!--v-if-->
+</div>"
+`;

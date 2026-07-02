@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FieldGroup > renders orientation vertical with default slot correctly 1`] = `"<div data-orientation="vertical" class="vertical">[object Object]</div>"`;
+
+exports[`FieldGroup > renders with as correctly 1`] = `"<section data-orientation="horizontal" class="horizontal"></section>"`;
+
+exports[`FieldGroup > renders with class correctly 1`] = `"<div data-orientation="horizontal" class="horizontal absolute"></div>"`;
+
+exports[`FieldGroup > renders with default slot correctly 1`] = `"<div data-orientation="horizontal" class="horizontal">[object Object]</div>"`;

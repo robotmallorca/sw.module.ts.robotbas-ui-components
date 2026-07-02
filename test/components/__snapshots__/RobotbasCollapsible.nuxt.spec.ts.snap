@@ -1,0 +1,6 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasCollapsible > match snapshot 1`] = `
+"<div data-state="open" data-slot="root" class="collapsible">Toggle<div data-slot="content" class="collapsible-content" id="reka-collapsible-content-v-0-0-0" style="--reka-collapsible-content-height: 0px; --reka-collapsible-content-width: 0px; transition-duration: 0s; animation-name: none;">Hidden content</div>
+</div>"
+`;

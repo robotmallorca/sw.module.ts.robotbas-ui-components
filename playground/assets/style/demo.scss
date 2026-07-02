@@ -1,0 +1,371 @@
+// ---------------------------------------------------------------------------
+// @robotbas/ui — estilos de la web de demostración
+// ---------------------------------------------------------------------------
+// Se importa UNA vez como CSS global (ver nuxt.config.ts). Aquí viven:
+//  1) El estilo de las clases "custom" que algunos componentes Robotbas* usan
+//     por defecto y que NO existen en Bootstrap (avatar, avatar-group, botón...).
+//  2) El layout y la estética de la propia página demo.
+// Las variables ($primary-500, ...) llegan inyectadas por additionalData.
+// ---------------------------------------------------------------------------
+
+:root {
+  --rb-bg: #{$gray-100};
+  --rb-surface: #{$white};
+  --rb-ink: #{$gray-900};
+  --rb-muted: #{$gray-600};
+  --rb-border: #{$gray-300};
+  --rb-primary: #{$primary-500};
+  --rb-primary-strong: #{$primary-700};
+}
+
+// ===========================================================================
+// 1) Clases custom de los componentes Robotbas*
+// ===========================================================================
+
+// --- Avatar --------------------------------------------------------------
+.avatar {
+  --avatar-size: 44px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  overflow: hidden;
+  background: $primary-100;
+  color: $primary-700;
+  font: $textmd-bold;
+  flex: none;
+  user-select: none;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-icon {
+  font-size: calc(var(--avatar-size) * 0.5);
+  line-height: 1;
+}
+
+.avatar-fallback {
+  text-transform: uppercase;
+  font-size: calc(var(--avatar-size) * 0.4);
+}
+
+// --- Avatar group --------------------------------------------------------
+.avatar-group {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  padding-left: 10px;
+
+  .avatar {
+    margin-left: -12px;
+    box-shadow: 0 0 0 2px $white;
+  }
+}
+
+// --- Chip (punto de estado sobre un avatar) ------------------------------
+.chip-dot {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 2px $white;
+}
+
+// --- Botón por defecto (ui.root = 'robotbas-button') ---------------------
+// El componente RobotbasButton no aplica clases .btn de Bootstrap por
+// defecto: le damos un aspecto sólido primario coherente con el tema.
+.robotbas-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: $robotbas-border-radius-default;
+  background: $primary-500;
+  color: $white;
+  font: $textmd-bold;
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.05s ease;
+
+  &:hover { background: $primary-700; }
+  &:active { transform: translateY(1px); }
+  &:focus-visible { outline: 3px solid rgba($primary-500, 0.35); outline-offset: 1px; }
+}
+
+// ===========================================================================
+// 2) Layout y estética de la página demo
+// ===========================================================================
+
+body {
+  background: var(--rb-bg);
+  color: var(--rb-ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.demo-root { scroll-behavior: smooth; }
+
+// --- Barra de navegación superior ----------------------------------------
+.demo-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  backdrop-filter: saturate(180%) blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid var(--rb-border);
+}
+
+.demo-nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--rb-ink);
+  text-decoration: none;
+  white-space: nowrap;
+  flex: none;
+}
+
+.demo-nav__logo {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, $primary-500, $primary-700);
+  color: $white;
+  font-size: 1.15rem;
+}
+
+.demo-nav__links {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+
+  a {
+    white-space: nowrap;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    color: var(--rb-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    &:hover { color: var(--rb-ink); background: $gray-100; }
+  }
+}
+
+// --- Hero -----------------------------------------------------------------
+.demo-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 4rem;
+  background:
+    radial-gradient(1200px 400px at 80% -10%, rgba($primary-500, 0.18), transparent 60%),
+    radial-gradient(900px 400px at 0% 0%, rgba($primary-700, 0.12), transparent 55%);
+}
+
+.demo-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: $white;
+  border: 1px solid var(--rb-border);
+  color: var(--rb-primary-strong);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.demo-hero__title {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+
+  .grad {
+    background: linear-gradient(120deg, $primary-500, $primary-700);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.demo-hero__lead {
+  max-width: 42rem;
+  font-size: 1.15rem;
+  color: var(--rb-muted);
+}
+
+.demo-stat {
+  strong { font-size: 1.6rem; font-weight: 800; line-height: 1; }
+  span { color: var(--rb-muted); font-size: 0.85rem; }
+}
+
+// --- Secciones de componentes --------------------------------------------
+.demo-section {
+  padding: 2.5rem 0;
+  scroll-margin-top: 80px;
+}
+
+.demo-section__title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.demo-section__desc { color: var(--rb-muted); }
+
+.demo-card {
+  background: var(--rb-surface);
+  border: 1px solid var(--rb-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  height: 100%;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.demo-card__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rb-muted);
+  margin-bottom: 0.9rem;
+}
+
+.demo-swatch {
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+// --- Footer ---------------------------------------------------------------
+.demo-footer {
+  border-top: 1px solid var(--rb-border);
+  padding: 2.5rem 0;
+  color: var(--rb-muted);
+}
+
+// Popover de Bootstrap: asegurar padding del contenido en modo demo
+.popover .popover-body-demo { padding: 0.75rem 1rem; max-width: 16rem; }
+
+// Toast: el Toaster del runtime aún monta los toasts fuera de su viewport, así
+// que cada toast (con ui.root='robotbas-toast-demo') se posiciona como tarjeta
+// flotante abajo a la derecha para que el demo luzca como una notificación real.
+.robotbas-toast-demo {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1090;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  width: 340px;
+  max-width: calc(100vw - 2rem);
+  padding: 0.9rem 1rem;
+  background: var(--rb-surface);
+  border: 1px solid var(--rb-border);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(16, 24, 40, 0.18);
+  animation: rb-toast-in 0.2s ease;
+}
+
+.robotbas-toast-demo__icon {
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+@keyframes rb-toast-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+// Progress por pasos: reka/RobotbasProgress emite .ProgressSteps/.ProgressStep
+// sin estilar; los distribuimos bajo la barra.
+.ProgressSteps {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.ProgressStep {
+  font-size: 0.78rem;
+  color: var(--rb-muted);
+  text-align: center;
+}
+
+// Progress: por defecto el runtime pinta la PISTA azul y el INDICADOR blanco,
+// con lo que el azul acaba marcando lo que falta. Lo invertimos: pista gris
+// clara (vacío) e indicador azul (progreso completado). Scoped a `.demo-root`
+// para ganar en especificidad sin `!important`.
+.demo-root {
+  .ProgressRoot {
+    background: $gray-200;
+  }
+
+  .ProgressIndicator {
+    background-color: $primary-500;
+  }
+}
+
+// Tree: los items usan `.list-group-item-action` (Bootstrap le pone width:100%)
+// y RobotbasTree les añade un `margin-left` de indentación, de modo que el ancho
+// total pasaba de 100% + margen y desbordaban por la derecha del contenedor.
+// Con width:auto el item se estira hasta el borde menos el margen izquierdo.
+#tree .list-group-item {
+  width: auto;
+  overflow: hidden;
+}
+
+// --- Estados de reka-ui que Bootstrap no refleja por sí solo ---------------
+// ToggleGroup: item seleccionado (data-state="on")
+.btn-group [data-state="on"] {
+  background: var(--rb-primary);
+  border-color: var(--rb-primary);
+  color: $white;
+  z-index: 1;
+}
+
+// Tabs: pestaña activa (data-state="active")
+.nav-tabs { border-bottom: 1px solid var(--rb-border); }
+.nav-tabs .nav-item { margin-bottom: -1px; }
+.nav-tabs [data-state="active"] .nav-link {
+  color: var(--rb-primary);
+  font-weight: 600;
+  border: 1px solid var(--rb-border);
+  border-bottom-color: var(--rb-surface);
+  border-radius: 8px 8px 0 0;
+  background: var(--rb-surface);
+}
+.nav-tabs .nav-link { cursor: pointer; color: var(--rb-muted); }
+
+// Collapsible: animación de despliegue
+.collapsible-content[data-state="closed"] { display: none; }
+
+// Accordion: reka no añade la clase `.collapsed` de Bootstrap, así que TODOS los
+// headers se pintarían con el estilo "abierto" (azul). Restauramos el aspecto
+// cerrado según `data-state` de reka.
+.accordion-button[data-state="closed"] {
+  background-color: var(--rb-surface);
+  color: var(--rb-ink);
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba($primary-500, 0.2);
+}
+.accordion-button::after { display: none; } // usamos nuestro propio trailing icon

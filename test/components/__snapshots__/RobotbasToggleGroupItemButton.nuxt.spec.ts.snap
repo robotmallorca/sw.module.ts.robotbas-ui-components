@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasToggleGroupItemButton > match snapshot 1`] = `
+"<div class="btn-group" tabindex="0" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="group"><button type="button" aria-pressed="false" data-state="off" label="Test" variant="normal" color="primary" data-reka-collection-item="" tabindex="-1" data-orientation="horizontal" value="test">
+    <!--v-if-->Test
+    <!--v-if-->
+  </button>
+  <!--v-if-->
+  <!--v-if-->
+</div>"
+`;

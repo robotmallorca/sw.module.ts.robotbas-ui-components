@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasSelectTree > match snapshot 1`] = `
+"<button data-v-52a9a7af="" data-slot="base" class="form-select" tabindex="0" role="combobox" type="button" aria-controls="reka-select-content-v-0-0-0" aria-expanded="false" aria-required="false" aria-autocomplete="none" dir="ltr" data-state="closed" data-placeholder=""><span data-v-52a9a7af="" class="d-flex align-items-center justify-content-between"><span data-v-52a9a7af="" style="pointer-events: none;" data-placeholder=" " class="">&nbsp;</span></span>
+  <!--v-if-->
+</button>
+<!--teleport start-->
+<!--teleport end-->
+<!--v-if-->"
+`;

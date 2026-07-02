@@ -1,7 +1,4 @@
-# Sample workflow for building and deploying a Nuxt site to GitHub Pages
-#
-# To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
-#
+# Build & deploy the @robotbas/ui component showcase (playground/) to GitHub Pages.
 name: Deploy Nuxt site to Pages
 
 on:
@@ -31,51 +28,42 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: pnpm
+
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
-        with:
-          # Automatically inject router.base in your Nuxt configuration file and set
-          # target to static (https://nuxtjs.org/docs/configuration-glossary/configuration-target/).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: nuxt
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
+        # NOTE: intentionally NOT passing `static_site_generator: nuxt`. That
+        # option injects the env var NUXT_APP_BASE_URL, which Nitro treats as a
+        # RUNTIME base and makes the prerender emit only "Redirecting..." stubs
+        # instead of the page. We bake the base at build time via DEPLOY_BASE_URL.
+
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: pnpm install --frozen-lockfile
+
       - name: Static HTML export with Nuxt
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+        # `github_pages` preset prerenders to static HTML and adds `.nojekyll`.
+        # The project subpath base is baked at build time inside nuxt.config.ts
+        # (selected via the GITHUB_ACTIONS env var, which Actions sets to "true").
+        # It must be a literal string, NOT passed through NUXT_APP_BASE_URL, or
+        # Nitro treats it as a runtime base and the prerender emits redirects.
+        env:
+          NITRO_PRESET: github_pages
+        run: pnpm exec nuxi build playground
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          # nuxi generate outputs the static site to <rootDir>/.output/public.
+          path: ./playground/.output/public
 
   # Deployment job
   deploy:

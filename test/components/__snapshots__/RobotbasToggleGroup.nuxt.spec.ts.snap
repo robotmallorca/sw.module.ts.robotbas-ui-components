@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasToggleGroup > match snapshot 1`] = `
+"<div class="btn-group" tabindex="-1" data-orientation="horizontal" dir="ltr" style="outline-color: none; outline-style: none; outline-width: initial;" role="group">
+  <!--v-if-->
+</div>"
+`;

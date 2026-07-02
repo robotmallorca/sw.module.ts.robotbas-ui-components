@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Avatar > renders with alt correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar"><span aria-label="Avatar fallback" data-slot="fallback" class="avatar-fallback">BC</span></span>"`;
+
+exports[`Avatar > renders with as (object) correctly 1`] = `
+"<section aria-hidden="true" data-slot="root" class="avatar">
+  <p src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></p>
+</section>"
+`;
+
+exports[`Avatar > renders with as (partial object) correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar"><p src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></p></span>"`;
+
+exports[`Avatar > renders with as correctly 1`] = `"<section aria-hidden="true" data-slot="root" class="avatar"><span aria-label="Avatar fallback" data-slot="fallback" class="avatar-fallback">&nbsp;</span></section>"`;
+
+exports[`Avatar > renders with chip correctly 1`] = `"<span data-slot="root" class="avatar"><span aria-hidden="true" data-slot="fallback" aria-label="Avatar fallback" class="avatar-fallback">&nbsp;</span><span role="contentinfo" data-slot="base" class="">1</span></span>"`;
+
+exports[`Avatar > renders with class correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar bg-default"><span aria-label="Avatar fallback" data-slot="fallback" class="avatar-fallback">&nbsp;</span></span>"`;
+
+exports[`Avatar > renders with default slot correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar">🇫🇷</span>"`;
+
+exports[`Avatar > renders with icon correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar"><i class="i-lucide-image avatar-icon" data-slot="icon"></i></span>"`;
+
+exports[`Avatar > renders with src correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="32" height="32" data-slot="image" class="avatar-image"></span>"`;
+
+exports[`Avatar > renders with text correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar"><span aria-label="Avatar fallback" data-slot="fallback" class="avatar-fallback">+1</span></span>"`;
+
+exports[`Avatar > renders with ui correctly 1`] = `"<span aria-hidden="true" data-slot="root" class="avatar"><span aria-label="Avatar fallback" data-slot="fallback" class="font-bold font-bold">&nbsp;</span></span>"`;

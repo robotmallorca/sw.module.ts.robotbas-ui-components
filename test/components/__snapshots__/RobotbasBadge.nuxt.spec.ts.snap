@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Badge > renders with as correctly 1`] = `
+"<div data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge">
+  <!--v-if--><span data-v-6e489e68="" data-slot="label" class="">Badge</span>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`Badge > renders with avatar and leadingIcon correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><i data-v-6e489e68="" class="i-lucide-arrow-left" data-slot="leadingIcon"></i><!--v-if--><!--v-if--></span>"`;
+
+exports[`Badge > renders with avatar and trailingIcon correctly 1`] = `
+"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><span data-v-6e489e68="" aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="24" height="24" data-slot="image" class="avatar-image"></span>
+<!--v-if--><i data-v-6e489e68="" class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>"
+`;
+
+exports[`Badge > renders with avatar correctly 1`] = `
+"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><span data-v-6e489e68="" aria-hidden="true" data-slot="root" class="avatar"><img src="https://github.com/benjamincanac.png" width="24" height="24" data-slot="image" class="avatar-image"></span>
+<!--v-if-->
+<!--v-if--></span>"
+`;
+
+exports[`Badge > renders with class correctly 1`] = `
+"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge rounded-full font-bold"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">Badge</span>
+<!--v-if--></span>"
+`;
+
+exports[`Badge > renders with default slot correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if-->Default slot<!--v-if--></span>"`;
+
+exports[`Badge > renders with icon correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><i data-v-6e489e68="" class="i-lucide-rocket" data-slot="leadingIcon"></i><!--v-if--><!--v-if--></span>"`;
+
+exports[`Badge > renders with label correctly 1`] = `
+"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">Badge</span>
+<!--v-if--></span>"
+`;
+
+exports[`Badge > renders with leading and icon correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><i data-v-6e489e68="" class="i-lucide-arrow-left" data-slot="leadingIcon"></i><!--v-if--><!--v-if--></span>"`;
+
+exports[`Badge > renders with leading slot correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge">Leading slot<!--v-if--><!--v-if--></span>"`;
+
+exports[`Badge > renders with leadingIcon correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><i data-v-6e489e68="" class="i-lucide-arrow-left" data-slot="leadingIcon"></i><!--v-if--><!--v-if--></span>"`;
+
+exports[`Badge > renders with square correctly 1`] = `
+"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="">Badge</span>
+<!--v-if--></span>"
+`;
+
+exports[`Badge > renders with trailing and icon correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><!--v-if--><i data-v-6e489e68="" class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>"`;
+
+exports[`Badge > renders with trailing slot correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><!--v-if-->Trailing slot</span>"`;
+
+exports[`Badge > renders with trailingIcon correctly 1`] = `"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><!--v-if--><i data-v-6e489e68="" class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>"`;
+
+exports[`Badge > renders with ui correctly 1`] = `
+"<span data-v-6e489e68="" role="contentinfo" data-slot="base" class="robotbas-badge badge"><!--v-if--><span data-v-6e489e68="" data-slot="label" class="font-bold font-bold">Badge</span>
+<!--v-if--></span>"
+`;
