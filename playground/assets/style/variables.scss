@@ -1,0 +1,43 @@
+// ---------------------------------------------------------------------------
+// @robotbas/ui — tokens de diseño del PLAYGROUND / DEMO
+// ---------------------------------------------------------------------------
+// El runtime del módulo se publica como FUENTE: sus componentes usan variables
+// SCSS ($primary-500, $gray-700, $textmd-regular, ...) que el CONSUMIDOR debe
+// inyectar globalmente. Este fichero cumple ese rol para la web de demostración.
+//
+// Se inyecta en CADA compilación SCSS vía `vite.css.preprocessorOptions.scss.
+// additionalData` (ver nuxt.config.ts), por lo que SOLO debe contener
+// declaraciones (variables, mixins, funciones) y NUNCA reglas que emitan CSS.
+//
+// La paleta está alineada con el tema por defecto de Bootstrap 5 para que los
+// estilos `scoped` de los componentes (badge, tree, sidebar...) combinen con
+// los componentes de Bootstrap (botones, tarjetas...).
+// ---------------------------------------------------------------------------
+
+// Base
+$white: #ffffff;
+$black: #000000;
+
+// Escala primary (azul RobotBAS, compatible con --bs-primary de Bootstrap)
+$primary-25: #f4f9ff;
+$primary-50: #e7f1ff;
+$primary-100: #cfe2ff;
+$primary-200: #9ec5fe;
+$primary-500: #0d6efd;
+$primary-700: #0a58ca;
+
+// Escala de grises (alineada con Bootstrap $gray-*)
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-900: #212529;
+
+// Radios
+$robotbas-border-radius-default: 8px;
+
+// Tokens tipográficos (shorthand `font:` -> peso tamaño/interlineado familia)
+$font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$textmd-regular: 400 0.95rem/1.5 #{$font-family-base};
+$textmd-bold: 600 0.95rem/1.5 #{$font-family-base};

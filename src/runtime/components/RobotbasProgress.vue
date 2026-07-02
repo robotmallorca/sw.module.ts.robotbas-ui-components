@@ -204,7 +204,7 @@ function stepVariant(index: number | string) {
 .ProgressRoot {
   position: relative;
   overflow: hidden;
-  background: $primary-500;
+  background: $gray-200;
   border-radius: $robotbas-border-radius-default;
   // width: 300px;
   height: 5px;
@@ -215,7 +215,7 @@ function stepVariant(index: number | string) {
 }
 
 .ProgressIndicator {
-  background-color: white;
+  background-color: $primary-500;
   width: 100%;
   height: 100%;
   transition: transform 660ms cubic-bezier(0.65, 0, 0.35, 1);

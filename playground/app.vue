@@ -1,13 +1,23 @@
-<template>
-  <div>
-    <h1>@robotbas/ui — playground</h1>
-    <p>
-      Añade aquí los componentes <code>Robotbas*</code> una vez integrado el runtime
-      para verificar que se auto-importan y renderizan.
-    </p>
-    <!-- Ejemplo (descomentar tras integrar el runtime): -->
-    <!-- <RobotbasTabs /> -->
-  </div>
-</template>
+<script setup lang="ts">
+// Shell de la web demo. Toda la estructura vive en componentes:
+//  - layout en `components/` (TheNav, TheHero, TheFooter, DemoSection, DemoCard)
+//  - una demo por componente en `demos/*.vue`
+//  - el registro/orden/metadatos de secciones en `sections.ts`
+import { sections } from './sections'
+</script>
 
-<script setup lang="ts"></script>
+<template>
+  <RobotbasApp class="demo-root">
+    <TheNav :sections="sections" />
+    <TheHero />
+
+    <main class="container-xl">
+      <DemoSection v-for="s in sections" :id="s.id" :key="s.id" :title="s.title" :icon="s.icon"
+        :description="s.description">
+        <component :is="s.component" />
+      </DemoSection>
+    </main>
+
+    <TheFooter />
+  </RobotbasApp>
+</template>
