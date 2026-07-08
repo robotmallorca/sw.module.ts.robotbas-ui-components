@@ -130,10 +130,6 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
     const runtimeDir = resolver.resolve('./runtime')
 
-    // Alias `#ui` -> runtime. Tipado vía .nuxt/tsconfig generado por Nuxt.
-    // Mantener este nombre evita re-tocar los imports `#ui/...` del consumidor.
-    nuxt.options.alias['#ui'] = runtimeDir
-
     // Auto-import de los componentes Robotbas* (pathPrefix: false => nombre = fichero).
     addComponentsDir({
       path: resolver.resolve('./runtime/components'),

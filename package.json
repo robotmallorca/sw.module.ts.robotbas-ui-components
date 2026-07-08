@@ -12,7 +12,24 @@
     ".": {
       "types": "./src/module.ts",
       "import": "./src/module.ts"
-    }
+    },
+    "./types": {
+      "types": "./src/runtime/types/index.ts",
+      "import": "./src/runtime/types/index.ts"
+    },
+    "./types/*": {
+      "types": "./src/runtime/types/*.ts",
+      "import": "./src/runtime/types/*.ts"
+    },
+    "./composables/*": {
+      "types": "./src/runtime/composables/*.ts",
+      "import": "./src/runtime/composables/*.ts"
+    },
+    "./components/*": {
+      "types": "./src/runtime/components/*",
+      "import": "./src/runtime/components/*"
+    },
+    "./package.json": "./package.json"
   },
   "main": "./src/module.ts",
   "files": [
