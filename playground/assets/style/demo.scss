@@ -32,7 +32,10 @@
   width: var(--avatar-size);
   height: var(--avatar-size);
   border-radius: 50%;
-  overflow: hidden;
+  // Ojo: NO ponemos `overflow: hidden` aquí. Cuando hay chip, el root del
+  // avatar ES el RobotbasChip y el `.chip-dot` es hijo suyo, así que
+  // `overflow: hidden` recortaría el punto de estado contra el círculo. En su
+  // lugar recortamos SOLO la imagen (abajo) al círculo.
   background: $primary-100;
   color: $primary-700;
   font: $textmd-bold;
@@ -44,6 +47,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  // Recorta la propia imagen al círculo (equivale al overflow:hidden del root
+  // pero sin afectar al chip). `inherit` toma el 50% del avatar.
+  border-radius: inherit;
 }
 
 .avatar-icon {
@@ -114,17 +120,26 @@ body {
 
 .demo-root { scroll-behavior: smooth; }
 
-// --- Barra de navegación superior ----------------------------------------
-.demo-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1030;
-  backdrop-filter: saturate(180%) blur(10px);
-  background: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid var(--rb-border);
+// El scroll a las anclas (#seccion) es suave al pulsar los enlaces del rail.
+html { scroll-behavior: smooth; }
+
+// --- Estructura general: rail lateral + contenido ------------------------
+.demo-shell {
+  --demo-sidebar-w: 248px;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+
+  &.is-collapsed { --demo-sidebar-w: 76px; }
 }
 
-.demo-nav__brand {
+.demo-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+// --- Marca (compartida por el rail y el footer) --------------------------
+.demo-logo {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -133,12 +148,13 @@ body {
   color: var(--rb-ink);
   text-decoration: none;
   white-space: nowrap;
-  flex: none;
+  overflow: hidden;
 }
 
-.demo-nav__logo {
+.demo-logo__mark {
   display: inline-grid;
   place-items: center;
+  flex: none;
   width: 34px;
   height: 34px;
   border-radius: 9px;
@@ -147,22 +163,138 @@ body {
   font-size: 1.15rem;
 }
 
-.demo-nav__links {
+.demo-logo__accent { color: var(--rb-primary); }
+
+// --- Barra de navegación lateral -----------------------------------------
+.demo-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  flex: 0 0 var(--demo-sidebar-w);
+  width: var(--demo-sidebar-w);
+  height: 100vh;
   display: flex;
-  gap: 0.25rem;
-  overflow-x: auto;
+  flex-direction: column;
+  background: var(--rb-surface);
+  border-right: 1px solid var(--rb-border);
+  transition: flex-basis 0.2s ease, width 0.2s ease;
+}
 
-  a {
-    white-space: nowrap;
-    padding: 0.35rem 0.7rem;
-    border-radius: 999px;
-    color: var(--rb-muted);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
+.demo-sidebar__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-height: 64px;
+  padding: 0.85rem;
+  border-bottom: 1px solid var(--rb-border);
+}
 
-    &:hover { color: var(--rb-ink); background: $gray-100; }
+.demo-sidebar__toggle-btn {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--rb-border);
+  border-radius: 8px;
+  background: $white;
+  color: var(--rb-muted);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover { background: $gray-100; color: var(--rb-ink); }
+  .me-1 { margin-right: 0 !important; }
+}
+
+.demo-sidebar__nav {
+  flex: 1 1 auto;
+  // Solo scroll vertical: con `overflow-y: auto` el eje X pasa a `auto` por
+  // defecto y aparecía un scrollbar horizontal fantasma. Lo forzamos a hidden.
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: $gray-300 transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.75rem;
+
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-thumb { background: $gray-300; border-radius: 3px; }
+  &::-webkit-scrollbar-track { background: transparent; }
+}
+
+.demo-sidebar__item { display: block; }
+
+// SideBarLink trae un ancho fijo (178px) pensado para un menú concreto. Lo
+// dejamos fluido para que nunca supere el ancho del rail (si no, en modo
+// plegado el enlace de 178px desborda y `overflow-x: hidden` recorta el icono).
+// Hace falta el prefijo `.demo-sidebar` para ganar en especificidad al estilo
+// scoped del componente.
+.demo-sidebar .demo-sidebar__item .sidebarlink { width: 100%; }
+
+// Estado activo dirigido por el scroll-spy (ver TheSidebar.vue).
+.demo-sidebar__item.is-active .sidebarlink {
+  background: $primary-50;
+  color: $primary-500;
+}
+
+.demo-sidebar__item.is-active .sidebarlink:hover {
+  background: $primary-100;
+  color: $primary-700;
+}
+
+.demo-sidebar__foot {
+  border-top: 1px solid var(--rb-border);
+  padding: 0.75rem;
+}
+
+.demo-sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: $gray-700;
+  text-decoration: none;
+  font: var(--textmd-medium, 500 16px/24px "Roboto", sans-serif);
+
+  i { flex: none; width: 24px; text-align: center; }
+  &:hover { background: $primary-25; color: $primary-700; }
+}
+
+// --- Modo rail (plegado / pantallas estrechas) ---------------------------
+// Solo iconos: se ocultan textos y se centran los iconos.
+@mixin sidebar-rail {
+  .demo-sidebar__head { flex-direction: column; }
+  .demo-logo__text { display: none; }
+
+  .demo-sidebar__item .sidebarlink,
+  .demo-sidebar__link {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
   }
+
+  .demo-sidebar__item .sidebarlink .sidebarlink-content { gap: 0; }
+  .demo-sidebar__item .sidebarlink .text,
+  .demo-sidebar__link .text { display: none; }
+
+  // El trailing de SideBarLink lleva `margin-left: auto` (para empujar badges a
+  // la derecha); en el rail queda vacío y descentraba el icono. Anulamos el
+  // margen (sin ocultarlo) para que el icono quede centrado.
+  .demo-sidebar__item .sidebarlink .sidebarlink-trailing { margin-left: 0; }
+}
+
+.demo-shell.is-collapsed .demo-sidebar { @include sidebar-rail; }
+
+@media (max-width: 991.98px) {
+  .demo-shell { --demo-sidebar-w: 76px; }
+  .demo-sidebar { @include sidebar-rail; }
+  .demo-sidebar__toggle-btn { display: none; }
 }
 
 // --- Hero -----------------------------------------------------------------
@@ -216,7 +348,7 @@ body {
 // --- Secciones de componentes --------------------------------------------
 .demo-section {
   padding: 2.5rem 0;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 1.5rem;
 }
 
 .demo-section__title {
@@ -357,15 +489,67 @@ body {
 // Collapsible: animación de despliegue
 .collapsible-content[data-state="closed"] { display: none; }
 
-// Accordion: reka no añade la clase `.collapsed` de Bootstrap, así que TODOS los
-// headers se pintarían con el estilo "abierto" (azul). Restauramos el aspecto
-// cerrado según `data-state` de reka.
-.accordion-button[data-state="closed"] {
-  background-color: var(--rb-surface);
-  color: var(--rb-ink);
-  box-shadow: none;
+// Accordion: cada item como tarjeta redondeada e independiente (fondo blanco,
+// borde neutro por defecto, azul solo al abrir). reka no añade la clase
+// `.collapsed` de Bootstrap, así que fijamos el aspecto con nuestras reglas.
+// OJO: scoped a `.demo-shell` (un <div> real), NO a `.demo-root`: esa clase va
+// en <RobotbasApp>, que es renderless (los providers de reka no pintan DOM), y
+// se pierde, por lo que `.demo-root ...` no casaba con nada.
+.demo-shell {
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  // Por defecto (cerrado): tarjeta blanca con borde neutro.
+  .accordion-item {
+    background: var(--rb-surface);
+    border: 1px solid var(--rb-border);
+    border-radius: 10px;
+    overflow: hidden; // recorta la cabecera al radio del item
+    transition: border-color 0.15s ease;
+  }
+
+  // Solo al abrir: acento azul (borde del item).
+  .accordion-item:has(.accordion-button[data-state="open"]) {
+    border-color: $primary-200;
+  }
+
+  .accordion-button {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.1rem;
+    background-color: var(--rb-surface);
+    color: var(--rb-ink);
+    font-weight: 500;
+    border-radius: 0;
+    box-shadow: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:focus { box-shadow: none; outline: none; }
+    &::after { display: none; } // usamos nuestro propio trailing icon
+  }
+
+  // Cerrado: hover gris neutro. Abierto: cabecera azul suave.
+  .accordion-button[data-state="closed"]:hover { background-color: $gray-100; }
+  .accordion-button[data-state="open"] {
+    background-color: $primary-25;
+    color: $primary-700;
+  }
+  .accordion-button[data-state="open"]:hover { background-color: $primary-50; }
+
+  // Chevron propio a la derecha. `inline-block` es imprescindible: un <i> inline
+  // NO se puede rotar con `transform`. Gira 180° al abrir.
+  .accordion-button [data-slot="trailingIcon"] {
+    display: inline-block;
+    margin-left: auto;
+    color: var(--rb-muted);
+    transition: transform 0.2s ease, color 0.15s ease;
+  }
+  .accordion-button[data-state="open"] [data-slot="trailingIcon"] {
+    transform: rotate(180deg);
+    color: $primary-700;
+  }
 }
-.accordion-button:focus {
-  box-shadow: 0 0 0 0.2rem rgba($primary-500, 0.2);
-}
-.accordion-button::after { display: none; } // usamos nuestro propio trailing icon

@@ -153,6 +153,7 @@ defineExpose({
               <RobotbasBadge v-if="item.badge !== undefined" color="neutral" variant="outline"
                 :size="(item.ui?.trailingBadgeSize || props.ui?.trailingBadgeSize)"
                 v-bind="(typeof item.badge === 'string' || typeof item.badge === 'number') ? { label: item.badge } : item.badge"
+                :class="props.ui?.trailingBadge"
                 :ui="{ base: item.ui?.trailingBadge }" />
             </slot>
           </span>

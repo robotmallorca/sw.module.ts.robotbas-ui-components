@@ -1,6 +1,6 @@
 # sw.module.ts.robotbas-ui-components
 RobotBAS VUE UI components shared with all webapps.
-Project module derived from NuxtUI
+Project module derived from NuxtUI.
 
 ---
 
@@ -58,7 +58,14 @@ pnpm add "github:robotmallorca/sw.module.ts.robotbas-ui-components"
 
 ```ts
 export default defineNuxtConfig({
+  build: {
+    transpile: ['reka-ui'],
+  },
   modules: ['@robotbas/ui'],
+
+  imports: {
+    dirs: ['../node_modules/@robotbas/ui/src/runtime/composables'],
+  },
   
 })
 ```
