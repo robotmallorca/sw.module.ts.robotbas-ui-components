@@ -35,7 +35,7 @@ const selectTreeItems = [
   <div class="row g-3">
     <div class="col-md-4">
       <DemoCard label="Select">
-        <RobotbasSelect v-model="selectValue" :items="selectItems" trailing-icon="bi bi-chevron-down"
+        <RobotbasSelect v-model="selectValue" :items="selectItems" 
           placeholder="Selecciona un estado" />
         <div class="small text-muted mt-2">Valor: <code>{{ selectValue }}</code></div>
       </DemoCard>
@@ -43,14 +43,14 @@ const selectTreeItems = [
     <div class="col-md-4">
       <DemoCard label="Combobox (con búsqueda)">
         <RobotbasCombobox v-model="comboboxValue" :items="comboboxItems" value-key="value"
-          trailing-icon="bi bi-chevron-expand" placeholder="Busca un dispositivo" />
+           placeholder="Busca un dispositivo" />
         <div class="small text-muted mt-2">Valor: <code>{{ comboboxValue || '—' }}</code></div>
       </DemoCard>
     </div>
     <div class="col-md-4">
       <DemoCard label="SelectTree (jerárquico)">
         <RobotbasSelectTree v-model="selectTreeValue" :items="selectTreeItems" value-key="title"
-          trailing-icon="bi bi-chevron-down" placeholder="Elige ubicación" />
+           placeholder="Elige ubicación" />
         <div class="small text-muted mt-2">Valor: <code>{{ selectTreeValue || '—' }}</code></div>
       </DemoCard>
     </div>

@@ -8,6 +8,6 @@ const tabItems = [
 
 <template>
   <DemoCard>
-    <RobotbasTabs :items="tabItems" :ui="{ content: 'pt-3 text-muted' }" />
+    <RobotbasTabs :items="tabItems" :ui="{ trailingBadge: 'ms-2' }" />
   </DemoCard>
 </template>

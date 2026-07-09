@@ -16,7 +16,7 @@
       <DemoCard label="Con Chip de estado">
         <div class="d-flex gap-3 align-items-center">
           <RobotbasAvatar text="ON" :chip="{ ui: { base: 'chip-dot' } }" />
-          <RobotbasAvatar icon="bi bi-person-fill" :chip="{ ui: { base: 'chip-dot' } }" />
+          <RobotbasAvatar icon="bi bi-person-fill" :chip="{ inset: false , ui: { base: 'chip-dot' } }" />
         </div>
       </DemoCard>
     </div>
