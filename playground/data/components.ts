@@ -31,6 +31,7 @@ export const componentInventory: ComponentInfo[] = [
   { name: 'SelectTree', icon: 'bi bi-diagram-3', desc: 'Selección jerárquica', live: true },
   { name: 'SideBarLink', icon: 'bi bi-link-45deg', desc: 'Enlace de menú', live: true },
   { name: 'SideBarCheckbox', icon: 'bi bi-check2-square', desc: 'Checkbox de menú', live: true },
+  { name: 'Table', icon: 'bi bi-table', desc: 'Tabla de datos', live: true },
   { name: 'Tabs', icon: 'bi bi-segmented-nav', desc: 'Pestañas', live: true },
   { name: 'Toast', icon: 'bi bi-bell', desc: 'Notificación', live: true },
   { name: 'Toaster', icon: 'bi bi-broadcast', desc: 'Gestor de toasts', live: true },

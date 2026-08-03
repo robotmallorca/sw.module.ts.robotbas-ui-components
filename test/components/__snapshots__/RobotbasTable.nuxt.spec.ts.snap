@@ -1,0 +1,376 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasTable > renders with class correctly 1`] = `
+"<div data-slot="root" class="shadow-sm">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Gamma</td>
+          <td data-slot="td" class="text-end text-nowrap">7</td>
+          <td data-slot="td" class="text-start text-nowrap">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with dense correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0 table-sm">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Gamma</td>
+          <td data-slot="td" class="text-end text-nowrap">7</td>
+          <td data-slot="td" class="text-start text-nowrap">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with filter correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with loading correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr>
+          <td colspan="3" data-slot="loading" class="text-center text-secondary py-4"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Loading...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with no rows correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr>
+          <td colspan="3" data-slot="empty" class="text-center text-secondary py-4">No data available</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with no-data slot correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr>
+          <td colspan="3" data-slot="empty" class="text-center text-secondary py-4">Nothing here</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with pagination correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div data-slot="pagination" class="d-flex align-items-center justify-content-end gap-2 mt-2 small text-secondary"><span>1–2 of 3</span>
+    <div class="btn-group btn-group-sm"><button type="button" class="btn btn-outline-secondary" disabled="" aria-label="Previous page"><i class="bi bi-chevron-left"></i></button><button type="button" class="btn btn-outline-secondary" aria-label="Next page"><i class="bi bi-chevron-right"></i></button></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasTable > renders with rows and columns correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Gamma</td>
+          <td data-slot="td" class="text-end text-nowrap">7</td>
+          <td data-slot="td" class="text-start text-nowrap">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with title correctly 1`] = `
+"<div data-slot="root" class="">
+  <div data-slot="top" class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+    <h2 data-slot="title" class="fs-5 fw-semibold mb-0">Feedback</h2>
+  </div>
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Gamma</td>
+          <td data-slot="td" class="text-end text-nowrap">7</td>
+          <td data-slot="td" class="text-start text-nowrap">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with top-right slot correctly 1`] = `
+"<div data-slot="root" class="">
+  <div data-slot="top" class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+    <!--v-if-->Top right
+  </div>
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Gamma</td>
+          <td data-slot="td" class="text-end text-nowrap">7</td>
+          <td data-slot="td" class="text-start text-nowrap">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with ui correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0 table-striped">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Beta</td>
+          <td data-slot="td" class="text-end text-nowrap">10</td>
+          <td data-slot="td" class="text-start text-nowrap">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Alpha</td>
+          <td data-slot="td" class="text-end text-nowrap">3</td>
+          <td data-slot="td" class="text-start text-nowrap">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start text-nowrap">Gamma</td>
+          <td data-slot="td" class="text-end text-nowrap">7</td>
+          <td data-slot="td" class="text-start text-nowrap">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
+
+exports[`RobotbasTable > renders with wrapCells correctly 1`] = `
+"<div data-slot="root" class="">
+  <!--v-if-->
+  <div data-slot="wrapper" class="table-responsive">
+    <table data-slot="table" class="table table-hover align-middle mb-0">
+      <thead data-slot="thead" class="">
+        <tr>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-start user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Name <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" aria-sort="none" data-slot="th" class="text-end user-select-none"><button type="button" class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1">Qty <i class="bi bi-arrow-down-up small opacity-50" data-slot="sortIcon"></i></button></th>
+          <th scope="col" data-slot="th" class="text-start">Status</th>
+        </tr>
+      </thead>
+      <tbody data-slot="tbody" class="">
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start">Beta</td>
+          <td data-slot="td" class="text-end">10</td>
+          <td data-slot="td" class="text-start">seen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start">Alpha</td>
+          <td data-slot="td" class="text-end">3</td>
+          <td data-slot="td" class="text-start">unseen</td>
+        </tr>
+        <tr data-slot="tr" class="">
+          <td data-slot="td" class="text-start">Gamma</td>
+          <td data-slot="td" class="text-end">7</td>
+          <td data-slot="td" class="text-start">hidden</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--v-if-->
+</div>"
+`;
