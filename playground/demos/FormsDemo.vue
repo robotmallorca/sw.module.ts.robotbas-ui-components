@@ -4,6 +4,7 @@ import { ref } from 'vue'
 const inputText = ref('')
 const inputEmail = ref('')
 const inputPassword = ref('')
+const inputClearable = ref('Escribe y bórralo con el aspa')
 const iteratorValue = ref(1)
 const iteratorLabels = ['Muy bajo', 'Bajo', 'Medio', 'Alto', 'Máximo']
 </script>
@@ -17,6 +18,13 @@ const iteratorLabels = ['Muy bajo', 'Bajo', 'Medio', 'Alto', 'Máximo']
           <RobotbasInput v-model="inputPassword" type="password" placeholder="Contraseña"
             :ui="{ base: 'form-control' }" />
           <RobotbasInput model-value="Deshabilitado" disabled :ui="{ base: 'form-control' }" />
+          <!--
+            `clearable` saca un botón para vaciar el campo mientras tenga valor.
+            El icono no lo impone la librería: sin `clear-icon` se pinta un aspa.
+          -->
+          <RobotbasInput v-model="inputClearable" clearable clear-icon="bi bi-x-circle-fill"
+            placeholder="Con botón de limpiar"
+            :ui="{ root: 'input-group', base: 'form-control', clear: 'input-group-text' }" />
         </div>
       </DemoCard>
     </div>

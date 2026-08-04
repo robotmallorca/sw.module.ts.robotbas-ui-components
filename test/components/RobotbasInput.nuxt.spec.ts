@@ -41,9 +41,15 @@ describe('RobotbasInput', () => {
     ['with class', { props: { class: 'absolute' } }],
     ['with ui', { props: { ui: { base: 'rounded-full' } } }],
     // Slots
+    ['with clearable and a value', { props: { clearable: true, modelValue: 'text' } }],
+    ['with clearable and no value', { props: { clearable: true } }],
+    ['with clearable and clearIcon', { props: { clearable: true, modelValue: 'text', clearIcon: 'i-lucide-x' } }],
+    ['with clearable and disabled', { props: { clearable: true, modelValue: 'text', disabled: true } }],
+    ['with clearable and trailingIcon', { props: { clearable: true, modelValue: 'text', trailingIcon: 'i-lucide-arrow-right' } }],
     ['with default slot', { slots: { default: () => 'Default slot' } }],
     ['with leading slot', { slots: { leading: () => 'Leading slot' } }],
-    ['with trailing slot', { slots: { trailing: () => 'Trailing slot' } }]
+    ['with trailing slot', { slots: { trailing: () => 'Trailing slot' } }],
+    ['with clear slot', { props: { clearable: true, modelValue: 'text' }, slots: { clear: () => 'Clear slot' } }]
   ])('renders %s correctly', async (nameOrHtml: string, options: { props?: RobotbasInputProps, slots?: Partial<RobotbasInputSlots> }) => {
     const html = await ComponentRender(nameOrHtml, options, RobotbasInput)
     expect(html).toMatchSnapshot()
@@ -113,6 +119,76 @@ describe('RobotbasInput', () => {
       const input = wrapper.find('input')
       await input.trigger('blur')
       expect(wrapper.emitted()).toMatchObject({ blur: [[{ type: 'blur' }]] })
+    })
+  })
+
+  describe('clearable', () => {
+    const findClear = (wrapper: any) => wrapper.find('[data-slot="clearButton"]')
+
+    test('is not rendered without the prop', async () => {
+      const wrapper = mount(RobotbasInput, { props: { modelValue: 'text' } })
+      expect(findClear(wrapper).exists()).toBe(false)
+    })
+
+    test('is not rendered while the input is empty', async () => {
+      const wrapper = mount(RobotbasInput, { props: { clearable: true, modelValue: '' } })
+      expect(findClear(wrapper).exists()).toBe(false)
+    })
+
+    test('is not rendered while the input is disabled', async () => {
+      const wrapper = mount(RobotbasInput, { props: { clearable: true, modelValue: 'text', disabled: true } })
+      expect(findClear(wrapper).exists()).toBe(false)
+    })
+
+    test('appears as soon as the input holds a value', async () => {
+      const wrapper = mount(RobotbasInput, { props: { clearable: true, modelValue: '' } })
+      expect(findClear(wrapper).exists()).toBe(false)
+
+      await wrapper.setProps({ modelValue: 'text' })
+      expect(findClear(wrapper).exists()).toBe(true)
+    })
+
+    test('empties the input and emits both events', async () => {
+      const wrapper = mount(RobotbasInput, { props: { clearable: true, modelValue: 'text' } })
+
+      await findClear(wrapper).trigger('click')
+
+      expect(wrapper.emitted()).toMatchObject({
+        'update:modelValue': [['']],
+        'clear': [[]]
+      })
+    })
+
+    test('honours the v-model modifiers when clearing', async () => {
+      const wrapper = mount(RobotbasInput, {
+        props: { clearable: true, modelValue: 'text', modelModifiers: { nullable: true } }
+      })
+
+      await findClear(wrapper).trigger('click')
+
+      expect(wrapper.emitted()).toMatchObject({ 'update:modelValue': [[null]] })
+    })
+
+    test('falls back to a × when no clearIcon is given', async () => {
+      const wrapper = mount(RobotbasInput, { props: { clearable: true, modelValue: 'text' } })
+      expect(findClear(wrapper).text()).toBe('×')
+    })
+
+    test('has an accessible name', async () => {
+      const wrapper = mount(RobotbasInput, {
+        props: { clearable: true, modelValue: 'text', clearLabel: 'Empty the field' }
+      })
+      expect(findClear(wrapper).attributes('aria-label')).toBe('Empty the field')
+    })
+
+    test('passes accessibility tests', async () => {
+      const wrapper = await mountSuspended(RobotbasInput, {
+        props: { clearable: true, modelValue: 'text', placeholder: 'Enter text...' }
+      })
+
+      expect(await axe(wrapper.element, {
+        rules: { region: { enabled: false } }
+      })).toHaveNoViolations()
     })
   })
 
