@@ -34,6 +34,23 @@ export interface RobotbasInputProps<T extends InputValue = InputValue> extends U
   autocomplete?: InputHTMLAttributes['autocomplete']
   autofocus?: boolean
   autofocusDelay?: number
+  /**
+   * Display a button that clears the input while it holds a value.
+   * The button is hidden when the input is empty or disabled.
+   */
+  clearable?: boolean
+  /**
+   * The icon of the clear button. Like every other icon in the library, the
+   * class is up to the consumer; when omitted a plain `×` is rendered so the
+   * button is never invisible.
+   * @IconifyIcon
+   */
+  clearIcon?: string
+  /**
+   * The accessible name of the clear button.
+   * @defaultValue 'Clear input'
+   */
+  clearLabel?: string
   disabled?: boolean
   /** Highlight the ring color like a focus state. */
   highlight?: boolean
@@ -50,6 +67,9 @@ export interface RobotbasInputProps<T extends InputValue = InputValue> extends U
     leadingAvatarSize?: string
     trailing?: string
     trailingIcon?: string
+    clear?: string
+    clearButton?: string
+    clearIcon?: string
   }
 }
 
@@ -57,12 +77,19 @@ export interface RobotbasInputEmits<T extends InputValue = InputValue> {
   'update:modelValue': [value: T]
   'blur': [event: FocusEvent]
   'change': [event: Event]
+  /**
+   * Emitted after the clear button empties the input. `update:modelValue` is
+   * emitted too, so v-model alone is enough for the common case.
+   */
+  'clear': []
 }
 
 export interface RobotbasInputSlots {
   leading(props: { ui: { root?: string, base?: string, leading?: string, leadingIcon?: string, leadingAvatar?: string, leadingAvatarSize?: string } }): any
   default(props: { ui: { root?: string, base?: string, leading?: string, leadingIcon?: string, leadingAvatar?: string, leadingAvatarSize?: string } }): any
   trailing(props: { ui: { root?: string, base?: string, trailing?: string, trailingIcon?: string } }): any
+  /** Replaces the default clear button. `clear()` empties the input. */
+  clear(props: { ui: { root?: string, base?: string, clear?: string, clearButton?: string, clearIcon?: string }, clear: () => void }): any
 }
 </script>
 
@@ -82,7 +109,8 @@ defineOptions({ inheritAttrs: false })
 const props = withDefaults(defineProps<RobotbasInputProps<T>>(), {
   type: 'text',
   autocomplete: 'off',
-  autofocusDelay: 0
+  autofocusDelay: 0,
+  clearLabel: 'Clear input'
 })
 const emits = defineEmits<RobotbasInputEmits<T>>()
 const slots = defineSlots<RobotbasInputSlots>()
@@ -104,6 +132,9 @@ const ui = computed(() => ({
   leadingAvatarSize: createUiFn(props.ui?.leadingAvatarSize),
   trailing: createUiFn(isTrailing.value || !!slots.trailing),
   trailingIcon: createUiFn(props.ui?.trailingIcon),
+  clear: createUiFn(props.ui?.clear),
+  clearButton: createUiFn(props.ui?.clearButton),
+  clearIcon: createUiFn(props.ui?.clearIcon),
   type: createUiFn(props.type),
   color: createUiFn(color.value),
   variant: createUiFn(props.variant),
@@ -164,6 +195,26 @@ function onBlur(event: FocusEvent) {
   emits('blur', event)
 }
 
+const isClearVisible = computed(() => {
+  if (!props.clearable || disabled.value) {
+    return false
+  }
+
+  const value = modelValue.value
+  return value !== undefined && value !== null && String(value) !== ''
+})
+
+function onClear() {
+  // Se pasa por updateInput y no por modelValue directamente para que el
+  // borrado respete los modificadores del v-model (.trim, .number, .nullable,
+  // .optional) y emita el mismo update:modelValue que borrar a mano.
+  updateInput('')
+  emits('clear')
+  // El foco vuelve al campo: si se quedara en el botón, este desaparece al
+  // vaciarse el valor y el foco se caería al <body>.
+  inputRef.value?.focus()
+}
+
 function autoFocus() {
   if (props.autofocus) {
     inputRef.value?.focus()
@@ -198,6 +249,19 @@ defineExpose({
         <RobotbasAvatar v-else-if="!!avatar"
           :size="((props.ui?.leadingAvatarSize || ui.leadingAvatarSize()) as RobotbasAvatarProps['size'])"
           v-bind="avatar" data-slot="leadingAvatar" :class="ui.leadingAvatar({ class: props.ui?.leadingAvatar })" />
+      </slot>
+    </span>
+
+    <span v-if="isClearVisible || !!slots.clear" data-slot="clear" :class="ui.clear({ class: props.ui?.clear })">
+      <slot name="clear" :ui="ui" :clear="onClear">
+        <button v-if="isClearVisible" type="button" :aria-label="clearLabel" data-slot="clearButton"
+          :class="ui.clearButton({ class: props.ui?.clearButton })" @click="onClear">
+          <RobotbasIcon v-if="clearIcon" :name="clearIcon" data-slot="clearIcon"
+            :class="ui.clearIcon({ class: props.ui?.clearIcon })" />
+          <!-- Sin clearIcon el botón se quedaría vacío e invisible. La librería
+               no impone ningún set de iconos, así que el respaldo es un aspa. -->
+          <span v-else aria-hidden="true">&times;</span>
+        </button>
       </slot>
     </span>
 
