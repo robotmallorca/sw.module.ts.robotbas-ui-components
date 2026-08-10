@@ -51,6 +51,10 @@ export interface RobotbasInputProps<T extends InputValue = InputValue> extends U
    * @defaultValue 'Clear input'
    */
   clearLabel?: string
+  /**
+   * Greys the field out and shows a `not-allowed` cursor over the whole group.
+   * The root gets a `data-disabled` attribute so consumer themes can hook onto it.
+   */
   disabled?: boolean
   /** Highlight the ring color like a focus state. */
   highlight?: boolean
@@ -205,13 +209,8 @@ const isClearVisible = computed(() => {
 })
 
 function onClear() {
-  // Se pasa por updateInput y no por modelValue directamente para que el
-  // borrado respete los modificadores del v-model (.trim, .number, .nullable,
-  // .optional) y emita el mismo update:modelValue que borrar a mano.
   updateInput('')
   emits('clear')
-  // El foco vuelve al campo: si se quedara en el botón, este desaparece al
-  // vaciarse el valor y el foco se caería al <body>.
   inputRef.value?.focus()
 }
 
@@ -233,7 +232,8 @@ defineExpose({
 </script>
 
 <template>
-  <Primitive :as="as" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })">
+  <Primitive :as="as" data-slot="root" :data-disabled="disabled || undefined"
+    :class="ui.root({ class: [props.ui?.root, props.class] })">
     <input :id="id" ref="inputRef" :type="type" :value="modelValue" :name="name" :placeholder="placeholder"
       data-slot="base" :class="ui.base({ class: props.ui?.base })" :disabled="disabled" :required="required"
       :autocomplete="autocomplete" v-bind="{ ...$attrs, ...ariaAttrs }" @input="onInput" @blur="onBlur"
@@ -258,8 +258,6 @@ defineExpose({
           :class="ui.clearButton({ class: props.ui?.clearButton })" @click="onClear">
           <RobotbasIcon v-if="clearIcon" :name="clearIcon" data-slot="clearIcon"
             :class="ui.clearIcon({ class: props.ui?.clearIcon })" />
-          <!-- Sin clearIcon el botón se quedaría vacío e invisible. La librería
-               no impone ningún set de iconos, así que el respaldo es un aspa. -->
           <span v-else aria-hidden="true">&times;</span>
         </button>
       </slot>
@@ -274,3 +272,20 @@ defineExpose({
     </span>
   </Primitive>
 </template>
+
+<style scoped>
+[data-slot="root"][data-disabled] {
+  cursor: not-allowed;
+}
+
+[data-slot="root"][data-disabled] [data-slot="leading"],
+[data-slot="root"][data-disabled] [data-slot="trailing"] {
+  color: var(--bs-secondary-color, #6c757d);
+}
+
+[data-slot="base"]:disabled {
+  background-color: var(--bs-secondary-bg, #e9ecef);
+  color: var(--bs-secondary-color, #6c757d);
+  cursor: not-allowed;
+}
+</style>
