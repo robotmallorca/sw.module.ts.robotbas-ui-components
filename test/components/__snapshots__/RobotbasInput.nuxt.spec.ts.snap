@@ -45,14 +45,14 @@ exports[`RobotbasInput > renders with clear slot correctly 1`] = `
 
 exports[`RobotbasInput > renders with clearable and a value correctly 1`] = `
 "<div data-v-6aeb49c4="" data-slot="root" class=""><input data-v-6aeb49c4="" type="text" data-slot="base" class="" autocomplete="off" value="text">
-  <!--v-if--><span data-v-6aeb49c4="" data-slot="clear" class=""><button data-v-6aeb49c4="" type="button" aria-label="Clear input" data-slot="clearButton" class=""><span data-v-6aeb49c4="" aria-hidden="true">×</span></button></span>
+  <!--v-if--><span data-v-6aeb49c4="" data-slot="clear" class=""><button data-v-6aeb49c4="" type="button" tabindex="-1" aria-label="Clear input" data-slot="clearButton" class=""><span data-v-6aeb49c4="" aria-hidden="true">×</span></button></span>
   <!--v-if-->
 </div>"
 `;
 
 exports[`RobotbasInput > renders with clearable and clearIcon correctly 1`] = `
 "<div data-v-6aeb49c4="" data-slot="root" class=""><input data-v-6aeb49c4="" type="text" data-slot="base" class="" autocomplete="off" value="text">
-  <!--v-if--><span data-v-6aeb49c4="" data-slot="clear" class=""><button data-v-6aeb49c4="" type="button" aria-label="Clear input" data-slot="clearButton" class=""><i data-v-6aeb49c4="" class="i-lucide-x" data-slot="clearIcon"></i></button></span>
+  <!--v-if--><span data-v-6aeb49c4="" data-slot="clear" class=""><button data-v-6aeb49c4="" type="button" tabindex="-1" aria-label="Clear input" data-slot="clearButton" class=""><i data-v-6aeb49c4="" class="i-lucide-x" data-slot="clearIcon"></i></button></span>
   <!--v-if-->
 </div>"
 `;
@@ -75,7 +75,7 @@ exports[`RobotbasInput > renders with clearable and no value correctly 1`] = `
 
 exports[`RobotbasInput > renders with clearable and trailingIcon correctly 1`] = `
 "<div data-v-6aeb49c4="" data-slot="root" class=""><input data-v-6aeb49c4="" type="text" data-slot="base" class="" autocomplete="off" value="text">
-  <!--v-if--><span data-v-6aeb49c4="" data-slot="clear" class=""><button data-v-6aeb49c4="" type="button" aria-label="Clear input" data-slot="clearButton" class=""><span data-v-6aeb49c4="" aria-hidden="true">×</span></button></span><span data-v-6aeb49c4="" data-slot="trailing" class=""><i data-v-6aeb49c4="" class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>
+  <!--v-if--><span data-v-6aeb49c4="" data-slot="clear" class=""><button data-v-6aeb49c4="" type="button" tabindex="-1" aria-label="Clear input" data-slot="clearButton" class=""><span data-v-6aeb49c4="" aria-hidden="true">×</span></button></span><span data-v-6aeb49c4="" data-slot="trailing" class=""><i data-v-6aeb49c4="" class="i-lucide-arrow-right" data-slot="trailingIcon"></i></span>
 </div>"
 `;
 

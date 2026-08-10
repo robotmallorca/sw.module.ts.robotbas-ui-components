@@ -36,7 +36,8 @@ export interface RobotbasInputProps<T extends InputValue = InputValue> extends U
   autofocusDelay?: number
   /**
    * Display a button that clears the input while it holds a value.
-   * The button is hidden when the input is empty or disabled.
+   * The button is hidden when the input is empty or disabled, and stays out of
+   * the tab order so Tab keeps moving to the next field of the form.
    */
   clearable?: boolean
   /**
@@ -254,7 +255,7 @@ defineExpose({
 
     <span v-if="isClearVisible || !!slots.clear" data-slot="clear" :class="ui.clear({ class: props.ui?.clear })">
       <slot name="clear" :ui="ui" :clear="onClear">
-        <button v-if="isClearVisible" type="button" :aria-label="clearLabel" data-slot="clearButton"
+        <button v-if="isClearVisible" type="button" tabindex="-1" :aria-label="clearLabel" data-slot="clearButton"
           :class="ui.clearButton({ class: props.ui?.clearButton })" @click="onClear">
           <RobotbasIcon v-if="clearIcon" :name="clearIcon" data-slot="clearIcon"
             :class="ui.clearIcon({ class: props.ui?.clearIcon })" />

@@ -181,6 +181,11 @@ describe('RobotbasInput', () => {
       expect(findClear(wrapper).attributes('aria-label')).toBe('Empty the field')
     })
 
+    test('stays out of the tab order so Tab reaches the next field', async () => {
+      const wrapper = mount(RobotbasInput, { props: { clearable: true, modelValue: 'text' } })
+      expect(findClear(wrapper).attributes('tabindex')).toBe('-1')
+    })
+
     test('passes accessibility tests', async () => {
       const wrapper = await mountSuspended(RobotbasInput, {
         props: { clearable: true, modelValue: 'text', placeholder: 'Enter text...' }
