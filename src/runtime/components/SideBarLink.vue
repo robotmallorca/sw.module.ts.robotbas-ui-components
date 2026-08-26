@@ -10,6 +10,25 @@ interface SideBarItemProps {
    * `{ size: 'sm', color: 'neutral', variant: 'outline' }`{lang="ts-type"}
    */
   badge?: string | number | RobotbasBadgeProps;
+  /**
+   * Nivel de anidamiento dentro de un desplegable. Los niveles > 0 se sangran
+   * y dibujan un raíl vertical a su izquierda que agrupa visualmente a los
+   * hermanos. Comparte escala con `SideBarCheckbox` (16 / 32 / 48 px).
+   */
+  submenu?: 0 | 1 | 2;
+  /**
+   * Marca el item como cabecero de un desplegable: añade el chevron (que rota
+   * según `open`) y expone `aria-expanded` / `data-state`. Sin `link` la raíz
+   * pasa a ser un `<button>` en vez de un enlace.
+   */
+  expandable?: boolean;
+  /** Estado del desplegable. Controla la rotación del chevron. */
+  open?: boolean;
+  /**
+   * Resalta el cabecero cuando está cerrado y alguno de sus hijos es la ruta
+   * activa, para no perder el rastro de dónde estás.
+   */
+  childActive?: boolean;
   ui?: {
     root?: string;
     content?: string;
@@ -23,7 +42,7 @@ interface SideBarItemProps {
 </script>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, resolveComponent } from "vue";
 import { useRoute } from "#imports";
 import type { RouteLocationRaw } from "#vue-router";
 import type { RobotbasBadgeProps } from "./RobotbasBadge.vue";
@@ -32,6 +51,14 @@ const props = defineProps<SideBarItemProps>();
 const emit = defineEmits(["toggle-click"]);
 
 const route = useRoute();
+
+const NuxtLink = resolveComponent("NuxtLink");
+
+// Un cabecero de desplegable sin ruta propia no es un enlace: es un botón que
+// abre y cierra. Si además tiene `link`, sigue navegando y solo el chevron
+// hace de disparador.
+const isTrigger = computed(() => props.expandable && !props.link);
+const rootTag = computed(() => (isTrigger.value ? "button" : NuxtLink));
 
 const selected = computed(() => {
   if (props.linkRegex) {
@@ -45,6 +72,8 @@ const variableClass = computed(() => {
   return `${selected.value ? "active" : ""}`;
 });
 
+const submenuClass = computed(() => (props.submenu ? `submenu-${props.submenu}` : ""));
+
 const badgeUi = computed(() => {
   const base = props.ui?.trailingBadge ?? "robotbas-badge badge sidebarlink-badge";
 
@@ -56,7 +85,15 @@ const onToggleClick = () => {
 </script>
 
 <template>
-  <NuxtLink :to="link" class="sidebarlink" :class="variableClass">
+  <component
+    :is="rootTag"
+    v-bind="isTrigger ? { type: 'button' } : { to: link }"
+    class="sidebarlink"
+    :class="[variableClass, submenuClass, { 'is-group': expandable, 'child-active': childActive }]"
+    :data-state="expandable ? (open ? 'open' : 'closed') : undefined"
+    :aria-expanded="expandable ? open : undefined"
+    @click="isTrigger ? onToggleClick() : undefined"
+  >
     <div class="sidebarlink-content">
       <div class="sidebarlink-leading">
         <slot name="leading">
@@ -78,15 +115,15 @@ const onToggleClick = () => {
           :ui="badgeUi"
         />
         <RobotbasIcon
-          v-if="trailingIcon"
-          :name="trailingIcon"
+          v-if="trailingIcon || expandable"
+          :name="trailingIcon || 'bi bi-chevron-down'"
           :class="ui?.trailingIcon"
-          class=""
-          @click="onToggleClick"
+          class="sidebarlink-toggle"
+          @click.stop.prevent="onToggleClick"
         />
       </slot>
     </span>
-  </NuxtLink>
+  </component>
 </template>
 
 <style scoped lang="scss">
@@ -110,6 +147,16 @@ const onToggleClick = () => {
   color: $gray-700;
   font: var(--textmd-medium, 500 16px/24px "Roboto", sans-serif);
   position: relative;
+}
+
+/* La raíz puede ser un <button> cuando es cabecero de desplegable sin ruta:
+   hay que neutralizar el estilo nativo para que sea indistinguible del <a>. */
+button.sidebarlink {
+  background: none;
+  border: none;
+  font: inherit;
+  text-align: left;
+  appearance: none;
 }
 
 .sidebarlink-content {
@@ -177,5 +224,77 @@ const onToggleClick = () => {
 .sidebarlink.active:hover {
   background: var(--primary-100, #ffd9e3);
   color: var(--primary-700, #8d004d);
+}
+
+/* ── DESPLEGABLES ─────────────────────────────────────────────────────────── */
+
+/* El chevron es UNO solo: la dirección la da el estado, no el nombre del icono. */
+.sidebarlink-toggle {
+  transition: transform 0.15s ease;
+}
+
+.sidebarlink[data-state="open"] .sidebarlink-toggle {
+  transform: rotate(180deg);
+}
+
+/* En un cabecero el chevron es un afordance, no contenido: va un tono por
+   debajo de la etiqueta para no competir con ella. */
+.sidebarlink.is-group .sidebarlink-toggle {
+  color: $gray-600;
+}
+
+.sidebarlink.is-group:hover .sidebarlink-toggle,
+.sidebarlink.is-group.active .sidebarlink-toggle {
+  color: inherit;
+}
+
+/* Cabecero cerrado con un hijo activo: se insinúa sin robarle el énfasis
+   al hijo (que sí lleva fondo). */
+.sidebarlink.child-active:not(.active) {
+  color: $primary-700;
+}
+
+/* Sangría alineada con la escala de SideBarCheckbox (16 / 32 / 48). */
+.sidebarlink.submenu-1 {
+  padding-left: 32px;
+}
+
+.sidebarlink.submenu-2 {
+  padding-left: 48px;
+}
+
+/* Raíl vertical que agrupa a los hermanos de un mismo nivel. Se desborda 2px
+   por arriba y por abajo para que items apilados con `gap` formen una línea
+   continua en vez de tramos sueltos. */
+.sidebarlink.submenu-1::before,
+.sidebarlink.submenu-2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 1px;
+  background: $gray-300;
+}
+
+.sidebarlink.submenu-1::before {
+  left: 19px;
+}
+
+.sidebarlink.submenu-2::before {
+  left: 35px;
+}
+
+/* El hijo activo tiñe su tramo de raíl: marca la posición dentro del grupo. */
+.sidebarlink.submenu-1.active::before,
+.sidebarlink.submenu-2.active::before {
+  background: $primary-500;
+  width: 2px;
+}
+
+/* Un hijo sin icono ni slot arrastraría 24px de caja vacía + 12px de gap y
+   quedaría descolgado del raíl. */
+.sidebarlink.submenu-1 .sidebarlink-leading:empty,
+.sidebarlink.submenu-2 .sidebarlink-leading:empty {
+  display: none;
 }
 </style>
