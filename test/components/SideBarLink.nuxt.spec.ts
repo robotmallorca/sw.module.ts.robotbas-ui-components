@@ -62,6 +62,35 @@ describe("sidebar link", () => {
       expect(root.attributes("data-state")).toBe("closed");
     });
 
+    it("draws its default chevron in CSS, depending on no icon pack", async () => {
+      const component = await mountSuspended(SideBarLink, {
+        props: { label: "Settings", expandable: true },
+      });
+
+      expect(component.find(".sidebarlink-caret").exists()).toBe(true);
+      // bootstrap-icons es devDependency: el componente publicado no puede
+      // asumirlo, así que no debe emitir clases `bi bi-*`.
+      expect(component.html()).not.toContain("bi-chevron");
+    });
+
+    it("lets trailingIcon replace the CSS chevron", async () => {
+      const component = await mountSuspended(SideBarLink, {
+        props: { label: "Settings", expandable: true, trailingIcon: "fas fa-chevron-down" },
+      });
+
+      expect(component.find(".fa-chevron-down").exists()).toBe(true);
+      expect(component.find(".sidebarlink-caret").exists()).toBe(false);
+    });
+
+    it("toggles from the default chevron too", async () => {
+      const component = await mountSuspended(SideBarLink, {
+        props: { label: "Settings", expandable: true },
+      });
+
+      await component.find(".sidebarlink-caret").trigger("click");
+      expect(component.emitted("toggle-click")).toBeTruthy();
+    });
+
     it("exposes the open state so the chevron can rotate", async () => {
       const component = await mountSuspended(SideBarLink, {
         props: { label: "Settings", expandable: true, open: true },

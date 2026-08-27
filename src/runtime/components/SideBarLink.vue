@@ -11,22 +11,25 @@ interface SideBarItemProps {
    */
   badge?: string | number | RobotbasBadgeProps;
   /**
-   * Nivel de anidamiento dentro de un desplegable. Los niveles > 0 se sangran
-   * y dibujan un raíl vertical a su izquierda que agrupa visualmente a los
-   * hermanos. Comparte escala con `SideBarCheckbox` (16 / 32 / 48 px).
+   * Nesting level inside a dropdown. Levels > 0 are indented and draw a
+   * vertical rail on their left that visually groups the siblings together.
+   * Shares its scale with `SideBarCheckbox` (16 / 32 / 48 px).
    */
   submenu?: 0 | 1 | 2;
   /**
-   * Marca el item como cabecero de un desplegable: añade el chevron (que rota
-   * según `open`) y expone `aria-expanded` / `data-state`. Sin `link` la raíz
-   * pasa a ser un `<button>` en vez de un enlace.
+   * Marks the item as a dropdown header: adds the chevron (which rotates
+   * according to `open`) and exposes `aria-expanded` / `data-state`. Without a
+   * `link` the root element becomes a `<button>` instead of a link.
+   *
+   * The default chevron is drawn in CSS so that it depends on no icon pack;
+   * `trailingIcon` replaces it with whichever icon you pass.
    */
   expandable?: boolean;
-  /** Estado del desplegable. Controla la rotación del chevron. */
+  /** Dropdown state. Drives the chevron rotation. */
   open?: boolean;
   /**
-   * Resalta el cabecero cuando está cerrado y alguno de sus hijos es la ruta
-   * activa, para no perder el rastro de dónde estás.
+   * Highlights the header while it is collapsed and one of its children is the
+   * active route, so you don't lose track of where you are.
    */
   childActive?: boolean;
   ui?: {
@@ -54,9 +57,9 @@ const route = useRoute();
 
 const NuxtLink = resolveComponent("NuxtLink");
 
-// Un cabecero de desplegable sin ruta propia no es un enlace: es un botón que
-// abre y cierra. Si además tiene `link`, sigue navegando y solo el chevron
-// hace de disparador.
+// A dropdown header with no route of its own is not a link: it is a button
+// that opens and closes. When it does have a `link` it keeps navigating and
+// only the chevron acts as the trigger.
 const isTrigger = computed(() => props.expandable && !props.link);
 const rootTag = computed(() => (isTrigger.value ? "button" : NuxtLink));
 
@@ -115,10 +118,19 @@ const onToggleClick = () => {
           :ui="badgeUi"
         />
         <RobotbasIcon
-          v-if="trailingIcon || expandable"
-          :name="trailingIcon || 'bi bi-chevron-down'"
+          v-if="trailingIcon"
+          :name="trailingIcon"
           :class="ui?.trailingIcon"
           class="sidebarlink-toggle"
+          @click.stop.prevent="onToggleClick"
+        />
+        <!-- Default chevron drawn in CSS. The module cannot assume any icon
+             pack (bootstrap-icons is a devDependency, for the playground
+             only), so bare `expandable` has to work with no dependencies.
+             Passing `trailing-icon` replaces it. -->
+        <span
+          v-else-if="expandable"
+          class="sidebarlink-toggle sidebarlink-caret"
           @click.stop.prevent="onToggleClick"
         />
       </slot>
@@ -149,12 +161,14 @@ const onToggleClick = () => {
   position: relative;
 }
 
-/* La raíz puede ser un <button> cuando es cabecero de desplegable sin ruta:
-   hay que neutralizar el estilo nativo para que sea indistinguible del <a>. */
+/* The root can be a <button> when it is a dropdown header with no route, so
+   the native styling has to be neutralised to keep it indistinguishable from
+   the <a>. No `font` here on purpose: author styles already beat the UA
+   stylesheet, and a `font: inherit` at (0,1,1) would override the `font` of
+   `.sidebarlink` at (0,1,0). */
 button.sidebarlink {
   background: none;
   border: none;
-  font: inherit;
   text-align: left;
   appearance: none;
 }
@@ -226,19 +240,34 @@ button.sidebarlink {
   color: var(--primary-700, #8d004d);
 }
 
-/* ── DESPLEGABLES ─────────────────────────────────────────────────────────── */
+/* ── DROPDOWNS ────────────────────────────────────────────────────────────── */
 
-/* El chevron es UNO solo: la dirección la da el estado, no el nombre del icono. */
+/* There is only ONE chevron: the state gives the direction, not the icon name. */
 .sidebarlink-toggle {
   transition: transform 0.15s ease;
 }
 
-.sidebarlink[data-state="open"] .sidebarlink-toggle {
+/* The `:not` keeps both rotations independent of rule order: the icon starts
+   at 0deg and the CSS caret starts at 45deg. */
+.sidebarlink[data-state="open"] .sidebarlink-toggle:not(.sidebarlink-caret) {
   transform: rotate(180deg);
 }
 
-/* En un cabecero el chevron es un afordance, no contenido: va un tono por
-   debajo de la etiqueta para no competir con ella. */
+.sidebarlink-caret {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentcolor;
+  border-bottom: 1.5px solid currentcolor;
+  transform: rotate(45deg);
+  margin: 0 5px 3px;
+}
+
+.sidebarlink[data-state="open"] .sidebarlink-caret {
+  transform: rotate(225deg);
+}
+
+/* On a header the chevron is an affordance, not content: it sits one shade
+   below the label so it does not compete with it. */
 .sidebarlink.is-group .sidebarlink-toggle {
   color: $gray-600;
 }
@@ -248,13 +277,13 @@ button.sidebarlink {
   color: inherit;
 }
 
-/* Cabecero cerrado con un hijo activo: se insinúa sin robarle el énfasis
-   al hijo (que sí lleva fondo). */
+/* Collapsed header with an active child: it hints at itself without stealing
+   the emphasis from the child, which does get a background. */
 .sidebarlink.child-active:not(.active) {
   color: $primary-700;
 }
 
-/* Sangría alineada con la escala de SideBarCheckbox (16 / 32 / 48). */
+/* Indentation aligned with the SideBarCheckbox scale (16 / 32 / 48). */
 .sidebarlink.submenu-1 {
   padding-left: 32px;
 }
@@ -263,9 +292,23 @@ button.sidebarlink {
   padding-left: 48px;
 }
 
-/* Raíl vertical que agrupa a los hermanos de un mismo nivel. Se desborda 2px
-   por arriba y por abajo para que items apilados con `gap` formen una línea
-   continua en vez de tramos sueltos. */
+/* The `overflow: hidden` on the base rule clips the pseudo-element at the box
+   edge and would break the rail into segments, so nested levels release it and
+   the label clipping moves down to the content. */
+.sidebarlink.submenu-1,
+.sidebarlink.submenu-2 {
+  overflow: visible;
+}
+
+.sidebarlink.submenu-1 .sidebarlink-content,
+.sidebarlink.submenu-2 .sidebarlink-content {
+  overflow: hidden;
+  min-width: 0;
+}
+
+/* Vertical rail that groups the siblings of a same level. It overflows by 2px
+   at the top and bottom so that items stacked with a `gap` form a continuous
+   line instead of loose segments. */
 .sidebarlink.submenu-1::before,
 .sidebarlink.submenu-2::before {
   content: "";
@@ -284,15 +327,15 @@ button.sidebarlink {
   left: 35px;
 }
 
-/* El hijo activo tiñe su tramo de raíl: marca la posición dentro del grupo. */
+/* The active child tints its rail segment: it marks the position within the group. */
 .sidebarlink.submenu-1.active::before,
 .sidebarlink.submenu-2.active::before {
   background: $primary-500;
   width: 2px;
 }
 
-/* Un hijo sin icono ni slot arrastraría 24px de caja vacía + 12px de gap y
-   quedaría descolgado del raíl. */
+/* A child with neither icon nor slot would drag along 24px of empty box plus a
+   12px gap and end up detached from the rail. */
 .sidebarlink.submenu-1 .sidebarlink-leading:empty,
 .sidebarlink.submenu-2 .sidebarlink-leading:empty {
   display: none;
