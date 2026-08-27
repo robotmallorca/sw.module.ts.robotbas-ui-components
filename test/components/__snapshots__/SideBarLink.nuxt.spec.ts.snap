@@ -18,6 +18,6 @@ exports[`sidebar link > with trailing icon > match snapshot 1`] = `
       <!--v-if-->
     </div>
     <div data-v-4ad93fef="" class="text">link text</div>
-  </div><span data-v-4ad93fef="" class="sidebarlink-trailing"><!--v-if--><i data-v-4ad93fef="" class="fas fa-chevron-down"></i></span>
+  </div><span data-v-4ad93fef="" class="sidebarlink-trailing"><!--v-if--><i data-v-4ad93fef="" class="fas fa-chevron-down sidebarlink-toggle"></i></span>
 </a>"
 `;
