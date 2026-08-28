@@ -19,6 +19,7 @@ export const componentInventory: ComponentInfo[] = [
   { name: 'Chip', icon: 'bi bi-circle-fill', desc: 'Indicador de estado', live: true },
   { name: 'Collapsible', icon: 'bi bi-arrows-collapse', desc: 'Contenido plegable', live: true },
   { name: 'Combobox', icon: 'bi bi-search', desc: 'Búsqueda + selección', live: true },
+  { name: 'DataGrid', icon: 'bi bi-grid-3x2', desc: 'ag-grid con tema Robotbas', live: true },
   { name: 'FieldGroup', icon: 'bi bi-collection', desc: 'Grupo de campos', live: true },
   { name: 'FormField', icon: 'bi bi-input-cursor-text', desc: 'Campo con etiqueta', live: true },
   { name: 'Icon', icon: 'bi bi-emoji-smile', desc: 'Iconografía', live: true },

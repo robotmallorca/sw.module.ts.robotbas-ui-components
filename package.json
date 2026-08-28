@@ -25,6 +25,10 @@
       "types": "./src/runtime/composables/*.ts",
       "import": "./src/runtime/composables/*.ts"
     },
+    "./utils/*": {
+      "types": "./src/runtime/utils/*.ts",
+      "import": "./src/runtime/utils/*.ts"
+    },
     "./components/*": {
       "types": "./src/runtime/components/*",
       "import": "./src/runtime/components/*"
@@ -55,12 +59,20 @@
     "superstruct": "^2.0.2"
   },
   "peerDependencies": {
+    "ag-grid-community": ">=35.0.0",
+    "ag-grid-vue3": ">=35.0.0",
     "reka-ui": ">=1.0.0",
     "vue": "^3.4.0",
     "vue-i18n": "^11.0.0"
   },
   "peerDependenciesMeta": {
     "vue-i18n": {
+      "optional": true
+    },
+    "ag-grid-community": {
+      "optional": true
+    },
+    "ag-grid-vue3": {
       "optional": true
     }
   },
@@ -70,6 +82,8 @@
     "@nuxt/test-utils": "^3.17.0",
     "@types/node": "latest",
     "@vue/test-utils": "^2.4.11",
+    "ag-grid-community": "^35.3.1",
+    "ag-grid-vue3": "^35.3.1",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "eslint": "^9.23.0",
