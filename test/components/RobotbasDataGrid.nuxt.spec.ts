@@ -86,6 +86,39 @@ describe('RobotbasDataGrid', () => {
     expect(grid.props('paginationPageSizeSelector')).toEqual([10, 20, 25, 50, 100])
   })
 
+  // Un `height: 100%` deja de resolver en cuanto un ancestro saca su altura de
+  // un min-height, y el grid se queda en 0px sin dar ningún error: se ve la
+  // cabecera y debajo nada.
+  it('fills its container by flex, never with a percentage height', async () => {
+    const wrapper = await mountSuspended(RobotbasDataGrid, { props: base })
+
+    const grid = wrapper.find('[data-slot="grid"]')
+    const style = grid.attributes('style') ?? ''
+
+    expect(style).not.toContain('height: 100%')
+    // El shorthand `flex` lo expande el navegador al serializar.
+    expect(style).toContain('flex-grow: 1')
+    expect(style).toContain('min-height: 0')
+  })
+
+  it('keeps a minimum height so it can never render invisible', async () => {
+    const wrapper = await mountSuspended(RobotbasDataGrid, { props: base })
+
+    expect(wrapper.find('[data-slot="wrapper"]').attributes('style')).toContain(
+      'min-height: 320px',
+    )
+  })
+
+  it('uses an explicit height as given', async () => {
+    const wrapper = await mountSuspended(RobotbasDataGrid, {
+      props: { ...base, height: '360px' },
+    })
+
+    expect(wrapper.find('[data-slot="grid"]').attributes('style')).toContain(
+      'height: 360px',
+    )
+  })
+
   it('applies the Robotbas theme by default and honours an override', async () => {
     const themed = await mountSuspended(RobotbasDataGrid, { props: base })
     expect(themed.findComponent({ name: 'AgGridVue' }).props('theme')).toBeTruthy()

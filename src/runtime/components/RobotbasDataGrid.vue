@@ -16,12 +16,9 @@ export interface RobotbasDataGridUI {
 }
 
 export interface RobotbasDataGridProps<Row = any> {
-  /** Definición de las columnas de ag-grid. */
   columnDefs: ColDef<Row>[]
   rowData: Row[]
-  /** Muestra el overlay de carga de ag-grid. */
   loading?: boolean
-  /** Cabecera opcional sobre el grid. */
   title?: string
   /**
    * @defaultValue true
@@ -31,21 +28,14 @@ export interface RobotbasDataGridProps<Row = any> {
    * @defaultValue 50
    */
   paginationPageSize?: number
-  /** Se fusiona sobre el defaultColDef del wrapper. */
   defaultColDef?: ColDef<Row>
-  /**
-   * Altura del grid. ag-grid no se dimensiona solo: sin una altura real no
-   * pinta ninguna fila.
-   * @defaultValue '100%'
-   */
-  height?: string
+  height?: StringIterator
+  minHeight?: string
   /**
    * @defaultValue 'No data available'
    */
   noDataLabel?: string
-  /** Clave estable de cada fila. Sin ella, ag-grid recrea las filas al refrescar. */
   getRowId?: (params: GetRowIdParams<Row>) => string
-  /** Sustituye el tema Robotbas por uno propio. */
   theme?: Theme
   class?: any
   ui?: RobotbasDataGridUI
@@ -72,11 +62,6 @@ import {
 } from 'ag-grid-community'
 import { robotbasGridTheme } from '../utils/grid-theme'
 
-// ag-grid v33+ es modular: sin registrar los módulos el grid se pinta en blanco
-// y sin error. Se hace aquí, y no en un plugin del consumidor, para que montar
-// el componente sea suficiente. El registro es aditivo, así que una app que ya
-// tenga el suyo (RobotDesk) no entra en conflicto — siempre que haya una sola
-// copia de ag-grid-community, que es lo que garantiza la peerDependency.
 let modulesRegistered = false
 function registerGridModules() {
   if (modulesRegistered) return
@@ -88,8 +73,6 @@ function registerGridModules() {
     PaginationModule,
     RowStyleModule,
     CellStyleModule,
-    // Convierte los grids en blanco por configuración inválida en un error de
-    // consola. Fuera de desarrollo solo es peso.
     ...(import.meta.dev ? [ValidationModule] : []),
   ])
   modulesRegistered = true
@@ -99,7 +82,7 @@ registerGridModules()
 const props = withDefaults(defineProps<RobotbasDataGridProps<Row>>(), {
   pagination: true,
   paginationPageSize: 50,
-  height: '100%',
+  minHeight: '320px',
   noDataLabel: 'No data available',
 })
 
@@ -111,10 +94,6 @@ defineSlots<{
   'top-right'(): any
 }>()
 
-// No se usa createUiFn() aquí a propósito: devuelve funciones, no strings, y es
-// justo lo que hace que los `:ui` de Combobox/Input/Select no casen con sus
-// interfaces `...UI` y el typecheck del repo esté en rojo. Aquí las clases son
-// strings de principio a fin.
 const cx = (...parts: Array<string | false | undefined>) =>
   parts.filter(Boolean).join(' ')
 
@@ -127,13 +106,21 @@ const defaultColDef = computed<ColDef<Row>>(() => ({
   ...props.defaultColDef,
 }))
 
-// `paginationPageSize` tiene que estar entre las opciones del selector o ag-grid
-// avisa por consola y lo ignora.
 const paginationPageSizeSelector = computed(() =>
   [...new Set([10, 25, 50, 100, props.paginationPageSize])].sort((a, b) => a - b),
 )
 
 const hasTop = computed(() => !!props.title)
+
+const wrapperStyle = computed(() => ({
+  minHeight: props.height ? undefined : props.minHeight,
+}))
+
+const gridStyle = computed(() =>
+  props.height
+    ? { width: '100%', height: props.height }
+    : { width: '100%', flex: '1 1 0%', minHeight: 0 },
+)
 
 function onGridReady(event: GridReadyEvent) {
   gridApi.value = event.api
@@ -169,22 +156,16 @@ defineExpose({ gridApi })
       </slot>
     </div>
 
-    <!--
-      min-height: 0 es obligatorio, no cosmético: dentro de un contenedor flex un
-      item no encoge por debajo de su contenido, así que sin esto el grid se sale
-      de la pantalla en vez de scrollar por dentro.
-    -->
     <div
       data-slot="wrapper"
-      class="flex-grow-1"
-      style="min-height: 0"
-      :class="props.ui?.wrapper"
+      :class="cx('flex-grow-1 d-flex flex-column', props.ui?.wrapper)"
+      :style="wrapperStyle"
     >
       <ClientOnly>
         <AgGridVue
           data-slot="grid"
           :class="props.ui?.grid"
-          :style="{ width: '100%', height: props.height }"
+          :style="gridStyle"
           :theme="props.theme ?? robotbasGridTheme"
           :column-defs="props.columnDefs"
           :row-data="props.rowData"
