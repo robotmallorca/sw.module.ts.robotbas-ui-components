@@ -14,6 +14,7 @@ import DisclosureDemo from './demos/DisclosureDemo.vue'
 import ProgressDemo from './demos/ProgressDemo.vue'
 import TreeDemo from './demos/TreeDemo.vue'
 import TableDemo from './demos/TableDemo.vue'
+import DataGridDemo from './demos/DataGridDemo.vue'
 import OverlaysDemo from './demos/OverlaysDemo.vue'
 import ToastDemo from './demos/ToastDemo.vue'
 import NavigationDemo from './demos/NavigationDemo.vue'
@@ -57,8 +58,9 @@ export const sections: ShowcaseSection[] = [
   { id: 'progress', label: 'Progress bars', title: 'Progress', icon: 'bi bi-bar-chart-steps', component: ProgressDemo },
   { id: 'tree', label: 'Tree', title: 'Tree', icon: 'bi bi-diagram-2', description: 'Árbol jerárquico navegable por teclado.', component: TreeDemo },
   { id: 'table', label: 'Table', title: 'Table', icon: 'bi bi-table', description: 'Tabla de datos con orden, filtro, paginación y celdas a medida.', component: TableDemo },
+  { id: 'datagrid', label: 'DataGrid', title: 'DataGrid', icon: 'bi bi-grid-3x2', description: 'Envoltorio de ag-grid con el tema Robotbas: registra sus módulos y trae orden, filtros y paginación.', component: DataGridDemo },
   { id: 'overlays', label: 'Modals', title: 'Modal · Popover', icon: 'bi bi-window-stack', description: 'Modales y popovers accesibles.', component: OverlaysDemo },
   { id: 'notifications', label: 'Toasts', title: 'Toast · Toaster', icon: 'bi bi-bell', description: 'Notificaciones efímeras con useToast(). Aparecen abajo a la derecha y se autodescartan.', component: ToastDemo },
   { id: 'navigation', label: 'SideBarLinks', title: 'SideBarLink · SideBarCheckbox', icon: 'bi bi-signpost-split', description: 'Elementos de menú lateral: enlaces con badge y checkboxes con submenús.', component: NavigationDemo },
-  { id: 'inventory', label: 'Inventario', title: 'Inventario completo', icon: 'bi bi-grid-3x3-gap', description: 'Los 29 componentes del módulo, todos en uso en esta página.', component: InventoryDemo },
+  { id: 'inventory', label: 'Inventario', title: 'Inventario completo', icon: 'bi bi-grid-3x3-gap', description: 'Los 30 componentes del módulo, todos en uso en esta página.', component: InventoryDemo },
 ]

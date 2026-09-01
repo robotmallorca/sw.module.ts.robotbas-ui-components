@@ -104,13 +104,11 @@ const props = withDefaults(defineProps<RobotbasTableProps<Row>>(), {
 const emit = defineEmits<RobotbasTableEmits>()
 
 defineSlots<{
-  /** Sustituye la barra superior entera. */
   'top'(): any
   'top-left'(): any
   'top-right'(): any
   'no-data'(): any
   'loading'(): any
-  /** Celda a medida de una columna: `body-cell-<name>`. */
   [key: `body-cell-${string}`]: (props: {
     row: Row
     value: unknown
