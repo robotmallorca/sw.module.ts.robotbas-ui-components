@@ -96,9 +96,9 @@ const props = withDefaults(defineProps<RobotbasTableProps<Row>>(), {
   rowKey: 'id',
   noDataLabel: 'No data available',
   loadingLabel: 'Loading...',
-  sortIcon: 'bi bi-arrow-down-up',
-  sortAscIcon: 'bi bi-caret-up-fill',
-  sortDescIcon: 'bi bi-caret-down-fill',
+  sortIcon: 'fas fa-sort',
+  sortAscIcon: 'fas fa-sort-up',
+  sortDescIcon: 'fas fa-sort-down',
 })
 
 const emit = defineEmits<RobotbasTableEmits>()
@@ -451,7 +451,7 @@ const hasTop = computed(() => !!props.title)
           aria-label="Previous page"
           @click="goToPage(page - 1)"
         >
-          <RobotbasIcon name="bi bi-chevron-left" />
+          <RobotbasIcon name="fas fa-chevron-left" />
         </button>
         <button
           type="button"
@@ -460,7 +460,7 @@ const hasTop = computed(() => !!props.title)
           aria-label="Next page"
           @click="goToPage(page + 1)"
         >
-          <RobotbasIcon name="bi bi-chevron-right" />
+          <RobotbasIcon name="fas fa-chevron-right" />
         </button>
       </div>
     </div>

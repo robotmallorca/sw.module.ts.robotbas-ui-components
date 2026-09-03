@@ -86,7 +86,6 @@
     "ag-grid-community": "^35.3.1",
     "ag-grid-vue3": "^35.3.1",
     "bootstrap": "^5.3.8",
-    "bootstrap-icons": "^1.13.1",
     "eslint": "^9.23.0",
     "happy-dom": "^20.10.6",
     "nuxt": "^3.16.0",

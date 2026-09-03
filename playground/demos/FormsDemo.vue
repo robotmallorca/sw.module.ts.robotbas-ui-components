@@ -22,7 +22,7 @@ const iteratorLabels = ['Muy bajo', 'Bajo', 'Medio', 'Alto', 'Máximo']
             `clearable` saca un botón para vaciar el campo mientras tenga valor.
             El icono no lo impone la librería: sin `clear-icon` se pinta un aspa.
           -->
-          <RobotbasInput v-model="inputClearable" clearable clear-icon="bi bi-x-circle-fill"
+          <RobotbasInput v-model="inputClearable" clearable clear-icon="fas fa-circle-xmark"
             placeholder="Con botón de limpiar"
             :ui="{ root: 'input-group', base: 'form-control', clear: 'input-group-text' }" />
         </div>
@@ -46,7 +46,7 @@ const iteratorLabels = ['Muy bajo', 'Bajo', 'Medio', 'Alto', 'Máximo']
     <div class="col-md-6">
       <DemoCard label="InputIterator (selector cíclico)">
         <RobotbasInputIterator v-model="iteratorValue" :values-labels="iteratorLabels" leading-as="button"
-          trailing-as="button" iteration-mode="rotation" leading-icon="bi bi-dash-lg" trailing-icon="bi bi-plus-lg"
+          trailing-as="button" iteration-mode="rotation" leading-icon="fas fa-minus" trailing-icon="fas fa-plus"
           :ui="{ root: 'input-group', leading: 'btn btn-outline-secondary', base: 'form-control text-center bg-white', trailing: 'btn btn-outline-secondary' }" />
         <div class="small text-muted mt-2">Índice <code>{{ iteratorValue }}</code> · toca − / +</div>
       </DemoCard>

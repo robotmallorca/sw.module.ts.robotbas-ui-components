@@ -28,7 +28,7 @@ export interface ShowcaseSection {
   label: string
   /** Título del encabezado de la sección. */
   title: string
-  /** Clase(s) del icono Bootstrap del encabezado. */
+  /** Clase(s) del icono Font Awesome del encabezado. */
   icon: string
   /** Descripción opcional bajo el título. */
   description?: string
@@ -45,24 +45,24 @@ export interface ShowcaseSection {
 // El nav, el orden y el encabezado de la sección se generan automáticamente.
 // ---------------------------------------------------------------------------
 export const sections: ShowcaseSection[] = [
-  { id: 'tokens', label: 'Tokens', title: 'Tokens de color', icon: 'bi bi-palette', description: 'La paleta que alimenta las variables SCSS del runtime.', component: TokensDemo },
-  { id: 'icons', label: 'Icons', title: 'RobotbasIcon', icon: 'bi bi-emoji-smile', description: 'Renderiza cualquier fuente de iconos por clase. Aquí, Bootstrap Icons.', component: IconsDemo },
-  { id: 'buttons', label: 'Buttons', title: 'Button', icon: 'bi bi-hand-index-thumb', description: 'Estilo por defecto y variantes vía la prop ui.', component: ButtonsDemo },
-  { id: 'badges', label: 'Badges', title: 'Badge', icon: 'bi bi-award', description: 'Etiquetas de estado con icono, texto y colores personalizados.', component: BadgesDemo },
-  { id: 'avatars', label: 'Avatars', title: 'Avatar · AvatarGroup · Chip', icon: 'bi bi-people', component: AvatarsDemo },
-  { id: 'cards', label: 'Cards', title: 'Card', icon: 'bi bi-card-heading', description: 'Contenedor con slots de cabecera, cuerpo y pie.', component: CardsDemo },
-  { id: 'forms', label: 'Inputs', title: 'Input · FormField · InputIterator · FieldGroup', icon: 'bi bi-input-cursor-text', component: FormsDemo },
-  { id: 'select', label: 'Selects', title: 'Select · Combobox · SelectTree', icon: 'bi bi-menu-button-wide', description: 'Desplegables accesibles con menú en portal (estilados con Bootstrap).', component: SelectsDemo },
-  { id: 'toggle', label: 'ToggleGroup', title: 'ToggleGroup', icon: 'bi bi-toggles', description: 'Selección exclusiva de una opción.', component: ToggleDemo },
-  { id: 'tabs', label: 'Tabs', title: 'Tabs', icon: 'bi bi-segmented-nav', component: TabsDemo },
-  { id: 'disclosure', label: 'Accordions', title: 'Accordion · Collapsible', icon: 'bi bi-list-nested', component: DisclosureDemo },
-  { id: 'progress', label: 'Progress bars', title: 'Progress', icon: 'bi bi-bar-chart-steps', component: ProgressDemo },
-  { id: 'tree', label: 'Tree', title: 'Tree', icon: 'bi bi-diagram-2', description: 'Árbol jerárquico navegable por teclado.', component: TreeDemo },
-  { id: 'table', label: 'Table', title: 'Table', icon: 'bi bi-table', description: 'Tabla de datos con orden, filtro, paginación y celdas a medida.', component: TableDemo },
-  { id: 'datagrid', label: 'DataGrid', title: 'DataGrid', icon: 'bi bi-grid-3x2', description: 'Envoltorio de ag-grid con el tema Robotbas: registra sus módulos y trae orden, filtros y paginación.', component: DataGridDemo },
-  { id: 'overlays', label: 'Modals', title: 'Modal · Popover', icon: 'bi bi-window-stack', description: 'Modales y popovers accesibles.', component: OverlaysDemo },
-  { id: 'notifications', label: 'Toasts', title: 'Toast · Toaster', icon: 'bi bi-bell', description: 'Notificaciones efímeras con useToast(). Aparecen abajo a la derecha y se autodescartan.', component: ToastDemo },
-  { id: 'navigation', label: 'SideBarLinks', title: 'SideBarLink · SideBarCheckbox', icon: 'bi bi-signpost-split', description: 'Elementos de menú lateral: enlaces con badge y checkboxes con submenús.', component: NavigationDemo },
-  { id: 'sidebar', label: 'Sidebar', title: 'Sidebar · SidebarFooter', icon: 'bi bi-layout-sidebar', description: 'El rail lateral completo que comparten RobotDesk y RobotAccount: cabecera con logo, control de contraer, menú y pie de usuario.', component: SidebarDemo },
-  { id: 'inventory', label: 'Inventario', title: 'Inventario completo', icon: 'bi bi-grid-3x3-gap', description: 'Los 30 componentes del módulo, todos en uso en esta página.', component: InventoryDemo },
+  { id: 'tokens', label: 'Tokens', title: 'Tokens de color', icon: 'fas fa-palette', description: 'La paleta que alimenta las variables SCSS del runtime.', component: TokensDemo },
+  { id: 'icons', label: 'Icons', title: 'RobotbasIcon', icon: 'fas fa-face-smile', description: 'Renderiza cualquier fuente de iconos por clase. Aquí, Font Awesome.', component: IconsDemo },
+  { id: 'buttons', label: 'Buttons', title: 'Button', icon: 'fas fa-hand-pointer', description: 'Estilo por defecto y variantes vía la prop ui.', component: ButtonsDemo },
+  { id: 'badges', label: 'Badges', title: 'Badge', icon: 'fas fa-award', description: 'Etiquetas de estado con icono, texto y colores personalizados.', component: BadgesDemo },
+  { id: 'avatars', label: 'Avatars', title: 'Avatar · AvatarGroup · Chip', icon: 'fas fa-users', component: AvatarsDemo },
+  { id: 'cards', label: 'Cards', title: 'Card', icon: 'fas fa-id-card', description: 'Contenedor con slots de cabecera, cuerpo y pie.', component: CardsDemo },
+  { id: 'forms', label: 'Inputs', title: 'Input · FormField · InputIterator · FieldGroup', icon: 'fas fa-i-cursor', component: FormsDemo },
+  { id: 'select', label: 'Selects', title: 'Select · Combobox · SelectTree', icon: 'fas fa-square-caret-down', description: 'Desplegables accesibles con menú en portal (estilados con Bootstrap).', component: SelectsDemo },
+  { id: 'toggle', label: 'ToggleGroup', title: 'ToggleGroup', icon: 'fas fa-toggle-on', description: 'Selección exclusiva de una opción.', component: ToggleDemo },
+  { id: 'tabs', label: 'Tabs', title: 'Tabs', icon: 'fas fa-window-maximize', component: TabsDemo },
+  { id: 'disclosure', label: 'Accordions', title: 'Accordion · Collapsible', icon: 'fas fa-list-ul', component: DisclosureDemo },
+  { id: 'progress', label: 'Progress bars', title: 'Progress', icon: 'fas fa-bars-progress', component: ProgressDemo },
+  { id: 'tree', label: 'Tree', title: 'Tree', icon: 'fas fa-sitemap', description: 'Árbol jerárquico navegable por teclado.', component: TreeDemo },
+  { id: 'table', label: 'Table', title: 'Table', icon: 'fas fa-table', description: 'Tabla de datos con orden, filtro, paginación y celdas a medida.', component: TableDemo },
+  { id: 'datagrid', label: 'DataGrid', title: 'DataGrid', icon: 'fas fa-table-cells', description: 'Envoltorio de ag-grid con el tema Robotbas: registra sus módulos y trae orden, filtros y paginación.', component: DataGridDemo },
+  { id: 'overlays', label: 'Modals', title: 'Modal · Popover', icon: 'fas fa-window-restore', description: 'Modales y popovers accesibles.', component: OverlaysDemo },
+  { id: 'notifications', label: 'Toasts', title: 'Toast · Toaster', icon: 'fas fa-bell', description: 'Notificaciones efímeras con useToast(). Aparecen abajo a la derecha y se autodescartan.', component: ToastDemo },
+  { id: 'navigation', label: 'SideBarLinks', title: 'SideBarLink · SideBarCheckbox', icon: 'fas fa-signs-post', description: 'Elementos de menú lateral: enlaces con badge y checkboxes con submenús.', component: NavigationDemo },
+  { id: 'sidebar', label: 'Sidebar', title: 'Sidebar · SidebarFooter', icon: 'fas fa-table-columns', description: 'El rail lateral completo que comparten RobotDesk y RobotAccount: cabecera con logo, control de contraer, menú y pie de usuario.', component: SidebarDemo },
+  { id: 'inventory', label: 'Inventario', title: 'Inventario completo', icon: 'fas fa-table-cells-large', description: 'Los 30 componentes del módulo, todos en uso en esta página.', component: InventoryDemo },
 ]

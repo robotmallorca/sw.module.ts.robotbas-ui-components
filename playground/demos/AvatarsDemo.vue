@@ -7,8 +7,8 @@
         <div class="d-flex gap-3 align-items-center">
           <RobotbasAvatar text="RB" />
           <RobotbasAvatar text="AL" />
-          <RobotbasAvatar icon="bi bi-person-fill" />
-          <RobotbasAvatar icon="bi bi-robot" />
+          <RobotbasAvatar icon="fas fa-user" />
+          <RobotbasAvatar icon="fas fa-robot" />
         </div>
       </DemoCard>
     </div>
@@ -16,7 +16,7 @@
       <DemoCard label="Con Chip de estado">
         <div class="d-flex gap-3 align-items-center">
           <RobotbasAvatar text="ON" :chip="{ ui: { base: 'chip-dot' } }" />
-          <RobotbasAvatar icon="bi bi-person-fill" :chip="{ inset: false , ui: { base: 'chip-dot' } }" />
+          <RobotbasAvatar icon="fas fa-user" :chip="{ inset: false , ui: { base: 'chip-dot' } }" />
         </div>
       </DemoCard>
     </div>

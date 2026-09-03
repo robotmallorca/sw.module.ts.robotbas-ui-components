@@ -58,13 +58,13 @@ function toggle() {
   <aside class="demo-sidebar">
     <div class="demo-sidebar__head">
       <a href="#top" class="demo-logo" aria-label="RobotBAS UI — inicio">
-        <span class="demo-logo__mark"><RobotbasIcon name="bi bi-boxes" /></span>
+        <span class="demo-logo__mark"><RobotbasIcon name="fas fa-cubes" /></span>
         <span class="demo-logo__text">RobotBAS <span class="demo-logo__accent">UI</span></span>
       </a>
       <RobotbasButton
         label=""
         :ui="{ root: 'demo-sidebar__toggle-btn' }"
-        :leading-icon="collapsed ? 'bi bi-chevron-double-right' : 'bi bi-chevron-double-left'"
+        :leading-icon="collapsed ? 'fas fa-angles-right' : 'fas fa-angles-left'"
         :aria-label="collapsed ? 'Expandir menú' : 'Contraer menú'"
         @click="toggle"
       />
@@ -89,7 +89,7 @@ function toggle() {
         target="_blank"
         rel="noopener"
       >
-        <RobotbasIcon name="bi bi-github" />
+        <RobotbasIcon name="fab fa-github" />
         <span class="text">Repositorio</span>
       </a>
     </div>

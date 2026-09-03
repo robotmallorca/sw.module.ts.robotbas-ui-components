@@ -23,16 +23,16 @@ const alertsOpen = ref(false)
           >
             <template #logo="{ compact: isCompact }">
               <span class="demo-rail-brand">
-                <RobotbasIcon name="bi bi-boxes" />
+                <RobotbasIcon name="fas fa-cubes" />
                 <span v-if="!isCompact">RobotBAS</span>
               </span>
             </template>
 
-            <SideBarLink label="Panel" link="#sidebar" leading-icon="bi bi-speedometer2" />
-            <SideBarLink label="Dispositivos" link="#sidebar" leading-icon="bi bi-hdd-network" :badge="12" />
+            <SideBarLink label="Panel" link="#sidebar" leading-icon="fas fa-gauge-high" />
+            <SideBarLink label="Dispositivos" link="#sidebar" leading-icon="fas fa-network-wired" :badge="12" />
             <SideBarLink
               label="Alertas"
-              leading-icon="bi bi-bell"
+              leading-icon="fas fa-bell"
               expandable
               :open="alertsOpen"
               @toggle-click="alertsOpen = !alertsOpen"
@@ -41,7 +41,7 @@ const alertsOpen = ref(false)
               <SideBarLink label="Activas" link="#sidebar" :submenu="1" :badge="3" />
               <SideBarLink label="Histórico" link="#sidebar" :submenu="1" />
             </template>
-            <SideBarLink label="Ajustes" link="#sidebar" leading-icon="bi bi-gear" />
+            <SideBarLink label="Ajustes" link="#sidebar" leading-icon="fas fa-gear" />
 
             <!-- El estado compacto NO se inyecta: viaja por el slot prop. -->
             <template #footer="{ compact: isCompact }">
@@ -55,18 +55,18 @@ const alertsOpen = ref(false)
                 <template #default="{ close }">
                   <li>
                     <button type="button" class="dropdown-item" @click="close">
-                      <i class="bi bi-person-gear" /> Perfil
+                      <i class="fas fa-user-cog" /> Perfil
                     </button>
                   </li>
                   <li>
                     <button type="button" class="dropdown-item" @click="close">
-                      <i class="bi bi-chat-left-text" /> Feedback
+                      <i class="fas fa-comment-dots" /> Feedback
                     </button>
                   </li>
                   <li><hr class="dropdown-divider"></li>
                   <li>
                     <button type="button" class="dropdown-item text-danger" @click="close">
-                      <i class="bi bi-box-arrow-right" /> Salir
+                      <i class="fas fa-sign-out-alt" /> Salir
                     </button>
                   </li>
                 </template>
@@ -78,7 +78,7 @@ const alertsOpen = ref(false)
         <div class="mt-3">
           <RobotbasButton
             :label="compact ? 'Expandir' : 'Contraer'"
-            :leading-icon="compact ? 'bi bi-chevron-double-right' : 'bi bi-chevron-double-left'"
+            :leading-icon="compact ? 'fas fa-angles-right' : 'fas fa-angles-left'"
             @click="compact = !compact"
           />
         </div>
@@ -91,12 +91,12 @@ const alertsOpen = ref(false)
           <RobotbasSidebar
             v-model:compact="compactAlways"
             :breakpoint="false"
-            toggle-icon="bi bi-chevron-double-left"
-            compact-toggle-icon="bi bi-chevron-double-right"
+            toggle-icon="fas fa-angles-left"
+            compact-toggle-icon="fas fa-angles-right"
           >
-            <SideBarLink label="Panel" link="#sidebar" leading-icon="bi bi-speedometer2" />
-            <SideBarLink label="Dispositivos" link="#sidebar" leading-icon="bi bi-hdd-network" :badge="12" />
-            <SideBarLink label="Ajustes" link="#sidebar" leading-icon="bi bi-gear" />
+            <SideBarLink label="Panel" link="#sidebar" leading-icon="fas fa-gauge-high" />
+            <SideBarLink label="Dispositivos" link="#sidebar" leading-icon="fas fa-network-wired" :badge="12" />
+            <SideBarLink label="Ajustes" link="#sidebar" leading-icon="fas fa-gear" />
           </RobotbasSidebar>
         </div>
       </DemoCard>

@@ -12,7 +12,7 @@ function scrollToSection(id: string) {
 <template>
   <header id="top" class="demo-hero">
     <div class="container-xl">
-      <span class="demo-hero__eyebrow"><RobotbasIcon name="bi bi-stars" /> Design System · RobotBAS</span>
+      <span class="demo-hero__eyebrow"><RobotbasIcon name="fas fa-wand-magic-sparkles" /> Design System · RobotBAS</span>
       <h1 class="demo-hero__title mt-3">
         Componentes <span class="grad">Robotbas*</span><br>listos para tus webapps
       </h1>
@@ -28,10 +28,10 @@ function scrollToSection(id: string) {
         <div class="demo-stat"><strong>SCSS</strong><br><span>tokens de marca</span></div>
       </div>
       <div class="d-flex flex-wrap gap-2 mt-4">
-        <RobotbasButton label="Ver componentes" leading-icon="bi bi-arrow-down-circle"
+        <RobotbasButton label="Ver componentes" leading-icon="fas fa-circle-arrow-down"
           @click="scrollToSection('tokens')" />
         <a class="btn btn-outline-secondary" href="https://github.com/robotmallorca/sw.module.ts.robotbas-ui-components"
-          target="_blank" rel="noopener"><RobotbasIcon name="bi bi-github me-1" /> Repositorio</a>
+          target="_blank" rel="noopener"><RobotbasIcon name="fab fa-github me-1" /> Repositorio</a>
       </div>
     </div>
   </header>

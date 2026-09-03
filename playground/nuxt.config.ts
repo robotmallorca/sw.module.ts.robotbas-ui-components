@@ -32,7 +32,10 @@ export default defineNuxtConfig({
   // los `<style scoped lang="scss">` de los componentes las resuelvan).
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
-    'bootstrap-icons/font/bootstrap-icons.css',
+    '@fortawesome/fontawesome-free/css/fontawesome.css',
+    '@fortawesome/fontawesome-free/css/solid.css',
+    // `fa-github` only exists in the brands family, not in solid.
+    '@fortawesome/fontawesome-free/css/brands.css',
     '~/assets/style/demo.scss',
   ],
 

@@ -125,8 +125,8 @@ const onToggleClick = () => {
           @click.stop.prevent="onToggleClick"
         />
         <!-- Default chevron drawn in CSS. The module cannot assume any icon
-             pack (bootstrap-icons is a devDependency, for the playground
-             only), so bare `expandable` has to work with no dependencies.
+             pack (Font Awesome is a devDependency, for the playground only),
+             so bare `expandable` has to work with no dependencies.
              Passing `trailing-icon` replaces it. -->
         <span
           v-else-if="expandable"

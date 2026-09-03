@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const showcaseIcons = [
-  'bi bi-house-door', 'bi bi-gear', 'bi bi-search', 'bi bi-bell',
-  'bi bi-person-circle', 'bi bi-cloud-arrow-up', 'bi bi-graph-up-arrow',
-  'bi bi-shield-check', 'bi bi-lightning-charge', 'bi bi-cpu',
-  'bi bi-diagram-3', 'bi bi-sliders',
+  'fas fa-house', 'fas fa-gear', 'fas fa-magnifying-glass', 'fas fa-bell',
+  'fas fa-circle-user', 'fas fa-cloud-arrow-up', 'fas fa-arrow-trend-up',
+  'fas fa-shield-halved', 'fas fa-bolt', 'fas fa-microchip',
+  'fas fa-sitemap', 'fas fa-sliders',
 ]
 </script>
 
