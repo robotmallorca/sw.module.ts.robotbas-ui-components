@@ -18,6 +18,7 @@ import DataGridDemo from './demos/DataGridDemo.vue'
 import OverlaysDemo from './demos/OverlaysDemo.vue'
 import ToastDemo from './demos/ToastDemo.vue'
 import NavigationDemo from './demos/NavigationDemo.vue'
+import SidebarDemo from './demos/SidebarDemo.vue'
 import InventoryDemo from './demos/InventoryDemo.vue'
 
 export interface ShowcaseSection {
@@ -62,5 +63,6 @@ export const sections: ShowcaseSection[] = [
   { id: 'overlays', label: 'Modals', title: 'Modal · Popover', icon: 'bi bi-window-stack', description: 'Modales y popovers accesibles.', component: OverlaysDemo },
   { id: 'notifications', label: 'Toasts', title: 'Toast · Toaster', icon: 'bi bi-bell', description: 'Notificaciones efímeras con useToast(). Aparecen abajo a la derecha y se autodescartan.', component: ToastDemo },
   { id: 'navigation', label: 'SideBarLinks', title: 'SideBarLink · SideBarCheckbox', icon: 'bi bi-signpost-split', description: 'Elementos de menú lateral: enlaces con badge y checkboxes con submenús.', component: NavigationDemo },
+  { id: 'sidebar', label: 'Sidebar', title: 'Sidebar · SidebarFooter', icon: 'bi bi-layout-sidebar', description: 'El rail lateral completo que comparten RobotDesk y RobotAccount: cabecera con logo, control de contraer, menú y pie de usuario.', component: SidebarDemo },
   { id: 'inventory', label: 'Inventario', title: 'Inventario completo', icon: 'bi bi-grid-3x3-gap', description: 'Los 30 componentes del módulo, todos en uso en esta página.', component: InventoryDemo },
 ]

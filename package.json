@@ -51,6 +51,7 @@
     "typecheck": "nuxi typecheck playground"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@nuxt/kit": "^3.16.0",
     "@standard-schema/spec": "^1.0.0",
     "@vueuse/core": "^13.0.0",
