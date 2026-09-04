@@ -68,9 +68,10 @@ describe("sidebar link", () => {
       });
 
       expect(component.find(".sidebarlink-caret").exists()).toBe(true);
-      // bootstrap-icons es devDependency: el componente publicado no puede
-      // asumirlo, así que no debe emitir clases `bi bi-*`.
-      expect(component.html()).not.toContain("bi-chevron");
+      // El pack de iconos es devDependency del playground: el componente
+      // publicado no puede asumirlo, así que no debe emitir clases de ninguno.
+      expect(component.html()).not.toContain("fa-");
+      expect(component.html()).not.toContain("bi-");
     });
 
     it("lets trailingIcon replace the CSS chevron", async () => {
