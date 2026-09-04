@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@fortawesome/fontawesome-free':
-        specifier: ^6.4.0
-        version: 6.7.2
       '@nuxt/kit':
         specifier: ^3.16.0
         version: 3.21.8(magicast@0.5.3)
@@ -33,6 +30,9 @@ importers:
         specifier: ^3.4.0
         version: 3.5.39(typescript@5.8.3)
     devDependencies:
+      '@fortawesome/fontawesome-free':
+        specifier: ^6.4.0
+        version: 6.7.2
       '@nuxt/eslint-config':
         specifier: ^1.3.0
         version: 1.16.0(@typescript-eslint/utils@8.62.0(eslint@9.39.4(jiti@2.7.0))(typescript@5.8.3))(@vue/compiler-sfc@3.5.39)(eslint@9.39.4(jiti@2.7.0))(typescript@5.8.3)

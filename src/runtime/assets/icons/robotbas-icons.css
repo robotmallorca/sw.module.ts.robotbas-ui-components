@@ -1,0 +1,1661 @@
+/* -------------------------------------------------------------------------
+ * RobotBAS icon font (RobotApps), Light and Bold.
+ *
+ * Generated from the icomoon export that used to live in RobotDesk under
+ * `src/assets/style/icons/`. Two things changed on the way in:
+ *
+ * 1. The original sheets each claimed `[class^="icon-"] { font-family: … !important }`
+ *    globally. A library must not seize every `icon-*` class in the consumer's
+ *    app, and loading both sheets made the second one win for ALL icons — which
+ *    is why `robotbas-icon-light` never actually rendered light in RobotDesk.
+ *    Here the family hangs off the marker class, so light is light and bold is
+ *    bold, and nothing outside `.robotbas-icon-*` is touched.
+ *
+ * 2. Only `.woff` ships. The `.eot` (IE11) and `.svg` (obsolete format) faces
+ *    were 917 KB of the original 1.3 MB.
+ *
+ * The two faces do NOT share codepoints — `caret-left` is \e9b3 in Light and
+ * \e949 in Bold — so each has its own block below. Never merge the selectors.
+ *
+ * Opt-in, like Font Awesome: the module does not inject this. Add it yourself:
+ *
+ *   css: ['@robotbas/ui/assets/icons/robotbas-icons.css']
+ *
+ * Usage: `<i class="robotbas-icon-light icon-projects" />`
+ * ------------------------------------------------------------------------- */
+
+@font-face {
+  font-family: 'RobotApps-Light';
+  src: url('./fonts/RobotApps-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'RobotApps-Bold';
+  src: url('./fonts/RobotApps-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.robotbas-icon-light,
+.robotbas-icon-bold {
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* !important mirrors the icomoon original: it guards against browser
+   extensions that force a font family on the page. */
+.robotbas-icon-light {
+  font-family: 'RobotApps-Light' !important;
+}
+
+.robotbas-icon-bold {
+  font-family: 'RobotApps-Bold' !important;
+}
+
+/* --- Light --- */
+
+.robotbas-icon-light.icon-alarm::before {
+  content: "\e900";
+}
+
+.robotbas-icon-light.icon-alarm-no::before {
+  content: "\e901";
+}
+
+.robotbas-icon-light.icon-back::before {
+  content: "\e9b4";
+}
+
+.robotbas-icon-light.icon-bed::before {
+  content: "\e9b6";
+}
+
+.robotbas-icon-light.icon-bed-sleep::before {
+  content: "\e9b5";
+}
+
+.robotbas-icon-light.icon-bolt::before {
+  content: "\e902";
+}
+
+.robotbas-icon-light.icon-bolt-2::before {
+  content: "\e903";
+}
+
+.robotbas-icon-light.icon-bolt-circle::before {
+  content: "\e904";
+}
+
+.robotbas-icon-light.icon-bolt-fill::before {
+  content: "\e905";
+}
+
+.robotbas-icon-light.icon-bolt-fill-2::before {
+  content: "\e906";
+}
+
+.robotbas-icon-light.icon-building::before {
+  content: "\e9a6";
+}
+
+.robotbas-icon-light.icon-building-fill::before {
+  content: "\e907";
+}
+
+.robotbas-icon-light.icon-building-plus::before {
+  content: "\e908";
+}
+
+.robotbas-icon-light.icon-building-settings::before {
+  content: "\e909";
+}
+
+.robotbas-icon-light.icon-button::before {
+  content: "\e90a";
+}
+
+.robotbas-icon-light.icon-calendar::before {
+  content: "\e90b";
+}
+
+.robotbas-icon-light.icon-calendar-2::before {
+  content: "\e90c";
+}
+
+.robotbas-icon-light.icon-calendar-fill::before {
+  content: "\e90d";
+}
+
+.robotbas-icon-light.icon-calendar-fill-2::before {
+  content: "\e90e";
+}
+
+.robotbas-icon-light.icon-cancel::before {
+  content: "\e90f";
+}
+
+.robotbas-icon-light.icon-caret-down::before {
+  content: "\e910";
+}
+
+.robotbas-icon-light.icon-caret-down-fill::before {
+  content: "\e981";
+}
+
+.robotbas-icon-light.icon-caret-left::before {
+  content: "\e9b3";
+}
+
+.robotbas-icon-light.icon-caret-left-fill::before {
+  content: "\e9b1";
+}
+
+.robotbas-icon-light.icon-caret-right::before {
+  content: "\e9af";
+}
+
+.robotbas-icon-light.icon-caret-right-fill::before {
+  content: "\e9b2";
+}
+
+.robotbas-icon-light.icon-caret-up::before {
+  content: "\e9b0";
+}
+
+.robotbas-icon-light.icon-caret-up-fill::before {
+  content: "\e911";
+}
+
+.robotbas-icon-light.icon-chartline::before {
+  content: "\e912";
+}
+
+.robotbas-icon-light.icon-check::before {
+  content: "\e913";
+}
+
+.robotbas-icon-light.icon-check-fill::before {
+  content: "\e914";
+}
+
+.robotbas-icon-light.icon-check-square::before {
+  content: "\e915";
+}
+
+.robotbas-icon-light.icon-chevron-down::before {
+  content: "\e916";
+}
+
+.robotbas-icon-light.icon-chevron-left::before {
+  content: "\e917";
+}
+
+.robotbas-icon-light.icon-chevron-right::before {
+  content: "\e918";
+}
+
+.robotbas-icon-light.icon-chevron-up::before {
+  content: "\e919";
+}
+
+.robotbas-icon-light.icon-chevrons-down::before {
+  content: "\e91a";
+}
+
+.robotbas-icon-light.icon-chevrons-left::before {
+  content: "\e98c";
+}
+
+.robotbas-icon-light.icon-chevrons-right::before {
+  content: "\e9c4";
+}
+
+.robotbas-icon-light.icon-chevrons-up::before {
+  content: "\e98e";
+}
+
+.robotbas-icon-light.icon-circle::before {
+  content: "\e9c6";
+}
+
+.robotbas-icon-light.icon-circle-down::before {
+  content: "\e98f";
+}
+
+.robotbas-icon-light.icon-circle-left::before {
+  content: "\e9c7";
+}
+
+.robotbas-icon-light.icon-circle-right::before {
+  content: "\e98d";
+}
+
+.robotbas-icon-light.icon-circle-up::before {
+  content: "\e9c5";
+}
+
+.robotbas-icon-light.icon-clip::before {
+  content: "\e91b";
+}
+
+.robotbas-icon-light.icon-cloud-check::before {
+  content: "\e91c";
+}
+
+.robotbas-icon-light.icon-cloud-down::before {
+  content: "\e91d";
+}
+
+.robotbas-icon-light.icon-cloud-up::before {
+  content: "\e9ba";
+}
+
+.robotbas-icon-light.icon-cold::before {
+  content: "\e990";
+}
+
+.robotbas-icon-light.icon-cold-heat::before {
+  content: "\e992";
+}
+
+.robotbas-icon-light.icon-connection::before {
+  content: "\e993";
+}
+
+.robotbas-icon-light.icon-connection-no::before {
+  content: "\e991";
+}
+
+.robotbas-icon-light.icon-copy::before {
+  content: "\e988";
+}
+
+.robotbas-icon-light.icon-correct::before {
+  content: "\e98a";
+}
+
+.robotbas-icon-light.icon-dashboard::before {
+  content: "\e98b";
+}
+
+.robotbas-icon-light.icon-dashboard-fill::before {
+  content: "\e989";
+}
+
+.robotbas-icon-light.icon-delete::before {
+  content: "\e987";
+}
+
+.robotbas-icon-light.icon-disabled::before {
+  content: "\e983";
+}
+
+.robotbas-icon-light.icon-door::before {
+  content: "\e985";
+}
+
+.robotbas-icon-light.icon-down::before {
+  content: "\e986";
+}
+
+.robotbas-icon-light.icon-download::before {
+  content: "\e984";
+}
+
+.robotbas-icon-light.icon-download-simple::before {
+  content: "\e91e";
+}
+
+.robotbas-icon-light.icon-drop::before {
+  content: "\e91f";
+}
+
+.robotbas-icon-light.icon-drop-fill::before {
+  content: "\e920";
+}
+
+.robotbas-icon-light.icon-drop-hot::before {
+  content: "\e921";
+}
+
+.robotbas-icon-light.icon-eco::before {
+  content: "\e922";
+}
+
+.robotbas-icon-light.icon-edit::before {
+  content: "\e923";
+}
+
+.robotbas-icon-light.icon-email::before {
+  content: "\e924";
+}
+
+.robotbas-icon-light.icon-email-read::before {
+  content: "\e925";
+}
+
+.robotbas-icon-light.icon-engine::before {
+  content: "\e926";
+}
+
+.robotbas-icon-light.icon-engine-fill::before {
+  content: "\e927";
+}
+
+.robotbas-icon-light.icon-erase::before {
+  content: "\e928";
+}
+
+.robotbas-icon-light.icon-error::before {
+  content: "\e929";
+}
+
+.robotbas-icon-light.icon-error-fill::before {
+  content: "\e92a";
+}
+
+.robotbas-icon-light.icon-expand::before {
+  content: "\e998";
+}
+
+.robotbas-icon-light.icon-expand-2::before {
+  content: "\e997";
+}
+
+.robotbas-icon-light.icon-eye::before {
+  content: "\e92b";
+}
+
+.robotbas-icon-light.icon-eye-no::before {
+  content: "\e92c";
+}
+
+.robotbas-icon-light.icon-fan-minus::before {
+  content: "\e92d";
+}
+
+.robotbas-icon-light.icon-fan-plus::before {
+  content: "\e9ae";
+}
+
+.robotbas-icon-light.icon-fancoil-0::before {
+  content: "\e9ad";
+}
+
+.robotbas-icon-light.icon-fancoil-1::before {
+  content: "\e9c0";
+}
+
+.robotbas-icon-light.icon-fancoil-2::before {
+  content: "\e9c2";
+}
+
+.robotbas-icon-light.icon-fancoil-3::before {
+  content: "\e92e";
+}
+
+.robotbas-icon-light.icon-file::before {
+  content: "\e92f";
+}
+
+.robotbas-icon-light.icon-file-add::before {
+  content: "\e930";
+}
+
+.robotbas-icon-light.icon-file-chart::before {
+  content: "\e931";
+}
+
+.robotbas-icon-light.icon-file-chartline::before {
+  content: "\e932";
+}
+
+.robotbas-icon-light.icon-file-download::before {
+  content: "\e933";
+}
+
+.robotbas-icon-light.icon-file-download-fill::before {
+  content: "\e934";
+}
+
+.robotbas-icon-light.icon-file-edit::before {
+  content: "\e935";
+}
+
+.robotbas-icon-light.icon-file-error::before {
+  content: "\e9a2";
+}
+
+.robotbas-icon-light.icon-file-fill::before {
+  content: "\e9a1";
+}
+
+.robotbas-icon-light.icon-file-find::before {
+  content: "\e936";
+}
+
+.robotbas-icon-light.icon-filter::before {
+  content: "\e937";
+}
+
+.robotbas-icon-light.icon-filter-cancel::before {
+  content: "\e9a4";
+}
+
+.robotbas-icon-light.icon-find::before {
+  content: "\e9a3";
+}
+
+.robotbas-icon-light.icon-flame::before {
+  content: "\e99e";
+}
+
+.robotbas-icon-light.icon-folder::before {
+  content: "\e99d";
+}
+
+.robotbas-icon-light.icon-folder-open::before {
+  content: "\e99c";
+}
+
+.robotbas-icon-light.icon-folder-plus::before {
+  content: "\e99b";
+}
+
+.robotbas-icon-light.icon-frown::before {
+  content: "\e99a";
+}
+
+.robotbas-icon-light.icon-frown-fill::before {
+  content: "\e938";
+}
+
+.robotbas-icon-light.icon-heat::before {
+  content: "\e939";
+}
+
+.robotbas-icon-light.icon-home::before {
+  content: "\e93a";
+}
+
+.robotbas-icon-light.icon-humidity::before {
+  content: "\e93b";
+}
+
+.robotbas-icon-light.icon-industry::before {
+  content: "\e93c";
+}
+
+.robotbas-icon-light.icon-industry-fill::before {
+  content: "\e93d";
+}
+
+.robotbas-icon-light.icon-info::before {
+  content: "\e93e";
+}
+
+.robotbas-icon-light.icon-info-fill::before {
+  content: "\e93f";
+}
+
+.robotbas-icon-light.icon-key::before {
+  content: "\e940";
+}
+
+.robotbas-icon-light.icon-laundry::before {
+  content: "\e941";
+}
+
+.robotbas-icon-light.icon-link::before {
+  content: "\e9a0";
+}
+
+.robotbas-icon-light.icon-list::before {
+  content: "\e99f";
+}
+
+.robotbas-icon-light.icon-lock::before {
+  content: "\e943";
+}
+
+.robotbas-icon-light.icon-logout::before {
+  content: "\e9c1";
+}
+
+.robotbas-icon-light.icon-maintenance::before {
+  content: "\e944";
+}
+
+.robotbas-icon-light.icon-marker::before {
+  content: "\e945";
+}
+
+.robotbas-icon-light.icon-medical-alarm::before {
+  content: "\e946";
+}
+
+.robotbas-icon-light.icon-meh::before {
+  content: "\e9a8";
+}
+
+.robotbas-icon-light.icon-meh-fill::before {
+  content: "\e9a7";
+}
+
+.robotbas-icon-light.icon-menu::before {
+  content: "\e947";
+}
+
+.robotbas-icon-light.icon-menu-big::before {
+  content: "\e948";
+}
+
+.robotbas-icon-light.icon-minus::before {
+  content: "\e9bf";
+}
+
+.robotbas-icon-light.icon-monitor::before {
+  content: "\e94a";
+}
+
+.robotbas-icon-light.icon-notes::before {
+  content: "\e94b";
+}
+
+.robotbas-icon-light.icon-password::before {
+  content: "\e94c";
+}
+
+.robotbas-icon-light.icon-password-fill::before {
+  content: "\e94d";
+}
+
+.robotbas-icon-light.icon-paste::before {
+  content: "\e94e";
+}
+
+.robotbas-icon-light.icon-plug::before {
+  content: "\e9b7";
+}
+
+.robotbas-icon-light.icon-plus::before {
+  content: "\e94f";
+}
+
+.robotbas-icon-light.icon-presence::before {
+  content: "\e950";
+}
+
+.robotbas-icon-light.icon-print::before {
+  content: "\e951";
+}
+
+.robotbas-icon-light.icon-print-fill::before {
+  content: "\e952";
+}
+
+.robotbas-icon-light.icon-prohibited::before {
+  content: "\e953";
+}
+
+.robotbas-icon-light.icon-projects::before {
+  content: "\e954";
+}
+
+.robotbas-icon-light.icon-question::before {
+  content: "\e995";
+}
+
+.robotbas-icon-light.icon-question-fill::before {
+  content: "\e9aa";
+}
+
+.robotbas-icon-light.icon-radiant::before {
+  content: "\e9a9";
+}
+
+.robotbas-icon-light.icon-radiant-floor::before {
+  content: "\e955";
+}
+
+.robotbas-icon-light.icon-refresh::before {
+  content: "\e999";
+}
+
+.robotbas-icon-light.icon-report::before {
+  content: "\e994";
+}
+
+.robotbas-icon-light.icon-save::before {
+  content: "\e956";
+}
+
+.robotbas-icon-light.icon-save-fill::before {
+  content: "\e9bd";
+}
+
+.robotbas-icon-light.icon-sell::before {
+  content: "\e957";
+}
+
+.robotbas-icon-light.icon-sell-no::before {
+  content: "\e958";
+}
+
+.robotbas-icon-light.icon-settings::before {
+  content: "\e959";
+}
+
+.robotbas-icon-light.icon-settings-vertical::before {
+  content: "\e95a";
+}
+
+.robotbas-icon-light.icon-signal-1::before {
+  content: "\e95b";
+}
+
+.robotbas-icon-light.icon-signal-2::before {
+  content: "\e9b8";
+}
+
+.robotbas-icon-light.icon-signal-3::before {
+  content: "\e980";
+}
+
+.robotbas-icon-light.icon-signal-4::before {
+  content: "\e97f";
+}
+
+.robotbas-icon-light.icon-signal-full::before {
+  content: "\e95c";
+}
+
+.robotbas-icon-light.icon-signal-no::before {
+  content: "\e95d";
+}
+
+.robotbas-icon-light.icon-smile::before {
+  content: "\e95e";
+}
+
+.robotbas-icon-light.icon-smile-fill::before {
+  content: "\e95f";
+}
+
+.robotbas-icon-light.icon-square-empty::before {
+  content: "\e9c3";
+}
+
+.robotbas-icon-light.icon-star::before {
+  content: "\e942";
+}
+
+.robotbas-icon-light.icon-star-fill::before {
+  content: "\e960";
+}
+
+.robotbas-icon-light.icon-statistic::before {
+  content: "\e961";
+}
+
+.robotbas-icon-light.icon-swap::before {
+  content: "\e962";
+}
+
+.robotbas-icon-light.icon-tag::before {
+  content: "\e963";
+}
+
+.robotbas-icon-light.icon-temperature::before {
+  content: "\e9bc";
+}
+
+.robotbas-icon-light.icon-time-1::before {
+  content: "\e9bb";
+}
+
+.robotbas-icon-light.icon-time-2::before {
+  content: "\e964";
+}
+
+.robotbas-icon-light.icon-trash::before {
+  content: "\e965";
+}
+
+.robotbas-icon-light.icon-tray::before {
+  content: "\e966";
+}
+
+.robotbas-icon-light.icon-unlock::before {
+  content: "\e967";
+}
+
+.robotbas-icon-light.icon-up::before {
+  content: "\e968";
+}
+
+.robotbas-icon-light.icon-user::before {
+  content: "\e969";
+}
+
+.robotbas-icon-light.icon-user-fill::before {
+  content: "\e96a";
+}
+
+.robotbas-icon-light.icon-user-key::before {
+  content: "\e96b";
+}
+
+.robotbas-icon-light.icon-user-plus::before {
+  content: "\e9ac";
+}
+
+.robotbas-icon-light.icon-user-round::before {
+  content: "\e9ab";
+}
+
+.robotbas-icon-light.icon-user-round-plus::before {
+  content: "\e9b9";
+}
+
+.robotbas-icon-light.icon-users::before {
+  content: "\e96c";
+}
+
+.robotbas-icon-light.icon-users-fill::before {
+  content: "\e9a5";
+}
+
+.robotbas-icon-light.icon-warning::before {
+  content: "\e96d";
+}
+
+.robotbas-icon-light.icon-warning-fill::before {
+  content: "\e982";
+}
+
+.robotbas-icon-light.icon-window::before {
+  content: "\e96e";
+}
+
+.robotbas-icon-light.icon-\e96f::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e970::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e971::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e972::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e9be::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e973::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e974::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e975::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e976::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e977::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e978::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e979::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e97a::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e97b::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e97c::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e97e::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e97d::before {
+  content: "";
+}
+
+.robotbas-icon-light.icon-\e996::before {
+  content: "";
+}
+
+/* --- Bold --- */
+
+.robotbas-icon-bold.icon-alarm::before {
+  content: "\e900";
+}
+
+.robotbas-icon-bold.icon-alarm-no::before {
+  content: "\e901";
+}
+
+.robotbas-icon-bold.icon-back::before {
+  content: "\e9b4";
+}
+
+.robotbas-icon-bold.icon-bed::before {
+  content: "\e9b6";
+}
+
+.robotbas-icon-bold.icon-bed-sleep::before {
+  content: "\e9b5";
+}
+
+.robotbas-icon-bold.icon-bolt::before {
+  content: "\e902";
+}
+
+.robotbas-icon-bold.icon-bolt-2::before {
+  content: "\e903";
+}
+
+.robotbas-icon-bold.icon-bolt-circle::before {
+  content: "\e904";
+}
+
+.robotbas-icon-bold.icon-bolt-fill::before {
+  content: "\e905";
+}
+
+.robotbas-icon-bold.icon-bolt-fill-2::before {
+  content: "\e906";
+}
+
+.robotbas-icon-bold.icon-building::before {
+  content: "\e9a6";
+}
+
+.robotbas-icon-bold.icon-building-fill::before {
+  content: "\e907";
+}
+
+.robotbas-icon-bold.icon-building-plus::before {
+  content: "\e908";
+}
+
+.robotbas-icon-bold.icon-building-settings::before {
+  content: "\e909";
+}
+
+.robotbas-icon-bold.icon-button::before {
+  content: "\e90a";
+}
+
+.robotbas-icon-bold.icon-calendar::before {
+  content: "\e90b";
+}
+
+.robotbas-icon-bold.icon-calendar-2::before {
+  content: "\e90c";
+}
+
+.robotbas-icon-bold.icon-calendar-fill::before {
+  content: "\e90d";
+}
+
+.robotbas-icon-bold.icon-calendar-fill-2::before {
+  content: "\e90e";
+}
+
+.robotbas-icon-bold.icon-cancel::before {
+  content: "\e90f";
+}
+
+.robotbas-icon-bold.icon-caret-down::before {
+  content: "\e910";
+}
+
+.robotbas-icon-bold.icon-caret-down-fill::before {
+  content: "\e981";
+}
+
+.robotbas-icon-bold.icon-caret-left::before {
+  content: "\e949";
+}
+
+.robotbas-icon-bold.icon-caret-left-fill::before {
+  content: "\e9ad";
+}
+
+.robotbas-icon-bold.icon-caret-right::before {
+  content: "\e9ae";
+}
+
+.robotbas-icon-bold.icon-caret-right-fill::before {
+  content: "\e9af";
+}
+
+.robotbas-icon-bold.icon-caret-up::before {
+  content: "\e9b0";
+}
+
+.robotbas-icon-bold.icon-caret-up-fill::before {
+  content: "\e911";
+}
+
+.robotbas-icon-bold.icon-chartline::before {
+  content: "\e912";
+}
+
+.robotbas-icon-bold.icon-check::before {
+  content: "\e913";
+}
+
+.robotbas-icon-bold.icon-check-fill::before {
+  content: "\e914";
+}
+
+.robotbas-icon-bold.icon-checks-quare::before {
+  content: "\e915";
+}
+
+.robotbas-icon-bold.icon-chevron-down::before {
+  content: "\e916";
+}
+
+.robotbas-icon-bold.icon-chevron-left::before {
+  content: "\e917";
+}
+
+.robotbas-icon-bold.icon-chevron-right::before {
+  content: "\e918";
+}
+
+.robotbas-icon-bold.icon-chevron-up::before {
+  content: "\e919";
+}
+
+.robotbas-icon-bold.icon-chevrons-down::before {
+  content: "\e91a";
+}
+
+.robotbas-icon-bold.icon-chevrons-left::before {
+  content: "\e98c";
+}
+
+.robotbas-icon-bold.icon-chevrons-right::before {
+  content: "\e9b1";
+}
+
+.robotbas-icon-bold.icon-chevrons-up::before {
+  content: "\e98e";
+}
+
+.robotbas-icon-bold.icon-circle::before {
+  content: "\e9b2";
+}
+
+.robotbas-icon-bold.icon-circle-down::before {
+  content: "\e98f";
+}
+
+.robotbas-icon-bold.icon-circle-left::before {
+  content: "\e9b3";
+}
+
+.robotbas-icon-bold.icon-circle-right::before {
+  content: "\e98d";
+}
+
+.robotbas-icon-bold.icon-circle-up::before {
+  content: "\e9bf";
+}
+
+.robotbas-icon-bold.icon-clip::before {
+  content: "\e91b";
+}
+
+.robotbas-icon-bold.icon-cloud-check::before {
+  content: "\e91c";
+}
+
+.robotbas-icon-bold.icon-cloud-down::before {
+  content: "\e91d";
+}
+
+.robotbas-icon-bold.icon-cloud-up::before {
+  content: "\e9ba";
+}
+
+.robotbas-icon-bold.icon-cold::before {
+  content: "\e990";
+}
+
+.robotbas-icon-bold.icon-cold-heat::before {
+  content: "\e992";
+}
+
+.robotbas-icon-bold.icon-connection::before {
+  content: "\e993";
+}
+
+.robotbas-icon-bold.icon-connection-no::before {
+  content: "\e991";
+}
+
+.robotbas-icon-bold.icon-copy::before {
+  content: "\e988";
+}
+
+.robotbas-icon-bold.icon-correct::before {
+  content: "\e98a";
+}
+
+.robotbas-icon-bold.icon-dashboard::before {
+  content: "\e98b";
+}
+
+.robotbas-icon-bold.icon-dashboard-fill::before {
+  content: "\e989";
+}
+
+.robotbas-icon-bold.icon-delete::before {
+  content: "\e987";
+}
+
+.robotbas-icon-bold.icon-disabled::before {
+  content: "\e983";
+}
+
+.robotbas-icon-bold.icon-door::before {
+  content: "\e985";
+}
+
+.robotbas-icon-bold.icon-down::before {
+  content: "\e986";
+}
+
+.robotbas-icon-bold.icon-download::before {
+  content: "\e984";
+}
+
+.robotbas-icon-bold.icon-download-simple::before {
+  content: "\e91e";
+}
+
+.robotbas-icon-bold.icon-drop::before {
+  content: "\e91f";
+}
+
+.robotbas-icon-bold.icon-drop-fill::before {
+  content: "\e920";
+}
+
+.robotbas-icon-bold.icon-drop-hot::before {
+  content: "\e921";
+}
+
+.robotbas-icon-bold.icon-eco::before {
+  content: "\e922";
+}
+
+.robotbas-icon-bold.icon-edit::before {
+  content: "\e923";
+}
+
+.robotbas-icon-bold.icon-email::before {
+  content: "\e924";
+}
+
+.robotbas-icon-bold.icon-email-read::before {
+  content: "\e925";
+}
+
+.robotbas-icon-bold.icon-engine::before {
+  content: "\e926";
+}
+
+.robotbas-icon-bold.icon-engine-fill::before {
+  content: "\e927";
+}
+
+.robotbas-icon-bold.icon-erase::before {
+  content: "\e928";
+}
+
+.robotbas-icon-bold.icon-error::before {
+  content: "\e929";
+}
+
+.robotbas-icon-bold.icon-error-fill::before {
+  content: "\e92a";
+}
+
+.robotbas-icon-bold.icon-expand::before {
+  content: "\e998";
+}
+
+.robotbas-icon-bold.icon-expand-2::before {
+  content: "\e997";
+}
+
+.robotbas-icon-bold.icon-eye-no::before {
+  content: "\e92b";
+}
+
+.robotbas-icon-bold.icon-eye::before {
+  content: "\e92c";
+}
+
+.robotbas-icon-bold.icon-fan-minus::before {
+  content: "\e92d";
+}
+
+.robotbas-icon-bold.icon-fan-plus::before {
+  content: "\e9c0";
+}
+
+.robotbas-icon-bold.icon-fancoil-0::before {
+  content: "\e9c1";
+}
+
+.robotbas-icon-bold.icon-fancoil-1::before {
+  content: "\e9c2";
+}
+
+.robotbas-icon-bold.icon-fancoil-2::before {
+  content: "\e9c3";
+}
+
+.robotbas-icon-bold.icon-fancoil-3::before {
+  content: "\e92e";
+}
+
+.robotbas-icon-bold.icon-file::before {
+  content: "\e92f";
+}
+
+.robotbas-icon-bold.icon-file-add::before {
+  content: "\e930";
+}
+
+.robotbas-icon-bold.icon-file-chart::before {
+  content: "\e931";
+}
+
+.robotbas-icon-bold.icon-file-chartline::before {
+  content: "\e932";
+}
+
+.robotbas-icon-bold.icon-file-download::before {
+  content: "\e933";
+}
+
+.robotbas-icon-bold.icon-file-download-fill::before {
+  content: "\e934";
+}
+
+.robotbas-icon-bold.icon-file-edit::before {
+  content: "\e935";
+}
+
+.robotbas-icon-bold.icon-file-error::before {
+  content: "\e9a2";
+}
+
+.robotbas-icon-bold.icon-file-fill::before {
+  content: "\e9a1";
+}
+
+.robotbas-icon-bold.icon-file-find::before {
+  content: "\e937";
+}
+
+.robotbas-icon-bold.icon-filter::before {
+  content: "\e936";
+}
+
+.robotbas-icon-bold.icon-filter-cancel::before {
+  content: "\e9a4";
+}
+
+.robotbas-icon-bold.icon-find::before {
+  content: "\e9a3";
+}
+
+.robotbas-icon-bold.icon-flame::before {
+  content: "\e99e";
+}
+
+.robotbas-icon-bold.icon-folder::before {
+  content: "\e99d";
+}
+
+.robotbas-icon-bold.icon-folder-open::before {
+  content: "\e99c";
+}
+
+.robotbas-icon-bold.icon-folder-plus::before {
+  content: "\e99b";
+}
+
+.robotbas-icon-bold.icon-frown::before {
+  content: "\e99a";
+}
+
+.robotbas-icon-bold.icon-frown-fill::before {
+  content: "\e938";
+}
+
+.robotbas-icon-bold.icon-heat::before {
+  content: "\e939";
+}
+
+.robotbas-icon-bold.icon-home::before {
+  content: "\e93a";
+}
+
+.robotbas-icon-bold.icon-humidity::before {
+  content: "\e93b";
+}
+
+.robotbas-icon-bold.icon-industry::before {
+  content: "\e93c";
+}
+
+.robotbas-icon-bold.icon-industry-fill::before {
+  content: "\e93d";
+}
+
+.robotbas-icon-bold.icon-info::before {
+  content: "\e93e";
+}
+
+.robotbas-icon-bold.icon-info-fill::before {
+  content: "\e93f";
+}
+
+.robotbas-icon-bold.icon-key::before {
+  content: "\e940";
+}
+
+.robotbas-icon-bold.icon-laundry::before {
+  content: "\e941";
+}
+
+.robotbas-icon-bold.icon-link::before {
+  content: "\e9a0";
+}
+
+.robotbas-icon-bold.icon-list::before {
+  content: "\e99f";
+}
+
+.robotbas-icon-bold.icon-lock::before {
+  content: "\e943";
+}
+
+.robotbas-icon-bold.icon-logout::before {
+  content: "\e9c4";
+}
+
+.robotbas-icon-bold.icon-maintenance::before {
+  content: "\e944";
+}
+
+.robotbas-icon-bold.icon-marker::before {
+  content: "\e945";
+}
+
+.robotbas-icon-bold.icon-medical-alarm::before {
+  content: "\e946";
+}
+
+.robotbas-icon-bold.icon-meh::before {
+  content: "\e9a8";
+}
+
+.robotbas-icon-bold.icon-meh-fill::before {
+  content: "\e9a7";
+}
+
+.robotbas-icon-bold.icon-menu::before {
+  content: "\e947";
+}
+
+.robotbas-icon-bold.icon-menu-big::before {
+  content: "\e948";
+}
+
+.robotbas-icon-bold.icon-minus::before {
+  content: "\e9c5";
+}
+
+.robotbas-icon-bold.icon-monitor::before {
+  content: "\e94a";
+}
+
+.robotbas-icon-bold.icon-notes::before {
+  content: "\e94b";
+}
+
+.robotbas-icon-bold.icon-password::before {
+  content: "\e94c";
+}
+
+.robotbas-icon-bold.icon-password-fill::before {
+  content: "\e94d";
+}
+
+.robotbas-icon-bold.icon-paste::before {
+  content: "\e94e";
+}
+
+.robotbas-icon-bold.icon-plug::before {
+  content: "\e9b7";
+}
+
+.robotbas-icon-bold.icon-plus::before {
+  content: "\e94f";
+}
+
+.robotbas-icon-bold.icon-presence::before {
+  content: "\e950";
+}
+
+.robotbas-icon-bold.icon-print::before {
+  content: "\e951";
+}
+
+.robotbas-icon-bold.icon-print-fill::before {
+  content: "\e952";
+}
+
+.robotbas-icon-bold.icon-prohibited::before {
+  content: "\e953";
+}
+
+.robotbas-icon-bold.icon-projects::before {
+  content: "\e954";
+}
+
+.robotbas-icon-bold.icon-question::before {
+  content: "\e995";
+}
+
+.robotbas-icon-bold.icon-question-fill::before {
+  content: "\e9aa";
+}
+
+.robotbas-icon-bold.icon-radiant::before {
+  content: "\e9a9";
+}
+
+.robotbas-icon-bold.icon-radiant-floor::before {
+  content: "\e955";
+}
+
+.robotbas-icon-bold.icon-refresh::before {
+  content: "\e999";
+}
+
+.robotbas-icon-bold.icon-report::before {
+  content: "\e994";
+}
+
+.robotbas-icon-bold.icon-save::before {
+  content: "\e956";
+}
+
+.robotbas-icon-bold.icon-save-fill::before {
+  content: "\e9bd";
+}
+
+.robotbas-icon-bold.icon-sell::before {
+  content: "\e957";
+}
+
+.robotbas-icon-bold.icon-sell-no::before {
+  content: "\e958";
+}
+
+.robotbas-icon-bold.icon-settings::before {
+  content: "\e959";
+}
+
+.robotbas-icon-bold.icon-settings-vertical::before {
+  content: "\e95a";
+}
+
+.robotbas-icon-bold.icon-signal-1::before {
+  content: "\e95b";
+}
+
+.robotbas-icon-bold.icon-signal-2::before {
+  content: "\e9b8";
+}
+
+.robotbas-icon-bold.icon-signal-3::before {
+  content: "\e980";
+}
+
+.robotbas-icon-bold.icon-signal-4::before {
+  content: "\e97f";
+}
+
+.robotbas-icon-bold.icon-signal-full::before {
+  content: "\e95c";
+}
+
+.robotbas-icon-bold.icon-signal-no::before {
+  content: "\e95d";
+}
+
+.robotbas-icon-bold.icon-smile::before {
+  content: "\e95e";
+}
+
+.robotbas-icon-bold.icon-smile-fill::before {
+  content: "\e95f";
+}
+
+.robotbas-icon-bold.icon-square-empty::before {
+  content: "\e9c6";
+}
+
+.robotbas-icon-bold.icon-star::before {
+  content: "\e942";
+}
+
+.robotbas-icon-bold.icon-star-fill::before {
+  content: "\e960";
+}
+
+.robotbas-icon-bold.icon-statistic::before {
+  content: "\e961";
+}
+
+.robotbas-icon-bold.icon-swap::before {
+  content: "\e962";
+}
+
+.robotbas-icon-bold.icon-tag::before {
+  content: "\e963";
+}
+
+.robotbas-icon-bold.icon-temperature::before {
+  content: "\e9bc";
+}
+
+.robotbas-icon-bold.icon-time-1::before {
+  content: "\e9bb";
+}
+
+.robotbas-icon-bold.icon-time-2::before {
+  content: "\e964";
+}
+
+.robotbas-icon-bold.icon-trash::before {
+  content: "\e965";
+}
+
+.robotbas-icon-bold.icon-tray::before {
+  content: "\e966";
+}
+
+.robotbas-icon-bold.icon-unlock::before {
+  content: "\e967";
+}
+
+.robotbas-icon-bold.icon-up::before {
+  content: "\e968";
+}
+
+.robotbas-icon-bold.icon-user::before {
+  content: "\e969";
+}
+
+.robotbas-icon-bold.icon-user-fill::before {
+  content: "\e96a";
+}
+
+.robotbas-icon-bold.icon-user-key::before {
+  content: "\e96b";
+}
+
+.robotbas-icon-bold.icon-user-plus::before {
+  content: "\e9ac";
+}
+
+.robotbas-icon-bold.icon-user-round::before {
+  content: "\e9ab";
+}
+
+.robotbas-icon-bold.icon-user-round-plus::before {
+  content: "\e9b9";
+}
+
+.robotbas-icon-bold.icon-users::before {
+  content: "\e96c";
+}
+
+.robotbas-icon-bold.icon-users-fill::before {
+  content: "\e9a5";
+}
+
+.robotbas-icon-bold.icon-warning::before {
+  content: "\e96d";
+}
+
+.robotbas-icon-bold.icon-warning-fill::before {
+  content: "\e982";
+}
+
+.robotbas-icon-bold.icon-window::before {
+  content: "\e96e";
+}
+
+.robotbas-icon-bold.icon-\e96f::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e970::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e971::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e972::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e9be::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e973::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e974::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e975::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e976::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e977::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e978::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e979::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e97a::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e97b::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e97c::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e97e::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e97d::before {
+  content: "";
+}
+
+.robotbas-icon-bold.icon-\e996::before {
+  content: "";
+}
+
