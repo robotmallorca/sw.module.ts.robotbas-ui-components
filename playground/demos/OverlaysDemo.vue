@@ -5,7 +5,7 @@
     <div class="d-flex flex-wrap gap-2">
       <RobotbasModal title="Confirmar acción" description="Esta operación reiniciará el controlador seleccionado."
         :close="false" :ui="{ dialog: 'modal-dialog modal-dialog-centered' }">
-        <RobotbasButton label="Abrir Modal" leading-icon="bi bi-window" />
+        <RobotbasButton label="Abrir Modal" leading-icon="fas fa-window-maximize" />
         <template #body>
           <p class="text-muted mb-0">
             El dispositivo estará inaccesible durante unos segundos mientras se reinicia.
@@ -19,7 +19,7 @@
       </RobotbasModal>
 
       <RobotbasPopover :arrow="true">
-        <RobotbasButton label="Abrir Popover" leading-icon="bi bi-chat-square-text"
+        <RobotbasButton label="Abrir Popover" leading-icon="fas fa-comment-dots"
           :ui="{ root: 'btn btn-outline-primary' }" />
         <template #content>
           <div class="popover-body-demo">

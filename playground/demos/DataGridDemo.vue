@@ -70,7 +70,7 @@ function simulateLoading() {
             <div class="d-flex align-items-center gap-2">
               <RobotbasButton
                 label="Simular carga"
-                leading-icon="bi bi-arrow-repeat"
+                leading-icon="fas fa-arrows-rotate"
                 :ui="{ root: 'btn btn-outline-secondary btn-sm' }"
                 @click="simulateLoading"
               />

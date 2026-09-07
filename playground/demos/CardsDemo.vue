@@ -10,7 +10,7 @@ const load = ref(65)
       <RobotbasCard>
         <template #header>
           <div class="d-flex align-items-center justify-content-between">
-            <span class="fw-semibold"><RobotbasIcon name="bi bi-cpu me-2 text-primary" />Controlador HVAC</span>
+            <span class="fw-semibold"><RobotbasIcon name="fas fa-microchip me-2 text-primary" />Controlador HVAC</span>
             <RobotbasBadge label="Activo" color-hex="#0f5132" background-color-hex="#d1e7dd" />
           </div>
         </template>
@@ -34,7 +34,7 @@ const load = ref(65)
     <div class="col-lg-4">
       <RobotbasCard>
         <div class="text-center py-3">
-          <RobotbasIcon name="bi bi-graph-up-arrow fs-1 text-primary" />
+          <RobotbasIcon name="fas fa-arrow-trend-up fs-1 text-primary" />
           <div class="fs-3 fw-bold mt-2">1.284</div>
           <div class="text-muted">lecturas hoy</div>
         </div>

@@ -1,0 +1,67 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasTopbar > renders default correctly 1`] = `
+"<div data-v-61e0b743="" class="robot-top-bar">
+  <div data-v-61e0b743="" class="top-bar-title">
+    <div data-v-61e0b743="" class="icons-nav-robot"></div>
+  </div>
+  <div data-v-61e0b743="" class="top-bar-trailing"></div>
+</div>"
+`;
+
+exports[`RobotbasTopbar > renders with a breadcrumb title correctly 1`] = `
+"<div data-v-61e0b743="" class="robot-top-bar">
+  <div data-v-61e0b743="" class="top-bar-title">
+    <div data-v-61e0b743="" class="icons-nav-robot"></div>
+    <!--v-if-->
+    <div data-v-61e0b743="" class="title-text">Hotel Miramar</div>
+    <div data-v-61e0b743="" class="title-separator">/</div>
+    <div data-v-61e0b743="" class="title-text">Rooms</div>
+  </div>
+  <div data-v-61e0b743="" class="top-bar-trailing"></div>
+</div>"
+`;
+
+exports[`RobotbasTopbar > renders with a plain title correctly 1`] = `
+"<div data-v-61e0b743="" class="robot-top-bar">
+  <div data-v-61e0b743="" class="top-bar-title">
+    <div data-v-61e0b743="" class="icons-nav-robot"></div>
+    <!--v-if-->
+    <div data-v-61e0b743="" class="title-text">Audit Logs</div>
+  </div>
+  <div data-v-61e0b743="" class="top-bar-trailing"></div>
+</div>"
+`;
+
+exports[`RobotbasTopbar > renders with a trailing slot correctly 1`] = `
+"<div data-v-61e0b743="" class="robot-top-bar">
+  <div data-v-61e0b743="" class="top-bar-title">
+    <div data-v-61e0b743="" class="icons-nav-robot"></div>
+    <!--v-if-->
+    <div data-v-61e0b743="" class="title-text">Rooms</div>
+  </div>
+  <div data-v-61e0b743="" class="top-bar-trailing">@RobotAccount - v1.2.3</div>
+</div>"
+`;
+
+exports[`RobotbasTopbar > renders with an icon correctly 1`] = `
+"<div data-v-61e0b743="" class="robot-top-bar">
+  <div data-v-61e0b743="" class="top-bar-title">
+    <div data-v-61e0b743="" class="icons-nav-robot"><i class="robotbas-icon-light icon-bed"></i></div>
+    <!--v-if-->
+    <div data-v-61e0b743="" class="title-text">Rooms</div>
+  </div>
+  <div data-v-61e0b743="" class="top-bar-trailing"></div>
+</div>"
+`;
+
+exports[`RobotbasTopbar > renders with ui correctly 1`] = `
+"<div data-v-61e0b743="" class="robot-top-bar shadow-sm">
+  <div data-v-61e0b743="" class="top-bar-title">
+    <div data-v-61e0b743="" class="icons-nav-robot"></div>
+    <!--v-if-->
+    <div data-v-61e0b743="" class="title-text">Rooms</div>
+  </div>
+  <div data-v-61e0b743="" class="top-bar-trailing"></div>
+</div>"
+`;

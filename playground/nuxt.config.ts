@@ -32,7 +32,14 @@ export default defineNuxtConfig({
   // los `<style scoped lang="scss">` de los componentes las resuelvan).
   css: [
     'bootstrap/dist/css/bootstrap.min.css',
-    'bootstrap-icons/font/bootstrap-icons.css',
+    '@fortawesome/fontawesome-free/css/fontawesome.css',
+    '@fortawesome/fontawesome-free/css/solid.css',
+    // `fa-github` only exists in the brands family, not in solid.
+    '@fortawesome/fontawesome-free/css/brands.css',
+    // La fuente propia de RobotBAS que publica el módulo. Aquí se referencia por
+    // ruta relativa porque el playground ES el repo; un consumidor la pide como
+    // '@robotbas/ui/assets/icons/robotbas-icons.css'.
+    '../src/runtime/assets/icons/robotbas-icons.css',
     '~/assets/style/demo.scss',
   ],
 

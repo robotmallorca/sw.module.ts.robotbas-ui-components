@@ -5,7 +5,7 @@
 defineProps<{
   id: string
   title: string
-  /** Clase(s) del icono Bootstrap del encabezado, p. ej. 'bi bi-award'. */
+  /** Clase(s) del icono Bootstrap del encabezado, p. ej. 'fas fa-award'. */
   icon: string
   description?: string
 }>()

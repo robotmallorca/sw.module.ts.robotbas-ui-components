@@ -79,6 +79,10 @@ export interface RobotbasTableProps<Row = any> {
   sortAscIcon?: string
   /** Icono de orden descendente. */
   sortDescIcon?: string
+  /** Icono del botón "página anterior" de la paginación. */
+  prevPageIcon?: string
+  /** Icono del botón "página siguiente" de la paginación. */
+  nextPageIcon?: string
   class?: any
   ui?: RobotbasTableUI
 }
@@ -96,9 +100,14 @@ const props = withDefaults(defineProps<RobotbasTableProps<Row>>(), {
   rowKey: 'id',
   noDataLabel: 'No data available',
   loadingLabel: 'Loading...',
-  sortIcon: 'bi bi-arrow-down-up',
-  sortAscIcon: 'bi bi-caret-up-fill',
-  sortDescIcon: 'bi bi-caret-down-fill',
+  // Los defaults son de Font Awesome, el pack de las apps RobotBAS. Son props
+  // justamente para que un consumidor que no lo cargue pueda pasar los suyos:
+  // el componente publicado no debe obligar a un pack concreto.
+  sortIcon: 'fas fa-sort',
+  sortAscIcon: 'fas fa-sort-up',
+  sortDescIcon: 'fas fa-sort-down',
+  prevPageIcon: 'fas fa-chevron-left',
+  nextPageIcon: 'fas fa-chevron-right',
 })
 
 const emit = defineEmits<RobotbasTableEmits>()
@@ -451,7 +460,7 @@ const hasTop = computed(() => !!props.title)
           aria-label="Previous page"
           @click="goToPage(page - 1)"
         >
-          <RobotbasIcon name="bi bi-chevron-left" />
+          <RobotbasIcon :name="prevPageIcon" />
         </button>
         <button
           type="button"
@@ -460,7 +469,7 @@ const hasTop = computed(() => !!props.title)
           aria-label="Next page"
           @click="goToPage(page + 1)"
         >
-          <RobotbasIcon name="bi bi-chevron-right" />
+          <RobotbasIcon :name="nextPageIcon" />
         </button>
       </div>
     </div>

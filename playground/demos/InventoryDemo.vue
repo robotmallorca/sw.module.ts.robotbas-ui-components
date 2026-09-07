@@ -10,7 +10,7 @@ import { componentInventory } from '../data/components'
         <div>
           <div class="fw-semibold d-flex align-items-center gap-2">
             {{ c.name }}
-            <RobotbasIcon v-if="c.live" name="bi bi-check-circle-fill text-success small" />
+            <RobotbasIcon v-if="c.live" name="fas fa-circle-check text-success small" />
           </div>
           <div class="small text-muted">{{ c.desc }}</div>
         </div>

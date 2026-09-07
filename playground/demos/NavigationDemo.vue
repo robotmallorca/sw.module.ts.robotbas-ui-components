@@ -15,37 +15,37 @@ const devicesOpen = ref(false)
   <div class="row g-3">
     <div class="col-md-6">
       <DemoCard label="SideBarLink">
-        <SideBarLink label="Panel" link="#navigation" leading-icon="bi bi-speedometer2" />
-        <SideBarLink label="Dispositivos" link="#navigation" leading-icon="bi bi-hdd-network" :badge="12" />
-        <SideBarLink label="Alertas" link="#navigation" leading-icon="bi bi-bell" :badge="3" />
-        <SideBarLink label="Ajustes" link="#navigation" leading-icon="bi bi-gear" />
+        <SideBarLink label="Panel" link="#navigation" leading-icon="fas fa-gauge-high" />
+        <SideBarLink label="Dispositivos" link="#navigation" leading-icon="fas fa-network-wired" :badge="12" />
+        <SideBarLink label="Alertas" link="#navigation" leading-icon="fas fa-bell" :badge="3" />
+        <SideBarLink label="Ajustes" link="#navigation" leading-icon="fas fa-gear" />
       </DemoCard>
     </div>
     <div class="col-md-6">
       <DemoCard label="SideBarLink — desplegables">
         <SideBarLink
           label="Settings"
-          leading-icon="bi bi-gear"
+          leading-icon="fas fa-gear"
           expandable
           :open="settingsOpen"
           @toggle-click="settingsOpen = !settingsOpen"
         />
         <template v-if="settingsOpen">
-          <SideBarLink label="General" link="#navigation" leading-icon="bi bi-house" :submenu="1" />
-          <SideBarLink label="Team" link="#navigation" leading-icon="bi bi-people" :submenu="1" />
-          <SideBarLink label="Billing" link="#navigation" leading-icon="bi bi-credit-card" :submenu="1" :badge="2" />
+          <SideBarLink label="General" link="#navigation" leading-icon="fas fa-house" :submenu="1" />
+          <SideBarLink label="Team" link="#navigation" leading-icon="fas fa-users" :submenu="1" />
+          <SideBarLink label="Billing" link="#navigation" leading-icon="fas fa-credit-card" :submenu="1" :badge="2" />
         </template>
 
         <SideBarLink
           label="Dispositivos"
-          leading-icon="bi bi-hdd-network"
+          leading-icon="fas fa-network-wired"
           expandable
           :open="devicesOpen"
           child-active
           @toggle-click="devicesOpen = !devicesOpen"
         />
         <template v-if="devicesOpen">
-          <SideBarLink label="Sensores" link="#navigation" leading-icon="bi bi-thermometer" :submenu="1" />
+          <SideBarLink label="Sensores" link="#navigation" leading-icon="fas fa-temperature-half" :submenu="1" />
           <SideBarLink label="Actuadores" link="#navigation" :submenu="2" />
         </template>
       </DemoCard>

@@ -1,0 +1,114 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasSidebar > renders compact correctly 1`] = `
+"<div class="sidebar-nav-robot px-0 compact">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header">
+      <!--v-if--><button type="button" class="sidebar-icon-compact sidebar-toggle-caret is-compact" aria-label="Expand sidebar"></button>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders default correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header">
+      <!--v-if--><button type="button" class="sidebar-icon-compact sidebar-toggle-caret" aria-label="Collapse sidebar"></button>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders with compact logo correctly 1`] = `
+"<div class="sidebar-nav-robot px-0 compact">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header"><img src="/icon.svg" class="sidebar-logo-compact" alt=""><button type="button" class="sidebar-icon-compact sidebar-toggle-caret is-compact" aria-label="Expand sidebar"></button></div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders with footer slot correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header">
+      <!--v-if--><button type="button" class="sidebar-icon-compact sidebar-toggle-caret" aria-label="Collapse sidebar"></button>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="">
+    <div class="">Footer slot</div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders with logo correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header"><img src="/logo.svg" class="" alt="RobotBas"><button type="button" class="sidebar-icon-compact sidebar-toggle-caret" aria-label="Collapse sidebar"></button></div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders with menu slot correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header">
+      <!--v-if--><button type="button" class="sidebar-icon-compact sidebar-toggle-caret" aria-label="Collapse sidebar"></button>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto">Menu slot</div>
+    <hr class="">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders with toggle icon correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header">
+      <!--v-if--><i class="sidebar-icon-compact robotbas-icon-light icon-chevrons-left" role="button" aria-label="Collapse sidebar"></i>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders with ui correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start min-vh-100">
+    <div class="sidebar-header">
+      <!--v-if--><button type="button" class="sidebar-icon-compact sidebar-toggle-caret" aria-label="Collapse sidebar"></button>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <hr class="sidebar-separator">
+    <div class=""></div>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebar > renders without separator correctly 1`] = `
+"<div class="sidebar-nav-robot px-0">
+  <div class="d-flex flex-column align-items-center align-items-sm-start flex-grow-1">
+    <div class="sidebar-header">
+      <!--v-if--><button type="button" class="sidebar-icon-compact sidebar-toggle-caret" aria-label="Collapse sidebar"></button>
+    </div>
+    <div id="menu" class="nav flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start mx-auto"></div>
+    <!--v-if-->
+    <div class=""></div>
+  </div>
+</div>"
+`;

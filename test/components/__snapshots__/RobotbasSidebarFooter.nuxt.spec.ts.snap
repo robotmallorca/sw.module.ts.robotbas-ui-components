@@ -1,0 +1,110 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RobotbasSidebarFooter > renders compact correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer compact">
+  <!--v-if-->
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false"><img data-v-7cfee575="" src="https://example.test/a.png" alt="ada" width="31" height="31" class="rounded-circle">
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2">Ada Lovelace</div>
+        <div data-v-7cfee575="" class="supporting-text">MASTER</div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;"></ul>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebarFooter > renders default correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer">
+  <!--v-if-->
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false">
+      <!--v-if-->
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2"></div>
+        <div data-v-7cfee575="" class="supporting-text"></div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;"></ul>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebarFooter > renders with append slot correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer">
+  <!--v-if-->
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false"><img data-v-7cfee575="" src="https://example.test/a.png" alt="ada" width="31" height="31" class="rounded-circle">
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2">Ada Lovelace</div>
+        <div data-v-7cfee575="" class="supporting-text">MASTER</div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;"></ul>
+  </div>
+  <div class="overlay"></div>
+</div>"
+`;
+
+exports[`RobotbasSidebarFooter > renders with compact separator correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer compact">
+  <hr data-v-7cfee575="" width="50">
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false"><img data-v-7cfee575="" src="https://example.test/a.png" alt="ada" width="31" height="31" class="rounded-circle">
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2">Ada Lovelace</div>
+        <div data-v-7cfee575="" class="supporting-text">MASTER</div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;"></ul>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebarFooter > renders with menu items correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer">
+  <!--v-if-->
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false"><img data-v-7cfee575="" src="https://example.test/a.png" alt="ada" width="31" height="31" class="rounded-circle">
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2">Ada Lovelace</div>
+        <div data-v-7cfee575="" class="supporting-text">MASTER</div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;">
+      <li>Logout</li>
+    </ul>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebarFooter > renders with separator correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer">
+  <hr data-v-7cfee575="" width="178">
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false"><img data-v-7cfee575="" src="https://example.test/a.png" alt="ada" width="31" height="31" class="rounded-circle">
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2">Ada Lovelace</div>
+        <div data-v-7cfee575="" class="supporting-text">MASTER</div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;"></ul>
+  </div>
+</div>"
+`;
+
+exports[`RobotbasSidebarFooter > renders with user correctly 1`] = `
+"<div data-v-7cfee575="" class="sidebar-footer">
+  <!--v-if-->
+  <div data-v-7cfee575="" class="user btn-group dropend">
+    <div data-v-7cfee575="" class="link-profile dropdown-toggle" role="button" aria-expanded="false"><img data-v-7cfee575="" src="https://example.test/a.png" alt="ada" width="31" height="31" class="rounded-circle">
+      <div data-v-7cfee575="" class="text-and-supporting-text">
+        <div data-v-7cfee575="" class="text2">Ada Lovelace</div>
+        <div data-v-7cfee575="" class="supporting-text">MASTER</div>
+      </div>
+    </div>
+    <ul data-v-7cfee575="" class="dropdown-menu" style="z-index: 9999;"></ul>
+  </div>
+</div>"
+`;
