@@ -55,6 +55,14 @@ es de ella de la que cuelgan tanto la familia tipográfica como el glifo. La hoj
 original de icomoon se apropiaba de `[class^="icon-"]` globalmente, lo que en una
 librería significaría secuestrar cualquier clase `icon-*` del proyecto que la use.
 
-Las dos caras **no comparten codepoints** (`caret-left` es `\e9b3` en Light y
-`\e949` en Bold), así que cada una tiene su bloque de reglas. Si hay que
-regenerar la hoja desde un export nuevo de icomoon, no fusiones los selectores.
+Cada cara tiene su propio bloque de reglas: 15 de los 181 glifos están en un
+codepoint distinto en Light que en Bold, y un nombre difiere directamente
+(`check-square` aquí, `checks-quare` en la hoja Bold — una errata del export).
+No fusiones los selectores.
+
+Si hay que regenerar la hoja desde un export nuevo de icomoon, lee cada
+codepoint **de la misma regla** que su selector. No emparejes una lista de
+nombres con una lista de codepoints: las hojas de origen traen 199 líneas
+`content:` frente a 181 reglas `.icon-NAME:before`, porque icomoon saca los
+iconos multicolor como capas `.icon-x .path1:before`. Las listas no cuadran y el
+desajuste es silencioso.

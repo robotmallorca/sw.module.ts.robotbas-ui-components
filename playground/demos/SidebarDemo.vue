@@ -101,6 +101,34 @@ const alertsOpen = ref(false)
         </div>
       </DemoCard>
     </div>
+
+    <div class="col-12">
+      <DemoCard label="RobotbasTopbar — cabecera de página">
+        <div class="demo-topbar-frame">
+          <RobotbasTopbar title="Panel">
+            <template #icon>
+              <RobotbasIcon name="robotbas-icon-light icon-dashboard" class="demo-topbar-icon" />
+            </template>
+            <template #trailing>
+              <span class="demo-topbar-version">@RobotBAS UI - v0.0.1</span>
+            </template>
+          </RobotbasTopbar>
+        </div>
+
+        <p class="text-secondary small mb-2 mt-3">
+          Un array de títulos se pinta como breadcrumb; los segmentos vacíos se
+          descartan, así que un dato que aún no ha cargado no deja una barra suelta.
+        </p>
+
+        <div class="demo-topbar-frame">
+          <RobotbasTopbar :title="['Hotel Miramar', 'Habitaciones', '101']">
+            <template #icon>
+              <RobotbasIcon name="robotbas-icon-light icon-bed" class="demo-topbar-icon" />
+            </template>
+          </RobotbasTopbar>
+        </div>
+      </DemoCard>
+    </div>
   </div>
 </template>
 
@@ -126,6 +154,22 @@ const alertsOpen = ref(false)
   margin: 1rem 16px;
   border-top: 1px solid var(--bs-border-color);
   opacity: 1;
+}
+
+.demo-topbar-frame {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.demo-topbar-icon {
+  font-size: 24px;
+  color: var(--bs-primary);
+}
+
+.demo-topbar-version {
+  font: 400 10px/10px 'Roboto', sans-serif;
+  color: var(--bs-secondary-color);
 }
 
 .demo-rail-brand {

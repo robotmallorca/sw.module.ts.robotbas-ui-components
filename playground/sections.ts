@@ -63,6 +63,6 @@ export const sections: ShowcaseSection[] = [
   { id: 'overlays', label: 'Modals', title: 'Modal · Popover', icon: 'fas fa-window-restore', description: 'Modales y popovers accesibles.', component: OverlaysDemo },
   { id: 'notifications', label: 'Toasts', title: 'Toast · Toaster', icon: 'fas fa-bell', description: 'Notificaciones efímeras con useToast(). Aparecen abajo a la derecha y se autodescartan.', component: ToastDemo },
   { id: 'navigation', label: 'SideBarLinks', title: 'SideBarLink · SideBarCheckbox', icon: 'fas fa-signs-post', description: 'Elementos de menú lateral: enlaces con badge y checkboxes con submenús.', component: NavigationDemo },
-  { id: 'sidebar', label: 'Sidebar', title: 'Sidebar · SidebarFooter', icon: 'fas fa-table-columns', description: 'El rail lateral completo que comparten RobotDesk y RobotAccount: cabecera con logo, control de contraer, menú y pie de usuario.', component: SidebarDemo },
+  { id: 'sidebar', label: 'Sidebar', title: 'Sidebar · SidebarFooter · Topbar', icon: 'fas fa-table-columns', description: 'El armazón de página que comparten RobotDesk y RobotAccount: rail lateral con logo, contraer, menú y pie de usuario, más la barra superior de título.', component: SidebarDemo },
   { id: 'inventory', label: 'Inventario', title: 'Inventario completo', icon: 'fas fa-table-cells-large', description: 'Los 30 componentes del módulo, todos en uso en esta página.', component: InventoryDemo },
 ]
