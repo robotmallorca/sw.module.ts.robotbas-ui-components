@@ -97,7 +97,7 @@ function simulateLoading() {
 
         <div class="small text-muted mt-2">
           Pincha las cabeceras para ordenar · escribe para filtrar sobre el valor
-          <em>mostrado</em> · la paginación aparece sola al pasar de 4 filas.
+          <em>mostrado</em> · pagina de 4 en 4.
         </div>
       </DemoCard>
     </div>

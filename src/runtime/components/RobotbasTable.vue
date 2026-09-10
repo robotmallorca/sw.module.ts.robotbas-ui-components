@@ -1,4 +1,6 @@
 <script lang="ts">
+import type { Theme } from 'ag-grid-community'
+
 export interface RobotbasTableColumn<Row = any> {
   /** Identificador único. También nombra el slot `body-cell-<name>`. */
   name: string
@@ -16,7 +18,7 @@ export interface RobotbasTableColumn<Row = any> {
   format?: (value: any, row: Row) => string
   /** Estilo en línea de las celdas de la columna. */
   style?: string | Record<string, string>
-  /** Estilo en línea de la cabecera. */
+  /** Estilo en línea de la cabecera. Su `width` se trata igual que el de `style`. */
   headerStyle?: string | Record<string, string>
   /** Clases extra de las celdas. */
   classes?: string
@@ -39,16 +41,18 @@ export interface RobotbasTableUI {
   top?: string
   title?: string
   wrapper?: string
+  /** Clases del propio grid. */
   table?: string
-  thead?: string
+  /** Clases de cada cabecera. */
   th?: string
-  tbody?: string
+  /** Clases de cada fila. */
   tr?: string
+  /** Clases de cada celda. */
   td?: string
-  sortIcon?: string
+  /** Clases del estado vacío. */
   empty?: string
+  /** Clases del estado de carga. */
   loading?: string
-  pagination?: string
 }
 
 export interface RobotbasTableProps<Row = any> {
@@ -69,7 +73,7 @@ export interface RobotbasTableProps<Row = any> {
    */
   loadingLabel?: string
   title?: string
-  /** Filas compactas (`.table-sm`). */
+  /** Filas compactas. */
   dense?: boolean
   /** Deja que el texto de las celdas fluya en varias líneas. */
   wrapCells?: boolean
@@ -83,6 +87,8 @@ export interface RobotbasTableProps<Row = any> {
   prevPageIcon?: string
   /** Icono del botón "página siguiente" de la paginación. */
   nextPageIcon?: string
+  /** Tema de ag-grid. Por defecto el de RobotBAS. */
+  theme?: Theme
   class?: any
   ui?: RobotbasTableUI
 }
@@ -93,16 +99,49 @@ export interface RobotbasTableEmits {
 </script>
 
 <script setup lang="ts" generic="Row extends Record<string, any>">
-import { computed, ref, watch } from 'vue'
-import RobotbasIcon from './RobotbasIcon.vue'
+import { computed, defineComponent, h, nextTick, shallowRef, useSlots, watch } from 'vue'
+import type { PropType } from 'vue'
+import { AgGridVue } from 'ag-grid-vue3'
+import {
+  CellStyleModule,
+  ClientSideRowModelModule,
+  ColumnApiModule,
+  ModuleRegistry,
+  PaginationModule,
+  QuickFilterModule,
+  RowAutoHeightModule,
+  RowStyleModule,
+  ValidationModule,
+  type ColDef,
+  type GetRowIdParams,
+  type GridApi,
+  type GridReadyEvent,
+  type ICellRendererParams,
+} from 'ag-grid-community'
+import { robotbasGridTheme } from '../utils/grid-theme'
+
+let modulesRegistered = false
+function registerGridModules() {
+  if (modulesRegistered) return
+
+  ModuleRegistry.registerModules([
+    ClientSideRowModelModule,
+    QuickFilterModule,
+    PaginationModule,
+    RowStyleModule,
+    CellStyleModule,
+    RowAutoHeightModule,
+    ColumnApiModule,
+    ...(import.meta.dev ? [ValidationModule] : []),
+  ])
+  modulesRegistered = true
+}
+registerGridModules()
 
 const props = withDefaults(defineProps<RobotbasTableProps<Row>>(), {
   rowKey: 'id',
   noDataLabel: 'No data available',
   loadingLabel: 'Loading...',
-  // Los defaults son de Font Awesome, el pack de las apps RobotBAS. Son props
-  // justamente para que un consumidor que no lo cargue pueda pasar los suyos:
-  // el componente publicado no debe obligar a un pack concreto.
   sortIcon: 'fas fa-sort',
   sortAscIcon: 'fas fa-sort-up',
   sortDescIcon: 'fas fa-sort-down',
@@ -111,6 +150,8 @@ const props = withDefaults(defineProps<RobotbasTableProps<Row>>(), {
 })
 
 const emit = defineEmits<RobotbasTableEmits>()
+
+const slots = useSlots()
 
 defineSlots<{
   'top'(): any
@@ -125,168 +166,265 @@ defineSlots<{
   }) => any
 }>()
 
-// No se usa createUiFn() aquí a propósito: devuelve funciones, no strings, y es
-// justo lo que hace que los `:ui` de Combobox/Input/Select no casen con sus
-// interfaces `...UI` y el typecheck del repo esté en rojo. Aquí las clases son
-// strings de principio a fin.
 const cx = (...parts: Array<string | false | undefined>) =>
   parts.filter(Boolean).join(' ')
 
-// ---------------------------------------------------------------------------
-// Estado de orden y paginación
-// ---------------------------------------------------------------------------
-const sortBy = ref<string | null>(props.pagination?.sortBy ?? null)
-const descending = ref<boolean>(props.pagination?.descending ?? false)
-const page = ref<number>(props.pagination?.page ?? 1)
+const gridApi = shallowRef<GridApi<Row> | null>(null)
 
+// ---------------------------------------------------------------------------
+// Estilos declarados por columna
+// ---------------------------------------------------------------------------
+function parseStyle(
+  style?: string | Record<string, string>,
+): Record<string, string> | undefined {
+  if (!style) return undefined
+  if (typeof style !== 'string') return style
+
+  const parsed: Record<string, string> = {}
+  for (const declaration of style.split(';')) {
+    const [property, ...rest] = declaration.split(':')
+    if (!property || rest.length === 0) continue
+    const name = property.trim().replace(/-([a-z])/g, (_, c) => c.toUpperCase())
+    parsed[name] = rest.join(':').trim()
+  }
+  return parsed
+}
+
+function pixelWidth(value?: string): number | undefined {
+  if (!value) return undefined
+  const match = /^(\d+(?:\.\d+)?)px$/.exec(value.trim())
+  return match ? Number(match[1]) : undefined
+}
+
+const ALIGN_CLASS = {
+  left: 'rb-table-cell-left',
+  center: 'rb-table-cell-center',
+  right: 'rb-table-cell-right',
+} as const
+
+const alignOf = (column: RobotbasTableColumn<Row>) => column.align ?? 'left'
+
+// ---------------------------------------------------------------------------
+// Celdas de slot
+// ---------------------------------------------------------------------------
+const columnByName = computed(() =>
+  Object.fromEntries(props.columns.map(column => [column.name, column])),
+)
+
+const SlotCell = defineComponent({
+  name: 'RobotbasTableSlotCell',
+  props: {
+    params: {
+      type: Object as PropType<ICellRendererParams<Row>>,
+      required: true,
+    },
+  },
+  setup(cellProps) {
+    return () => {
+      const column = columnByName.value[cellProps.params.colDef?.colId ?? '']
+      if (!column) return null
+      return slots[`body-cell-${column.name}`]?.({
+        row: cellProps.params.data as Row,
+        value: cellProps.params.value,
+        column,
+      })
+    }
+  },
+})
+
+const NoRowsOverlay = defineComponent({
+  name: 'RobotbasTableNoRowsOverlay',
+  setup() {
+    return () =>
+      h(
+        'span',
+        { 'data-slot': 'empty', 'class': cx('text-secondary', props.ui?.empty) },
+        slots['no-data']?.() ?? props.noDataLabel,
+      )
+  },
+})
+
+const LoadingOverlay = defineComponent({
+  name: 'RobotbasTableLoadingOverlay',
+  setup() {
+    return () =>
+      h(
+        'span',
+        { 'data-slot': 'loading', 'class': cx('text-secondary', props.ui?.loading) },
+        slots.loading?.() ?? [
+          h('span', {
+            'class': 'spinner-border spinner-border-sm me-2',
+            'role': 'status',
+            'aria-hidden': 'true',
+          }),
+          props.loadingLabel,
+        ],
+      )
+  },
+})
+
+// ---------------------------------------------------------------------------
+// Columnas
+// ---------------------------------------------------------------------------
+const columnDefs = computed<ColDef<Row>[]>(() =>
+  props.columns.map((column) => {
+    const cellStyle = parseStyle(column.style)
+    const headerStyle = parseStyle(column.headerStyle)
+    const width = pixelWidth(cellStyle?.width ?? headerStyle?.width)
+    const align = alignOf(column)
+
+    const formatValue = column.format
+      ? (params: { value: any, data?: Row }) =>
+          column.format!(params.value, params.data as Row)
+      : undefined
+
+    return {
+      colId: column.name,
+      headerName: column.label,
+      field: (typeof column.field === 'string'
+        ? column.field
+        : undefined) as ColDef<Row>['field'],
+      valueGetter:
+        typeof column.field === 'function'
+          ? params => (column.field as (row: Row) => unknown)(params.data as Row)
+          : undefined,
+      valueFormatter: formatValue,
+      getQuickFilterText: formatValue,
+      sortable: !!column.sortable,
+      unSortIcon: !!column.sortable,
+      cellClass: cx(ALIGN_CLASS[align], column.classes, props.ui?.td),
+      headerClass: cx(ALIGN_CLASS[align], column.headerClasses, props.ui?.th),
+      cellStyle: cellStyle,
+      ...(width === undefined ? { flex: 1 } : { width, flex: undefined }),
+      cellRenderer: slots[`body-cell-${column.name}`] ? SlotCell : undefined,
+    }
+  }),
+)
+
+const defaultColDef = computed<ColDef<Row>>(() => ({
+  resizable: true,
+  sortable: false,
+  wrapText: props.wrapCells,
+  autoHeight: props.wrapCells,
+}))
+
+// ---------------------------------------------------------------------------
+// Orden y paginación
+// ---------------------------------------------------------------------------
 const rowsPerPage = computed(() => props.pagination?.rowsPerPage ?? 0)
+const paginated = computed(() => rowsPerPage.value > 0)
+
+const displayedRows = computed(() => (props.loading ? [] : props.rows))
+
+const showPagingPanel = computed(() => paginated.value)
+
+const icons = computed(() => ({
+  sortAscending: `<i class="${props.sortAscIcon}"></i>`,
+  sortDescending: `<i class="${props.sortDescIcon}"></i>`,
+  sortUnSort: `<i class="${props.sortIcon} opacity-50"></i>`,
+  previous: `<i class="${props.prevPageIcon}"></i>`,
+  next: `<i class="${props.nextPageIcon}"></i>`,
+}))
+
+const getRowId = computed(() =>
+  typeof props.rowKey === 'function'
+    ? (params: GetRowIdParams<Row>) => String((props.rowKey as (row: Row) => unknown)(params.data))
+    : (params: GetRowIdParams<Row>) => String(params.data[props.rowKey as string]),
+)
+
+let lastPublished = ''
+
+function seedPublished() {
+  lastPublished = JSON.stringify({
+    sortBy: props.pagination?.sortBy ?? null,
+    descending: props.pagination?.descending ?? false,
+    rowsPerPage: rowsPerPage.value,
+    page: props.pagination?.page ?? 1,
+  })
+}
+
+function applyRequestedSort() {
+  const api = gridApi.value
+  if (!api) return
+
+  const sortBy = props.pagination?.sortBy ?? null
+  seedPublished()
+  api.applyColumnState({
+    state: props.columns.map(column => ({
+      colId: column.name,
+      sort:
+        sortBy === column.name
+          ? props.pagination?.descending
+            ? ('desc' as const)
+            : ('asc' as const)
+          : null,
+    })),
+  })
+}
+
+function onGridReady(event: GridReadyEvent<Row>) {
+  gridApi.value = event.api
+  applyRequestedSort()
+  if (props.pagination?.page && props.pagination.page > 1) {
+    event.api.paginationGoToPage(props.pagination.page - 1)
+  }
+}
 
 watch(
-  () => props.pagination,
-  (value) => {
-    if (!value) return
-    if (value.sortBy !== undefined) sortBy.value = value.sortBy
-    if (value.descending !== undefined) descending.value = value.descending
-    if (value.page !== undefined) page.value = value.page
+  () => [props.pagination?.sortBy, props.pagination?.descending],
+  () => applyRequestedSort(),
+)
+
+watch(
+  () => props.pagination?.page,
+  (page) => {
+    if (!page || !gridApi.value) return
+    seedPublished()
+    gridApi.value.paginationGoToPage(page - 1)
   },
 )
 
-function publishPagination() {
-  emit('update:pagination', {
-    sortBy: sortBy.value,
-    descending: descending.value,
+function currentPagination(): RobotbasTablePagination {
+  const api = gridApi.value
+  const sorted = api
+    ?.getColumnState()
+    .find(state => state.sort !== null && state.sort !== undefined)
+
+  return {
+    sortBy: sorted?.colId ?? null,
+    descending: sorted?.sort === 'desc',
     rowsPerPage: rowsPerPage.value,
-    page: page.value,
-  })
-}
-
-// ---------------------------------------------------------------------------
-// Acceso a los valores
-// ---------------------------------------------------------------------------
-function rawValue(row: Row, column: RobotbasTableColumn<Row>): unknown {
-  return typeof column.field === 'function'
-    ? column.field(row)
-    : row[column.field]
-}
-
-/** Valor tal y como se ve. Es también lo que se ordena y se filtra. */
-function displayValue(row: Row, column: RobotbasTableColumn<Row>): string {
-  const value = rawValue(row, column)
-  if (column.format) return column.format(value, row)
-  return value === null || value === undefined ? '' : String(value)
-}
-
-function rowKeyOf(row: Row, index: number): string | number {
-  if (typeof props.rowKey === 'function') return props.rowKey(row)
-  const value = row[props.rowKey]
-  return value === undefined ? index : value
-}
-
-// ---------------------------------------------------------------------------
-// Filtrado -> orden -> paginación
-// ---------------------------------------------------------------------------
-const filtered = computed(() => {
-  const needle = props.filter?.trim().toLowerCase()
-  if (!needle) return props.rows
-  return props.rows.filter((row) =>
-    props.columns.some((column) =>
-      displayValue(row, column).toLowerCase().includes(needle),
-    ),
-  )
-})
-
-const sorted = computed(() => {
-  const column = props.columns.find((c) => c.name === sortBy.value)
-  if (!column) return filtered.value
-
-  const direction = descending.value ? -1 : 1
-  // Copia: Array.sort muta, y `rows` es una prop.
-  return [...filtered.value].sort((a, b) => {
-    const left = rawValue(a, column)
-    const right = rawValue(b, column)
-
-    if (left === right) return 0
-    if (left === null || left === undefined) return 1
-    if (right === null || right === undefined) return -1
-
-    if (typeof left === 'number' && typeof right === 'number') {
-      return (left - right) * direction
-    }
-    return (
-      String(left).localeCompare(String(right), undefined, { numeric: true }) *
-      direction
-    )
-  })
-})
-
-const pageCount = computed(() =>
-  rowsPerPage.value > 0
-    ? Math.max(1, Math.ceil(sorted.value.length / rowsPerPage.value))
-    : 1,
-)
-
-// Si el filtro reduce el total, la página actual puede quedar fuera de rango.
-watch([pageCount, () => props.filter], () => {
-  if (page.value > pageCount.value) page.value = pageCount.value
-})
-
-const visibleRows = computed(() => {
-  if (rowsPerPage.value <= 0) return sorted.value
-  const start = (page.value - 1) * rowsPerPage.value
-  return sorted.value.slice(start, start + rowsPerPage.value)
-})
-
-const firstIndex = computed(() =>
-  sorted.value.length === 0 ? 0 : (page.value - 1) * rowsPerPage.value + 1,
-)
-const lastIndex = computed(() =>
-  rowsPerPage.value <= 0
-    ? sorted.value.length
-    : Math.min(page.value * rowsPerPage.value, sorted.value.length),
-)
-
-// ---------------------------------------------------------------------------
-// Interacción
-// ---------------------------------------------------------------------------
-function toggleSort(column: RobotbasTableColumn<Row>) {
-  if (!column.sortable) return
-  if (sortBy.value === column.name) {
-    descending.value = !descending.value
-  } else {
-    sortBy.value = column.name
-    descending.value = false
+    page: api ? api.paginationGetCurrentPage() + 1 : 1,
   }
-  page.value = 1
-  publishPagination()
 }
 
-function goToPage(next: number) {
-  const target = Math.min(Math.max(1, next), pageCount.value)
-  if (target === page.value) return
-  page.value = target
-  publishPagination()
+function publishPagination() {
+  const value = currentPagination()
+  const fingerprint = JSON.stringify(value)
+  if (fingerprint === lastPublished) return
+  lastPublished = fingerprint
+  emit('update:pagination', value)
 }
 
-function sortIconFor(column: RobotbasTableColumn<Row>) {
-  if (sortBy.value !== column.name) return props.sortIcon
-  return descending.value ? props.sortDescIcon : props.sortAscIcon
+function onSortChanged() {
+  gridApi.value?.paginationGoToFirstPage()
+  void nextTick(publishPagination)
 }
 
-/** Valor de aria-sort de la cabecera. */
-function ariaSortFor(column: RobotbasTableColumn<Row>) {
-  if (!column.sortable) return undefined
-  if (sortBy.value !== column.name) return 'none'
-  return descending.value ? 'descending' : 'ascending'
+function onPaginationChanged() {
+  void nextTick(publishPagination)
 }
 
-const alignClass = (column: RobotbasTableColumn<Row>) =>
-  column.align === 'right'
-    ? 'text-end'
-    : column.align === 'center'
-      ? 'text-center'
-      : 'text-start'
+function onModelUpdated() {
+  const api = gridApi.value
+  if (!api) return
+  if (api.getDisplayedRowCount() === 0) api.showNoRowsOverlay()
+  else api.hideOverlay()
+}
 
 const hasTop = computed(() => !!props.title)
+
+defineExpose({ gridApi })
 </script>
 
 <template>
@@ -315,163 +453,59 @@ const hasTop = computed(() => !!props.title)
       </slot>
     </div>
 
-    <div
-      data-slot="wrapper"
-      :class="cx('table-responsive', props.ui?.wrapper)"
-    >
-      <table
-        data-slot="table"
-        :class="
-          cx(
-            'table table-hover align-middle mb-0',
-            dense && 'table-sm',
-            props.ui?.table,
-          )
-        "
-      >
-        <thead data-slot="thead" :class="props.ui?.thead">
-          <tr>
-            <th
-              v-for="column in columns"
-              :key="column.name"
-              scope="col"
-              :aria-sort="ariaSortFor(column)"
-              :style="column.headerStyle"
-              data-slot="th"
-              :class="
-                cx(
-                  alignClass(column),
-                  column.sortable && 'user-select-none',
-                  column.headerClasses,
-                  props.ui?.th,
-                )
-              "
-            >
-              <button
-                v-if="column.sortable"
-                type="button"
-                class="btn btn-link p-0 border-0 text-decoration-none fw-semibold text-reset d-inline-flex align-items-center gap-1"
-                @click="toggleSort(column)"
-              >
-                {{ column.label }}
-                <RobotbasIcon
-                  :name="sortIconFor(column)"
-                  data-slot="sortIcon"
-                  :class="
-                    cx(
-                      'small',
-                      sortBy !== column.name && 'opacity-50',
-                      props.ui?.sortIcon,
-                    )
-                  "
-                />
-              </button>
-              <template v-else>{{ column.label }}</template>
-            </th>
-          </tr>
-        </thead>
-
-        <tbody data-slot="tbody" :class="props.ui?.tbody">
-          <tr v-if="loading">
-            <td
-              :colspan="columns.length"
-              data-slot="loading"
-              :class="cx('text-center text-secondary py-4', props.ui?.loading)"
-            >
-              <slot name="loading">
-                <span
-                  class="spinner-border spinner-border-sm me-2"
-                  role="status"
-                  aria-hidden="true"
-                />
-                {{ loadingLabel }}
-              </slot>
-            </td>
-          </tr>
-
-          <tr v-else-if="visibleRows.length === 0">
-            <td
-              :colspan="columns.length"
-              data-slot="empty"
-              :class="cx('text-center text-secondary py-4', props.ui?.empty)"
-            >
-              <slot name="no-data">{{ noDataLabel }}</slot>
-            </td>
-          </tr>
-
-          <!--
-            El bucle va dentro de un <template v-else> y no como `v-for` +
-            `v-else` en el propio <tr>: en el mismo elemento, v-if tiene
-            prioridad sobre v-for en Vue 3 y la regla vue/no-use-v-if-with-v-for
-            lo rechaza.
-          -->
-          <template v-else>
-            <tr
-              v-for="(row, index) in visibleRows"
-              :key="rowKeyOf(row, index)"
-              data-slot="tr"
-              :class="props.ui?.tr"
-            >
-              <td
-                v-for="column in columns"
-                :key="column.name"
-                :style="column.style"
-                data-slot="td"
-                :class="
-                  cx(
-                    alignClass(column),
-                    !wrapCells && 'text-nowrap',
-                    column.classes,
-                    props.ui?.td,
-                  )
-                "
-              >
-                <slot
-                  :name="`body-cell-${column.name}`"
-                  :row="row"
-                  :value="rawValue(row, column)"
-                  :column="column"
-                >
-                  {{ displayValue(row, column) }}
-                </slot>
-              </td>
-            </tr>
-          </template>
-        </tbody>
-      </table>
-    </div>
-
-    <div
-      v-if="rowsPerPage > 0 && pageCount > 1"
-      data-slot="pagination"
-      :class="
-        cx(
-          'd-flex align-items-center justify-content-end gap-2 mt-2 small text-secondary',
-          props.ui?.pagination,
-        )
-      "
-    >
-      <span>{{ firstIndex }}&ndash;{{ lastIndex }} of {{ sorted.length }}</span>
-      <div class="btn-group btn-group-sm">
-        <button
-          type="button"
-          class="btn btn-outline-secondary"
-          :disabled="page <= 1"
-          aria-label="Previous page"
-          @click="goToPage(page - 1)"
-        >
-          <RobotbasIcon :name="prevPageIcon" />
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-secondary"
-          :disabled="page >= pageCount"
-          aria-label="Next page"
-          @click="goToPage(page + 1)"
-        >
-          <RobotbasIcon :name="nextPageIcon" />
-        </button>
-      </div>
+    <div data-slot="wrapper" :class="props.ui?.wrapper">
+      <ClientOnly>
+        <AgGridVue
+          data-slot="table"
+          class="rb-table"
+          :class="props.ui?.table"
+          style="width: 100%"
+          :theme="props.theme ?? robotbasGridTheme"
+          :column-defs="columnDefs"
+          :default-col-def="defaultColDef"
+          :row-data="displayedRows"
+          :get-row-id="getRowId"
+          :quick-filter-text="props.filter"
+          :loading="props.loading"
+          :icons="icons"
+          :pagination="paginated"
+          :pagination-page-size="paginated ? rowsPerPage : undefined"
+          :suppress-pagination-panel="!showPagingPanel"
+          :row-height="!wrapCells && dense ? 30 : undefined"
+          :no-rows-overlay-component="NoRowsOverlay"
+          :loading-overlay-component="LoadingOverlay"
+          dom-layout="autoHeight"
+          @grid-ready="onGridReady"
+          @sort-changed="onSortChanged"
+          @pagination-changed="onPaginationChanged"
+          @model-updated="onModelUpdated"
+        />
+      </ClientOnly>
     </div>
   </div>
 </template>
+
+<style>
+.rb-table .rb-table-cell-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.rb-table .rb-table-cell-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.rb-table .ag-header-cell.rb-table-cell-center .ag-header-cell-label {
+  justify-content: center;
+}
+
+.rb-table .ag-header-cell.rb-table-cell-right .ag-header-cell-label {
+  justify-content: flex-end;
+}
+
+.rb-table .ag-cell-wrap-text {
+  word-break: break-word;
+}
+
+</style>
